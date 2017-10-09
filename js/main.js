@@ -1,0 +1,9 @@
+$(document).ready(function(){
+  $("#unbuntu").click(function(){
+    $("span.name").empty("span.name");
+    $("span.class").empty("span.class");
+    $("div#type-face").addClass("unbuntu");
+    $("span.name").append("unbuntu");
+    $("span.class").append('<code>class="ubuntu"</code>');
+  });
+});

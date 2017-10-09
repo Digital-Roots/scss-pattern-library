@@ -1,0 +1,160 @@
+/***
+Campaign site style library
+***/
+/*******
+
+ typography
+
+
+*****/
+/* base type */
+html {
+  /* Change default typefaces here */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: calc(.875 + 0.45vw);
+  -webkit-font-smoothing: antialiased;
+}
+/* web fonts */
+@font-face {
+  font-family: ubuntu;
+  src: url(stylesheets/fonts/ubuntu-font-family-0.83);
+}
+.unbuntu{
+  font-family: 'unbuntu';
+}
+/* Copy & Lists */
+p {
+  line-height: calc(1.5rem + 0.45vw);
+  margin-top: 1.02rem;
+  margin-bottom: 0.35rem;
+}
+ul,
+ol {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+ul li,
+ol li {
+  line-height: 1.5;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+blockquote {
+  line-height: 1.5;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* Change heading typefaces here */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top: calc(.35 + .3vh);
+  margin-bottom: 0;
+  line-height: calc(1 + .25vw);
+  text-shadow: 1px 1px 3px darkgrey, 1px 1px 2px lightgrey;
+}
+h1 {
+  font-size: 2.842rem;
+  line-height: 2.15;
+  margin-top: 2.85rem;
+}
+h2 {
+  font-size: 2.428rem;
+  line-height: 2.05;
+}
+h3 {
+  font-size: calc(2.114rem + .1vw);
+  line-height: 1.5;
+}
+h4 {
+  font-size: calc(1.407rem + .5vw);
+}
+h5 {
+  font-size: calc(1.013333333333333rem + .5vw);
+}
+h6 {
+  font-size: calc(0.7535rem + .85vw);
+}
+/* Tables */
+table{
+	border-spacing: 0;
+	width: 100%;
+}
+td,
+th{
+	border-bottom: .1rem solid darkgrey;
+	padding: 1.2rem 1.5rem;
+	text-align: center;
+
+	&:first-child{
+		padding-left: 0;
+  }
+	&:last-child{
+    padding-right: 0;
+  }
+}
+
+/* Code blocks */
+code {
+  vertical-align: bottom;
+}
+/* type face*/
+/*******
+
+
+Help Classes
+
+*****/
+.text-center{
+  text-align: center;
+}
+/*******
+
+
+templates grid/flex
+
+
+*****/
+#grid-2-1{
+  display:grid;
+  //grid-template: ;
+}
+@media only screen and (max-width: 700px){
+  #grid-2-1{
+    //grid-template: ;
+  }
+}
+@media only screen and (max-width: 400px){
+  #grid-2-1{
+    display: flex;
+    flex-flow: column;
+  }
+}
+#type-face p{
+  display: block;
+}
+/*********
+
+
+Navigation
+
+
+*********/
+nav{
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+}
+nav button{
+  height: 35px;
+}

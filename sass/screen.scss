@@ -1,7 +1,35 @@
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+Creator: Robert Edwardes
+Website: digitalroots.io
+Project Name: RINO
+licenses: MIT
+ */
 
 @import "compass/reset";
-@import "../sass/00-atom/typeography.scss";
+/*******
+
+
+Typeagraphy
+
+*****/
+@import "../sass/00-elements/typeography.scss";
+@import "../sass/00-elements/color-patches.scss";
+/*******
+
+
+templates grid/flex
+
+
+*****/
+@import "../sass/02-templates/grid-2-1.scss";
+/*******
+
+
+Help Classes
+
+*****/
+@import "../sass/01-compenates/helpers.scss";
+@import "../sass/print.scss"

@@ -1,3 +1,71 @@
-/* Welcome to Compass. Use this file to define print styles.
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* Print Style */
+@media print {
+  /* line 3, ../sass/print.scss */
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 12, ../sass/print.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 17, ../sass/print.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 21, ../sass/print.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 25, ../sass/print.scss */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  /* line 30, ../sass/print.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 36, ../sass/print.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* line 40, ../sass/print.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 45, ../sass/print.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  /* line 49, ../sass/print.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 56, ../sass/print.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}

@@ -1,7 +1,12 @@
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+Creator: Robert Edwardes
+Website: digitalroots.io
+Project Name: RINO
+licenses: MIT
+ */
 /* line 5, ../../../.rvm/gems/ruby-2.4.1@global/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -67,9 +72,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/***
-Campaign site style library
-***/
+/*******
+
+
+Typeagraphy
+
+*****/
 /*******
 
  typography
@@ -77,7 +85,7 @@ Campaign site style library
 
 *****/
 /* base type */
-/* line 11, ../sass/00-atom/typeography.scss */
+/* line 8, ../sass/00-elements/typeography.scss */
 html {
   /* Change default typefaces here */
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -90,33 +98,33 @@ html {
   font-family: ubuntu;
   src: url(stylesheets/fonts/ubuntu-font-family-0.83);
 }
-/* line 22, ../sass/00-atom/typeography.scss */
+/* line 19, ../sass/00-elements/typeography.scss */
 .unbuntu {
   font-family: 'unbuntu';
 }
 
 /* Copy & Lists */
-/* line 26, ../sass/00-atom/typeography.scss */
+/* line 23, ../sass/00-elements/typeography.scss */
 p {
   line-height: calc(1.5rem + 0.45vw);
   margin-top: 1.02rem;
   margin-bottom: 0.35rem;
 }
 
-/* line 31, ../sass/00-atom/typeography.scss */
+/* line 28, ../sass/00-elements/typeography.scss */
 ul,
 ol {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
-/* line 36, ../sass/00-atom/typeography.scss */
+/* line 33, ../sass/00-elements/typeography.scss */
 ul li,
 ol li {
   line-height: 1.5;
 }
 
-/* line 40, ../sass/00-atom/typeography.scss */
+/* line 37, ../sass/00-elements/typeography.scss */
 ul ul,
 ol ul,
 ul ol,
@@ -125,7 +133,7 @@ ol ol {
   margin-bottom: 0;
 }
 
-/* line 47, ../sass/00-atom/typeography.scss */
+/* line 44, ../sass/00-elements/typeography.scss */
 blockquote {
   line-height: 1.5;
   margin-top: 1.5rem;
@@ -133,7 +141,7 @@ blockquote {
 }
 
 /* Headings */
-/* line 53, ../sass/00-atom/typeography.scss */
+/* line 50, ../sass/00-elements/typeography.scss */
 h1,
 h2,
 h3,
@@ -148,81 +156,69 @@ h6 {
   text-shadow: 1px 1px 3px darkgrey, 1px 1px 2px lightgrey;
 }
 
-/* line 66, ../sass/00-atom/typeography.scss */
+/* line 63, ../sass/00-elements/typeography.scss */
 h1 {
   font-size: 2.842rem;
   line-height: 2.15;
   margin-top: 2.85rem;
 }
 
-/* line 71, ../sass/00-atom/typeography.scss */
+/* line 68, ../sass/00-elements/typeography.scss */
 h2 {
   font-size: 2.428rem;
   line-height: 2.05;
 }
 
-/* line 75, ../sass/00-atom/typeography.scss */
+/* line 72, ../sass/00-elements/typeography.scss */
 h3 {
   font-size: calc(2.114rem + .1vw);
   line-height: 1.5;
 }
 
-/* line 79, ../sass/00-atom/typeography.scss */
+/* line 76, ../sass/00-elements/typeography.scss */
 h4 {
   font-size: calc(1.407rem + .5vw);
 }
 
-/* line 82, ../sass/00-atom/typeography.scss */
+/* line 79, ../sass/00-elements/typeography.scss */
 h5 {
   font-size: calc(1.013333333333333rem + .5vw);
 }
 
-/* line 85, ../sass/00-atom/typeography.scss */
+/* line 82, ../sass/00-elements/typeography.scss */
 h6 {
   font-size: calc(0.7535rem + .85vw);
 }
 
 /* Tables */
-/* line 89, ../sass/00-atom/typeography.scss */
+/* line 86, ../sass/00-elements/typeography.scss */
 table {
   border-spacing: 0;
   width: 100%;
 }
 
-/* line 93, ../sass/00-atom/typeography.scss */
+/* line 90, ../sass/00-elements/typeography.scss */
 td,
 th {
   border-bottom: .1rem solid darkgrey;
   padding: 1.2rem 1.5rem;
   text-align: center;
 }
-/* line 99, ../sass/00-atom/typeography.scss */
+/* line 96, ../sass/00-elements/typeography.scss */
 td:first-child,
 th:first-child {
   padding-left: 0;
 }
-/* line 102, ../sass/00-atom/typeography.scss */
+/* line 99, ../sass/00-elements/typeography.scss */
 td:last-child,
 th:last-child {
   padding-right: 0;
 }
 
 /* Code blocks */
-/* line 108, ../sass/00-atom/typeography.scss */
+/* line 105, ../sass/00-elements/typeography.scss */
 code {
   vertical-align: bottom;
-}
-
-/* type face*/
-/*******
-
-
-Help Classes
-
-*****/
-/* line 118, ../sass/00-atom/typeography.scss */
-.text-center {
-  text-align: center;
 }
 
 /*******
@@ -232,38 +228,90 @@ templates grid/flex
 
 
 *****/
-/* line 128, ../sass/00-atom/typeography.scss */
+/* line 1, ../sass/02-templates/grid-2-1.scss */
 #grid-2-1 {
   display: grid;
 }
 
-@media only screen and (max-width: 400px) {
-  /* line 138, ../sass/00-atom/typeography.scss */
-  #grid-2-1 {
-    display: flex;
-    flex-flow: column;
+/*******
+
+
+Help Classes
+
+*****/
+/* line 1, ../sass/01-compenates/helpers.scss */
+.text-center {
+  text-align: center;
+}
+
+/* Print Style */
+@media print {
+  /* line 3, ../sass/print.scss */
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
   }
-}
-/* line 143, ../sass/00-atom/typeography.scss */
-#type-face p {
-  display: block;
-}
 
-/*********
+  /* line 12, ../sass/print.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
 
+  /* line 17, ../sass/print.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
 
-Navigation
+  /* line 21, ../sass/print.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
 
+  /* line 25, ../sass/print.scss */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
 
-*********/
-/* line 153, ../sass/00-atom/typeography.scss */
-nav {
-  width: 100vw;
-  overflow: hidden;
-  display: flex;
-}
+  /* line 30, ../sass/print.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
 
-/* line 158, ../sass/00-atom/typeography.scss */
-nav button {
-  height: 35px;
+  /* line 36, ../sass/print.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* line 40, ../sass/print.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 45, ../sass/print.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  /* line 49, ../sass/print.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 56, ../sass/print.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
 }

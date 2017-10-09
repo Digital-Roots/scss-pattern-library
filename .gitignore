@@ -2,3 +2,7 @@
 *.rb
 
 /stylesheets/*-*
+
+.sass-cache/*
+
+/stylesheets/print.css

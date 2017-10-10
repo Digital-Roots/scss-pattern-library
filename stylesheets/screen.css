@@ -332,7 +332,15 @@ button {
   padding: .2rem;
   margin: .3rem;
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 700px) {
+  /* line 1, ../sass/01-compenates/buttons.scss */
+  button {
+    font-size: 1.2rem;
+    padding: .25rem;
+    margin: .25rem;
+  }
+}
+@media screen and (min-width: 900px) {
   /* line 1, ../sass/01-compenates/buttons.scss */
   button {
     font-size: 1.75rem;
@@ -353,10 +361,11 @@ templates grid/flex
   padding: calc(1rem / 4);
   display: flex;
   flex-flow: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: stretch;
+  height: 100vh;
 }
-/* line 7, ../sass/02-templates/grid-2-1.scss */
+/* line 8, ../sass/02-templates/grid-2-1.scss */
 .grid-2-1 main {
   display: flex;
   flex-flow: column nowrap;
@@ -365,35 +374,35 @@ templates grid/flex
   height: 50vh;
 }
 @media screen and (min-width: 700px) {
-  /* line 7, ../sass/02-templates/grid-2-1.scss */
+  /* line 8, ../sass/02-templates/grid-2-1.scss */
   .grid-2-1 main {
     order: 1;
     flex-flow: row;
   }
 }
-/* line 17, ../sass/02-templates/grid-2-1.scss */
+/* line 18, ../sass/02-templates/grid-2-1.scss */
 .grid-2-1 main .main {
   order: 1;
   text-align: center;
 }
 @media screen and (min-width: 400px) {
-  /* line 17, ../sass/02-templates/grid-2-1.scss */
+  /* line 18, ../sass/02-templates/grid-2-1.scss */
   .grid-2-1 main .main {
     flex: 2 50%;
   }
 }
-/* line 24, ../sass/02-templates/grid-2-1.scss */
+/* line 25, ../sass/02-templates/grid-2-1.scss */
 .grid-2-1 main .second {
   order: 2;
   text-align: center;
 }
 @media screen and (min-width: 400px) {
-  /* line 24, ../sass/02-templates/grid-2-1.scss */
+  /* line 25, ../sass/02-templates/grid-2-1.scss */
   .grid-2-1 main .second {
     flex: 1 50%;
   }
 }
-/* line 32, ../sass/02-templates/grid-2-1.scss */
+/* line 33, ../sass/02-templates/grid-2-1.scss */
 .grid-2-1 footer, .grid-2-1 div.footer {
   display: flex;
   align-items: center;
@@ -405,9 +414,11 @@ templates grid/flex
   margin: 0;
 }
 @media screen and (min-width: 700px) {
-  /* line 32, ../sass/02-templates/grid-2-1.scss */
+  /* line 33, ../sass/02-templates/grid-2-1.scss */
   .grid-2-1 footer, .grid-2-1 div.footer {
     order: 2;
+    justify-content: center;
+    align-items: flex-end;
   }
 }
 
@@ -451,6 +462,14 @@ Help Classes
 .frame-w100-height15 {
   width: 100%;
   height: 15vh;
+  display: block;
+}
+
+/* line 17, ../sass/00-elements/helpers.scss */
+.text-block {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
 }
 
 /*******

@@ -9,10 +9,10 @@ html {
 @each $name, $file in (ubuntu, /ubuntu-font-family-0.83/Ubuntu-C),(Comfortaa, stylesheets/fonts/3.001/Comfortaa-Regular),(BRUX, stylesheets/fonts/BRUX/TTF/BRUX-Regular), (Hamurz, stylesheets/fonts/hamurz/Hamurz Free Version), (kust, stylesheets/fonts/Kust_Free_Brush_Font/kust){
   @font-face {
     font-family: "#{$name}";
-    src: url('stylesheets/fonts/#{$file}.ttf');
+    src: url('/fonts/#{$file}.ttf');
   }
   .#{$name}{
-    font-family: "#{$name}";
+    font-family: #{$name};
   }
 }
 /* Copy & Lists */
@@ -52,17 +52,17 @@ h6 {
   /* Change heading typefaces here */
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: calc(.35 + .3vh);
-  margin-bottom: 0;
+  margin-bottom: .2rem;
   line-height: calc(1 + .25vw);
   text-shadow: 1px 1px 3px darkgrey, 1px 1px 2px lightgrey;
 }
 h1 {
-  font-size: 2.842rem;
+  font-size: 2.642rem;
   line-height: 2.15;
   margin-top: 2.85rem;
 }
 h2 {
-  font-size: 2.428rem;
+  font-size: 2.328rem;
   line-height: 2.05;
 }
 h3 {
@@ -76,7 +76,7 @@ h5 {
   font-size: calc(1.013333333333333rem + .5vw);
 }
 h6 {
-  font-size: calc(0.7535rem + .85vw);
+  font-size: calc(0.5535rem + .85vw);
 }
 /* Tables */
 table{

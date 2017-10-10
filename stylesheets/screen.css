@@ -93,47 +93,47 @@ html {
 /* web fonts */
 @font-face {
   font-family: "ubuntu";
-  src: url("stylesheets/fonts//ubuntu-font-family-0 0.83/Ubuntu-C.ttf");
+  src: url("/fonts//ubuntu-font-family-0 0.83/Ubuntu-C.ttf");
 }
 /* line 14, ../sass/00-elements/typeography.scss */
 .ubuntu {
-  font-family: "ubuntu";
+  font-family: ubuntu;
 }
 
 @font-face {
   font-family: "Comfortaa";
-  src: url("stylesheets/fonts/stylesheets/fonts/3.001/Comfortaa-Regular.ttf");
+  src: url("/fonts/stylesheets/fonts/3.001/Comfortaa-Regular.ttf");
 }
 /* line 14, ../sass/00-elements/typeography.scss */
 .Comfortaa {
-  font-family: "Comfortaa";
+  font-family: Comfortaa;
 }
 
 @font-face {
   font-family: "BRUX";
-  src: url("stylesheets/fonts/stylesheets/fonts/BRUX/TTF/BRUX-Regular.ttf");
+  src: url("/fonts/stylesheets/fonts/BRUX/TTF/BRUX-Regular.ttf");
 }
 /* line 14, ../sass/00-elements/typeography.scss */
 .BRUX {
-  font-family: "BRUX";
+  font-family: BRUX;
 }
 
 @font-face {
   font-family: "Hamurz";
-  src: url("stylesheets/fonts/stylesheets/fonts/hamurz/Hamurz Free Version.ttf");
+  src: url("/fonts/stylesheets/fonts/hamurz/Hamurz Free Version.ttf");
 }
 /* line 14, ../sass/00-elements/typeography.scss */
 .Hamurz {
-  font-family: "Hamurz";
+  font-family: Hamurz;
 }
 
 @font-face {
   font-family: "kust";
-  src: url("stylesheets/fonts/stylesheets/fonts/Kust_Free_Brush_Font/kust.ttf");
+  src: url("/fonts/stylesheets/fonts/Kust_Free_Brush_Font/kust.ttf");
 }
 /* line 14, ../sass/00-elements/typeography.scss */
 .kust {
-  font-family: "kust";
+  font-family: kust;
 }
 
 /* Copy & Lists */
@@ -184,21 +184,21 @@ h6 {
   /* Change heading typefaces here */
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: calc(.35 + .3vh);
-  margin-bottom: 0;
+  margin-bottom: .2rem;
   line-height: calc(1 + .25vw);
   text-shadow: 1px 1px 3px darkgrey, 1px 1px 2px lightgrey;
 }
 
 /* line 59, ../sass/00-elements/typeography.scss */
 h1 {
-  font-size: 2.842rem;
+  font-size: 2.642rem;
   line-height: 2.15;
   margin-top: 2.85rem;
 }
 
 /* line 64, ../sass/00-elements/typeography.scss */
 h2 {
-  font-size: 2.428rem;
+  font-size: 2.328rem;
   line-height: 2.05;
 }
 
@@ -220,7 +220,7 @@ h5 {
 
 /* line 78, ../sass/00-elements/typeography.scss */
 h6 {
-  font-size: calc(0.7535rem + .85vw);
+  font-size: calc(0.5535rem + .85vw);
 }
 
 /* Tables */

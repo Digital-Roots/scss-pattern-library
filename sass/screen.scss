@@ -13,8 +13,10 @@ license: MIT
 @import "compass/reset";
 /* Add CSS and Imports after this line */
 .base{
-  display: block;
   overflow-x: hidden;
+}
+*{
+  box-sizing: border-box;
 }
 /*******
 
@@ -32,13 +34,6 @@ Typeography
 /*******
 
 
-color
-
-*****/
-@import "../sass/00-elements/color-patches.scss";
-/*******
-
-
 Compenates
 
 *****/
@@ -52,6 +47,7 @@ templates grid/flex
 *****/
 @import "../sass/02-templates/grid-2-1.scss";
 @import "../sass/02-templates/nav-file.scss";
+@import "../sass/02-templates/masonry-board.scss";
 /*******
 
 

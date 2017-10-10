@@ -78,8 +78,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* Add CSS and Imports after this line */
 /* line 15, ../sass/screen.scss */
 .base {
-  display: block;
   overflow-x: hidden;
+}
+
+/* line 18, ../sass/screen.scss */
+* {
+  box-sizing: border-box;
 }
 
 /*******
@@ -315,12 +319,6 @@ code {
 /*******
 
 
-color
-
-*****/
-/*******
-
-
 Compenates
 
 *****/
@@ -373,6 +371,10 @@ templates grid/flex
   width: 100%;
   height: 50vh;
 }
+/* line 14, ../sass/02-templates/grid-2-1.scss */
+.grid-2-1 main h1 {
+  margin-top: 0;
+}
 @media screen and (min-width: 700px) {
   /* line 8, ../sass/02-templates/grid-2-1.scss */
   .grid-2-1 main {
@@ -380,29 +382,31 @@ templates grid/flex
     flex-flow: row;
   }
 }
-/* line 18, ../sass/02-templates/grid-2-1.scss */
+/* line 21, ../sass/02-templates/grid-2-1.scss */
 .grid-2-1 main .main {
   order: 1;
   text-align: center;
+  align-self: stretch;
 }
 @media screen and (min-width: 400px) {
-  /* line 18, ../sass/02-templates/grid-2-1.scss */
+  /* line 21, ../sass/02-templates/grid-2-1.scss */
   .grid-2-1 main .main {
     flex: 2 50%;
   }
 }
-/* line 25, ../sass/02-templates/grid-2-1.scss */
+/* line 29, ../sass/02-templates/grid-2-1.scss */
 .grid-2-1 main .second {
   order: 2;
   text-align: center;
+  align-self: stretch;
 }
 @media screen and (min-width: 400px) {
-  /* line 25, ../sass/02-templates/grid-2-1.scss */
+  /* line 29, ../sass/02-templates/grid-2-1.scss */
   .grid-2-1 main .second {
     flex: 1 50%;
   }
 }
-/* line 33, ../sass/02-templates/grid-2-1.scss */
+/* line 38, ../sass/02-templates/grid-2-1.scss */
 .grid-2-1 footer, .grid-2-1 div.footer {
   display: flex;
   align-items: center;
@@ -414,7 +418,7 @@ templates grid/flex
   margin: 0;
 }
 @media screen and (min-width: 700px) {
-  /* line 33, ../sass/02-templates/grid-2-1.scss */
+  /* line 38, ../sass/02-templates/grid-2-1.scss */
   .grid-2-1 footer, .grid-2-1 div.footer {
     order: 2;
     justify-content: center;
@@ -433,6 +437,22 @@ templates grid/flex
   align-items: center;
   margin: 0;
   padding: 0;
+}
+
+/* line 12, ../sass/02-templates/nav-file.scss */
+.side-nav {
+  display: flex;
+  flex-flow: column;
+}
+
+/* line 1, ../sass/02-templates/masonry-board.scss */
+.board {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100vw;
+  font-size: 0;
+  overflow-x: hidden;
 }
 
 /*******

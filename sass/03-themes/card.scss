@@ -1,16 +1,8 @@
-/* Base for section */
-.board{
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-  height: auto;
-}
 .card{
   width: 19vw;
   height: auto;
   align-content: space-around;
+  padding: 1%;
   &-grey{
     box-shadow: .75px .50px .2px grey, .5px .5px 1px black;
   }

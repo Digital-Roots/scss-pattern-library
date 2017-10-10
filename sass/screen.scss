@@ -12,6 +12,10 @@ license: MIT
  *****/
 @import "compass/reset";
 /* Add CSS and Imports after this line */
+.base{
+  display: block;
+  overflow-x: hidden;
+}
 /*******
 
 
@@ -32,6 +36,13 @@ color
 
 *****/
 @import "../sass/00-elements/color-patches.scss";
+/*******
+
+
+Compenates
+
+*****/
+@import "../sass/01-compenates/buttons.scss";
 /*******
 
 

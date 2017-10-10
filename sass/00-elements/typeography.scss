@@ -14,6 +14,8 @@ html {
   }
   .#{$name}{
     font-family: #{$name};
+    font-size: calc(.875 + 0.45vw);
+    -webkit-font-smoothing: antialiased;
   }
 }
 /* tff fonts */
@@ -24,6 +26,8 @@ html {
   }
   .#{$name}{
     font-family: #{$name};
+    font-size: calc(.875 + 0.45vw);
+    -webkit-font-smoothing: antialiased;
   }
 }
 /* Copy & Lists */

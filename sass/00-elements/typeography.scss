@@ -6,13 +6,24 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 /* web fonts */
+/* otf fonts */
 @each $name, $file in (leafy, fonts/leafy),(Brela, fonts/brelaregular),(BRUX, fonts/BFTinyHand-Regular), (Hamurz, fonts/Hamurz Free Version), (kust, fonts/kust), (tinny-hands, fonts/BFTinyHand-Regular){
   @font-face {
     font-family: #{$name};
     src: url('#{$file}.otf');
   }
   .#{$name}{
-    font-family: #{$name} !important;
+    font-family: #{$name};
+  }
+}
+/* tff fonts */
+@each $name, $file in (ubuntu, Ubuntu-C){
+  @font-face {
+    font-family: #{$name};
+    src: url('#{$file}.ttf');
+  }
+  .#{$name}{
+    font-family: #{$name};
   }
 }
 /* Copy & Lists */

@@ -75,17 +75,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+/* Add CSS and Imports after this line */
 /*******
 
 
 Base
 
 *****/
-/* line 20, ../sass/screen.scss */
-body {
-  margin: 15px;
-}
-
 /*******
 
 
@@ -102,82 +98,102 @@ html {
 }
 
 /* web fonts */
+/* otf fonts */
 @font-face {
   font-family: leafy;
   src: url("fonts/leafy.otf");
 }
-/* line 14, ../sass/00-elements/typeography.scss */
+/* line 15, ../sass/00-elements/typeography.scss */
 .leafy {
-  font-family: leafy !important;
+  font-family: leafy;
 }
 
 @font-face {
   font-family: Brela;
   src: url("fonts/brelaregular.otf");
 }
-/* line 14, ../sass/00-elements/typeography.scss */
+/* line 15, ../sass/00-elements/typeography.scss */
 .Brela {
-  font-family: Brela !important;
+  font-family: Brela;
 }
 
 @font-face {
   font-family: BRUX;
   src: url("fonts/BFTinyHand-Regular.otf");
 }
-/* line 14, ../sass/00-elements/typeography.scss */
+/* line 15, ../sass/00-elements/typeography.scss */
 .BRUX {
-  font-family: BRUX !important;
+  font-family: BRUX;
 }
 
 @font-face {
   font-family: Hamurz;
   src: url("fonts/Hamurz Free Version.otf");
 }
-/* line 14, ../sass/00-elements/typeography.scss */
+/* line 15, ../sass/00-elements/typeography.scss */
 .Hamurz {
-  font-family: Hamurz !important;
+  font-family: Hamurz;
 }
 
 @font-face {
   font-family: kust;
   src: url("fonts/kust.otf");
 }
-/* line 14, ../sass/00-elements/typeography.scss */
+/* line 15, ../sass/00-elements/typeography.scss */
 .kust {
-  font-family: kust !important;
+  font-family: kust;
 }
 
 @font-face {
   font-family: tinny-hands;
   src: url("fonts/BFTinyHand-Regular.otf");
 }
-/* line 14, ../sass/00-elements/typeography.scss */
+/* line 15, ../sass/00-elements/typeography.scss */
 .tinny-hands {
-  font-family: tinny-hands !important;
+  font-family: tinny-hands;
+}
+
+/* tff fonts */
+@font-face {
+  font-family: ubuntu;
+  src: url(".ttf");
+}
+/* line 25, ../sass/00-elements/typeography.scss */
+.ubuntu {
+  font-family: ubuntu;
+}
+
+@font-face {
+  font-family: Ubuntu-C;
+  src: url(".ttf");
+}
+/* line 25, ../sass/00-elements/typeography.scss */
+.Ubuntu-C {
+  font-family: Ubuntu-C;
 }
 
 /* Copy & Lists */
-/* line 19, ../sass/00-elements/typeography.scss */
+/* line 30, ../sass/00-elements/typeography.scss */
 p {
   line-height: calc(1.5rem + 0.45vw);
   margin-top: 1.02rem;
   margin-bottom: 0.35rem;
 }
 
-/* line 24, ../sass/00-elements/typeography.scss */
+/* line 35, ../sass/00-elements/typeography.scss */
 ul,
 ol {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
-/* line 29, ../sass/00-elements/typeography.scss */
+/* line 40, ../sass/00-elements/typeography.scss */
 ul li,
 ol li {
   line-height: 1.5;
 }
 
-/* line 33, ../sass/00-elements/typeography.scss */
+/* line 44, ../sass/00-elements/typeography.scss */
 ul ul,
 ol ul,
 ul ol,
@@ -186,7 +202,7 @@ ol ol {
   margin-bottom: 0;
 }
 
-/* line 40, ../sass/00-elements/typeography.scss */
+/* line 51, ../sass/00-elements/typeography.scss */
 blockquote {
   line-height: 1.5;
   margin-top: 1.5rem;
@@ -194,7 +210,7 @@ blockquote {
 }
 
 /* Headings */
-/* line 46, ../sass/00-elements/typeography.scss */
+/* line 57, ../sass/00-elements/typeography.scss */
 h1,
 h2,
 h3,
@@ -208,67 +224,67 @@ h6 {
   text-shadow: 1px 1px 3px darkgrey, 1px 1px 2px lightgrey;
 }
 
-/* line 58, ../sass/00-elements/typeography.scss */
+/* line 69, ../sass/00-elements/typeography.scss */
 h1 {
   font-size: 2.642rem;
   line-height: 2.15;
   margin-top: 2.85rem;
 }
 
-/* line 63, ../sass/00-elements/typeography.scss */
+/* line 74, ../sass/00-elements/typeography.scss */
 h2 {
   font-size: 2.328rem;
   line-height: 2.05;
 }
 
-/* line 67, ../sass/00-elements/typeography.scss */
+/* line 78, ../sass/00-elements/typeography.scss */
 h3 {
   font-size: calc(2.114rem + .1vw);
   line-height: 1.5;
 }
 
-/* line 71, ../sass/00-elements/typeography.scss */
+/* line 82, ../sass/00-elements/typeography.scss */
 h4 {
   font-size: calc(1.407rem + .5vw);
 }
 
-/* line 74, ../sass/00-elements/typeography.scss */
+/* line 85, ../sass/00-elements/typeography.scss */
 h5 {
   font-size: calc(1.013333333333333rem + .5vw);
 }
 
-/* line 77, ../sass/00-elements/typeography.scss */
+/* line 88, ../sass/00-elements/typeography.scss */
 h6 {
   font-size: calc(0.5535rem + .85vw);
 }
 
 /* Tables */
-/* line 81, ../sass/00-elements/typeography.scss */
+/* line 92, ../sass/00-elements/typeography.scss */
 table {
   border-spacing: 0;
   width: 100%;
 }
 
-/* line 85, ../sass/00-elements/typeography.scss */
+/* line 96, ../sass/00-elements/typeography.scss */
 td,
 th {
   border-bottom: .1rem solid darkgrey;
   padding: 1.2rem 1.5rem;
   text-align: center;
 }
-/* line 91, ../sass/00-elements/typeography.scss */
+/* line 102, ../sass/00-elements/typeography.scss */
 td:first-child,
 th:first-child {
   padding-left: 0;
 }
-/* line 94, ../sass/00-elements/typeography.scss */
+/* line 105, ../sass/00-elements/typeography.scss */
 td:last-child,
 th:last-child {
   padding-right: 0;
 }
 
 /* Code blocks */
-/* line 100, ../sass/00-elements/typeography.scss */
+/* line 111, ../sass/00-elements/typeography.scss */
 code {
   vertical-align: bottom;
   background-color: rgba(100, 100, 100, 0.3);
@@ -306,63 +322,58 @@ templates grid/flex
 
 *****/
 /* line 1, ../sass/02-templates/grid-2-1.scss */
-#grid-2-1 {
+.grid-2-1 {
+  padding: calc(1rem / 4);
   display: flex;
-  flexflow: column;
+  flex-flow: column;
 }
-/* line 4, ../sass/02-templates/grid-2-1.scss */
-#grid-2-1 div {
-  width: 100vw;
+/* line 5, ../sass/02-templates/grid-2-1.scss */
+.grid-2-1 footer {
+  padding: 0;
+  margin: 0;
 }
-/* line 7, ../sass/02-templates/grid-2-1.scss */
-#grid-2-1 div.main {
-  order: 1;
-  height: 80vh;
-}
-/* line 11, ../sass/02-templates/grid-2-1.scss */
-#grid-2-1 div.second {
-  order: 3;
-  height: 100vh;
+/* line 9, ../sass/02-templates/grid-2-1.scss */
+.grid-2-1 main {
+  display: flex;
+  flex-flow: column nowrap;
+  order: 2;
+  width: 100%;
+  height: 90vh;
 }
 /* line 15, ../sass/02-templates/grid-2-1.scss */
-#grid-2-1 div.input {
+.grid-2-1 main .main {
+  order: 1;
+}
+/* line 18, ../sass/02-templates/grid-2-1.scss */
+.grid-2-1 main .second {
   order: 2;
-  height: 20vh;
 }
-@media screen and (minwidth: 400px) {
-  /* line 1, ../sass/02-templates/grid-2-1.scss */
-  #grid-2-1 {
-    flexflow: row;
-  }
-  /* line 21, ../sass/02-templates/grid-2-1.scss */
-  #grid-2-1 .input {
-    order: 1;
-  }
-  /* line 24, ../sass/02-templates/grid-2-1.scss */
-  #grid-2-1 div.main {
-    order: 2;
-    width: 65vw;
-  }
-  /* line 28, ../sass/02-templates/grid-2-1.scss */
-  #grid-2-1 div.second {
-    order: 3;
-    width: 35vw;
-    height: 80vh;
-  }
+/* line 22, ../sass/02-templates/grid-2-1.scss */
+.grid-2-1 footer, .grid-2-1 div.footer {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  order: 1;
+  width: 100%;
+  height: 10vh;
 }
-@media screen and (minwidth: 700px) {
-  /* line 35, ../sass/02-templates/grid-2-1.scss */
-  #grid-2-1.input {
-    order: 3;
-  }
-  /* line 38, ../sass/02-templates/grid-2-1.scss */
-  #grid-2-1 div.main {
-    order: 1;
-  }
-  /* line 41, ../sass/02-templates/grid-2-1.scss */
-  #grid-2-1 div.second {
-    order: 2;
-  }
+
+/* line 1, ../sass/02-templates/nav-file.scss */
+.toggle-nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+/* line 8, ../sass/02-templates/nav-file.scss */
+.toggle-nav button {
+  border: none;
+  border-radius: 0;
+  font-size: 1.75rem;
+  padding: .25rem;
+  margin: .3rem;
 }
 
 /*******
@@ -371,22 +382,34 @@ templates grid/flex
 Help Classes
 
 *****/
-/* line 1, ../sass/01-compenates/helpers.scss */
+/* line 1, ../sass/00-elements/helpers.scss */
 .hidden {
   display: none;
   visibility: hidden;
 }
 
-/* line 5, ../sass/01-compenates/helpers.scss */
+/* line 5, ../sass/00-elements/helpers.scss */
 .visibil {
   display: block;
   visibility: visible;
 }
 
+/* line 9, ../sass/00-elements/helpers.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 12, ../sass/00-elements/helpers.scss */
+.frame-w100-height45 {
+  display: block;
+  width: 100%;
+  height: 45px;
+}
+
 /*******
 
 
-alt sheets
+alternative sheets
 
 *****/
 /* Print Style */

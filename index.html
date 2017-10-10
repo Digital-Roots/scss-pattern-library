@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width" />
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
+  <script src-"js/modernizer-custom.js"></script>
   <link href="stylesheets/screen.css" rel="stylesheet" type="text/css" />
   <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
   <!--[if IE]>
@@ -16,28 +17,41 @@
 
 <body>
   <h2 class="text-center">Type Faces</h4>
-  <section id="grid-2-1">
-    <div id="type-face">
-      <h1>H1 <span class="name"></span></h1>
-      <h2>H2 <span class="name"></span></h2>
-      <h3>H3 <span class="name"></span></h3>
-      <h4>H4 <span class="name"></span></h4>
-      <h5>H5 <span class="name"></span></h5>
-      <h6>H6 <span class="name"></span></h6>
-      <p>
-        <code class="class"></code> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dignissim mi at turpis venenatis fermentum. Praesent non elit vel ex auctor pellentesque. Maecenas ac mollis arcu. Cras lorem mauris, lacinia sed metus
-        in, accumsan suscipit nulla.
+    <section class="grid-2-1">
+      <main id="type-face">
+        <div class="second">
+          <h1>H1 <span class="name">header 1</span></h1>
+          <h2>H2 <span class="name">header 2</span></h2>
+          <h3>H3 <span class="name">header 3</span></h3>
+          <h4>H4 <span class="name">header 4</span></h4>
+          <h5>H5 <span class="name">header 5</span></h5>
+          <h6>H6 <span class="name">header 6</span></h6>
+        </div>
+        <div class="main">
+          <p>
+            <code class="class"></code> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dignissim mi at turpis venenatis fermentum. Praesent non elit vel ex auctor pellentesque. Maecenas ac mollis arcu. Cras lorem mauris, lacinia sed metus
+            in, accumsan suscipit nulla.
+          </p>
+        </div>
+      </main>
+      <footer>
+        <nav id="type-selector" class="toggle-nav">
+          <button id="leafy" class="leafy">leafy</button>
+          <button id="Brela" class="Brela">Brela</button>
+          <button id="BRUX" class="BRUX">BRUX</button>
+          <button id="Hamurz" class="Hamurz">Hamurz</button>
+          <button id="kust" class="kust">kust</button>
+          <button id="tinny-hands" class="tinny-hands">tinny hands</button>
+          <button id="ubuntu" class="ubuntu">Ubuntu</button>
+        </nav>
+      </footer>
+    </section>
+    <div class="frame-w100-h45">
+      <h4 class="text-center">How to pick the perfect Image</h4>
+      <p class="text-center">
+
       </p>
     </div>
-    <nav id="type-selector">
-      <button id="leafy">leafy</button>
-      <button id="Brela">Brela</button>
-      <button id="BRUX">BRUX</button>
-      <button id="Hamurz">Hamurz</button>
-      <button id="kust">kust</button>
-      <button id="tinny-hands">tinny hands</button>
-    </nav>
-  </section>
 </body>
 
 </html>

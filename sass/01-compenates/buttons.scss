@@ -14,4 +14,9 @@ button{
     padding: .25rem;
     margin: .3rem;
   }
+  &.inverse{
+    @extend button;
+    color: white;
+    background-color: black
+  }
 }

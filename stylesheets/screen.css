@@ -92,26 +92,26 @@ html {
 
 /* web fonts */
 @font-face {
-  font-family: "ubuntu";
-  src: url("/fonts//ubuntu-font-family-0 0.83/Ubuntu-C.ttf");
+  font-family: leafy;
+  src: url("fonts/leafy.otf");
 }
 /* line 14, ../sass/00-elements/typeography.scss */
-.ubuntu {
-  font-family: ubuntu;
+.leafy {
+  font-family: leafy;
 }
 
 @font-face {
-  font-family: "Comfortaa";
-  src: url("/fonts/stylesheets/fonts/3.001/Comfortaa-Regular.ttf");
+  font-family: Brela;
+  src: url("fonts/brelaregular.otf");
 }
 /* line 14, ../sass/00-elements/typeography.scss */
-.Comfortaa {
-  font-family: Comfortaa;
+.Brela {
+  font-family: Brela;
 }
 
 @font-face {
-  font-family: "BRUX";
-  src: url("/fonts/stylesheets/fonts/BRUX/TTF/BRUX-Regular.ttf");
+  font-family: BRUX;
+  src: url("fonts/BFTinyHand-Regular.otf");
 }
 /* line 14, ../sass/00-elements/typeography.scss */
 .BRUX {
@@ -119,8 +119,8 @@ html {
 }
 
 @font-face {
-  font-family: "Hamurz";
-  src: url("/fonts/stylesheets/fonts/hamurz/Hamurz Free Version.ttf");
+  font-family: Hamurz;
+  src: url("fonts/Hamurz Free Version.otf");
 }
 /* line 14, ../sass/00-elements/typeography.scss */
 .Hamurz {
@@ -128,12 +128,21 @@ html {
 }
 
 @font-face {
-  font-family: "kust";
-  src: url("/fonts/stylesheets/fonts/Kust_Free_Brush_Font/kust.ttf");
+  font-family: kust;
+  src: url("fonts/kust.otf");
 }
 /* line 14, ../sass/00-elements/typeography.scss */
 .kust {
   font-family: kust;
+}
+
+@font-face {
+  font-family: tinny-hands;
+  src: url("fonts/BFTinyHand-Regular.otf");
+}
+/* line 14, ../sass/00-elements/typeography.scss */
+.tinny-hands {
+  font-family: tinny-hands;
 }
 
 /* Copy & Lists */

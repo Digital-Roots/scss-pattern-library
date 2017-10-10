@@ -1,27 +1,27 @@
 $(document).ready(function(){
-  $("#unbuntu").click(function(){
+  $("#leafy").click(function(){
     $("span.name").empty("span.name");
     $("code.class").empty("code.class");
     if($('div#type-face').attr('class') == ''){
-      $("div#type-face").addClass("unbuntu");
+      $("div#type-face").addClass("leafy");
     }else{
       $("div#type-face").removeAttr('class');
-      $("div#type-face").addClass("unbuntu");
+      $("div#type-face").addClass("leafy");
     }
-    $("span.name").append("unbuntu");
-    $("code.class").append('class= ubuntu');
+    $("span.name").append("leafy");
+    $("code.class").append('class= leafy');
   });
-  $("#Comfortaa").click(function(){
+  $("#Brela").click(function(){
     $("span.name").empty("span.name");
     $("code.class").empty("code.class");
     if($('div#type-face').attr('class') == ''){
-      $("div#type-face").addClass("Comfortaa");
+      $("div#type-face").addClass("Brela");
     }else{
       $("div#type-face").removeAttr('class');
-      $("div#type-face").addClass("Comfortaa");
+      $("div#type-face").addClass("Brela");
     }
-    $("span.name").append("Comfortaa");
-    $("code.class").append('class= Comfortaa');
+    $("span.name").append("Brela");
+    $("code.class").append('class= Brela');
   });
   $("#BRUX").click(function(){
     $("span.name").empty("span.name");
@@ -59,16 +59,16 @@ $(document).ready(function(){
     $("span.name").append("kust");
     $("code.class").append('class= kust');
   });
-  // $("#Comfortaa").click(function(){
-  //   $("span.name").empty("span.name");
-  //   $("code.class").empty("code.class");
-  //   if($('div#type-face').attr('class') == ''){
-  //     $("div#type-face").addClass("Comfortaa");
-  //   }else{
-  //     $("div#type-face").removeAttr('class');
-  //     $("div#type-face").addClass("Comfortaa");
-  //   }
-  //   $("span.name").append("Comfortaa");
-  //   $("code.class").append('class= Comfortaa');
-  // });
+  $("#tinny-hands").click(function(){
+    $("span.name").empty("span.name");
+    $("code.class").empty("code.class");
+    if($('div#type-face').attr('class') == ''){
+      $("div#type-face").addClass("tinny-hands");
+    }else{
+      $("div#type-face").removeAttr('class');
+      $("div#type-face").addClass("tinny-hands");
+    }
+    $("span.name").append("tinny hands");
+    $("code.class").append('class= tinny-hands');
+  });
 });

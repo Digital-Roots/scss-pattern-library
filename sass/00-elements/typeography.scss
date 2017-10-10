@@ -6,10 +6,10 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 /* web fonts */
-@each $name, $file in (ubuntu, /ubuntu-font-family-0.83/Ubuntu-C),(Comfortaa, stylesheets/fonts/3.001/Comfortaa-Regular),(BRUX, stylesheets/fonts/BRUX/TTF/BRUX-Regular), (Hamurz, stylesheets/fonts/hamurz/Hamurz Free Version), (kust, stylesheets/fonts/Kust_Free_Brush_Font/kust){
+@each $name, $file in (leafy, fonts/leafy),(Brela, fonts/brelaregular),(BRUX, fonts/BFTinyHand-Regular), (Hamurz, fonts/Hamurz Free Version), (kust, fonts/kust), (tinny-hands, fonts/BFTinyHand-Regular){
   @font-face {
-    font-family: "#{$name}";
-    src: url('/fonts/#{$file}.ttf');
+    font-family: #{$name};
+    src: url('#{$file}.otf');
   }
   .#{$name}{
     font-family: #{$name};

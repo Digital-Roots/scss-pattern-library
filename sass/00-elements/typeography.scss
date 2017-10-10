@@ -1,9 +1,3 @@
-/*******
-
- typography
-
-
-*****/
 /* base type */
 html {
   /* Change default typefaces here */
@@ -12,12 +6,14 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 /* web fonts */
-@font-face {
-  font-family: ubuntu;
-  src: url(stylesheets/fonts/ubuntu-font-family-0.83);
-}
-.unbuntu{
-  font-family: 'unbuntu';
+@each $name, $file in (ubuntu, /ubuntu-font-family-0.83/Ubuntu-C),(Comfortaa, stylesheets/fonts/3.001/Comfortaa-Regular),(BRUX, stylesheets/fonts/BRUX/TTF/BRUX-Regular), (Hamurz, stylesheets/fonts/hamurz/Hamurz Free Version), (kust, stylesheets/fonts/Kust_Free_Brush_Font/kust){
+  @font-face {
+    font-family: "#{$name}";
+    src: url('stylesheets/fonts/#{$file}.ttf');
+  }
+  .#{$name}{
+    font-family: "#{$name}";
+  }
 }
 /* Copy & Lists */
 p {

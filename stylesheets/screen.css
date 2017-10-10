@@ -1,12 +1,15 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+/*
 Creator: Robert Edwardes
 Website: digitalroots.io
 Project Name: RINO
-licenses: MIT
+license: MIT
  */
+ /*******
+
+
+ reset
+
+ *****/
 /* line 5, ../../../.rvm/gems/ruby-2.4.1@global/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -75,17 +78,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*******
 
 
-Typeagraphy
-
-*****/
-/*******
-
- typography
-
+Typeography
 
 *****/
 /* base type */
-/* line 8, ../sass/00-elements/typeography.scss */
+/* line 2, ../sass/00-elements/typeography.scss */
 html {
   /* Change default typefaces here */
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -95,36 +92,72 @@ html {
 
 /* web fonts */
 @font-face {
-  font-family: ubuntu;
-  src: url(stylesheets/fonts/ubuntu-font-family-0.83);
+  font-family: "ubuntu";
+  src: url("stylesheets/fonts//ubuntu-font-family-0 0.83/Ubuntu-C.ttf");
 }
-/* line 19, ../sass/00-elements/typeography.scss */
-.unbuntu {
-  font-family: 'unbuntu';
+/* line 14, ../sass/00-elements/typeography.scss */
+.ubuntu {
+  font-family: "ubuntu";
+}
+
+@font-face {
+  font-family: "Comfortaa";
+  src: url("stylesheets/fonts/stylesheets/fonts/3.001/Comfortaa-Regular.ttf");
+}
+/* line 14, ../sass/00-elements/typeography.scss */
+.Comfortaa {
+  font-family: "Comfortaa";
+}
+
+@font-face {
+  font-family: "BRUX";
+  src: url("stylesheets/fonts/stylesheets/fonts/BRUX/TTF/BRUX-Regular.ttf");
+}
+/* line 14, ../sass/00-elements/typeography.scss */
+.BRUX {
+  font-family: "BRUX";
+}
+
+@font-face {
+  font-family: "Hamurz";
+  src: url("stylesheets/fonts/stylesheets/fonts/hamurz/Hamurz Free Version.ttf");
+}
+/* line 14, ../sass/00-elements/typeography.scss */
+.Hamurz {
+  font-family: "Hamurz";
+}
+
+@font-face {
+  font-family: "kust";
+  src: url("stylesheets/fonts/stylesheets/fonts/Kust_Free_Brush_Font/kust.ttf");
+}
+/* line 14, ../sass/00-elements/typeography.scss */
+.kust {
+  font-family: "kust";
 }
 
 /* Copy & Lists */
-/* line 23, ../sass/00-elements/typeography.scss */
+/* line 19, ../sass/00-elements/typeography.scss */
 p {
   line-height: calc(1.5rem + 0.45vw);
   margin-top: 1.02rem;
   margin-bottom: 0.35rem;
 }
 
-/* line 28, ../sass/00-elements/typeography.scss */
+/* line 24, ../sass/00-elements/typeography.scss */
 ul,
 ol {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
-/* line 33, ../sass/00-elements/typeography.scss */
+/* line 29, ../sass/00-elements/typeography.scss */
 ul li,
 ol li {
   line-height: 1.5;
 }
 
-/* line 37, ../sass/00-elements/typeography.scss */
+/* line 33, ../sass/00-elements/typeography.scss */
 ul ul,
 ol ul,
 ul ol,
@@ -133,7 +166,7 @@ ol ol {
   margin-bottom: 0;
 }
 
-/* line 44, ../sass/00-elements/typeography.scss */
+/* line 40, ../sass/00-elements/typeography.scss */
 blockquote {
   line-height: 1.5;
   margin-top: 1.5rem;
@@ -141,7 +174,7 @@ blockquote {
 }
 
 /* Headings */
-/* line 50, ../sass/00-elements/typeography.scss */
+/* line 46, ../sass/00-elements/typeography.scss */
 h1,
 h2,
 h3,
@@ -156,69 +189,93 @@ h6 {
   text-shadow: 1px 1px 3px darkgrey, 1px 1px 2px lightgrey;
 }
 
-/* line 63, ../sass/00-elements/typeography.scss */
+/* line 59, ../sass/00-elements/typeography.scss */
 h1 {
   font-size: 2.842rem;
   line-height: 2.15;
   margin-top: 2.85rem;
 }
 
-/* line 68, ../sass/00-elements/typeography.scss */
+/* line 64, ../sass/00-elements/typeography.scss */
 h2 {
   font-size: 2.428rem;
   line-height: 2.05;
 }
 
-/* line 72, ../sass/00-elements/typeography.scss */
+/* line 68, ../sass/00-elements/typeography.scss */
 h3 {
   font-size: calc(2.114rem + .1vw);
   line-height: 1.5;
 }
 
-/* line 76, ../sass/00-elements/typeography.scss */
+/* line 72, ../sass/00-elements/typeography.scss */
 h4 {
   font-size: calc(1.407rem + .5vw);
 }
 
-/* line 79, ../sass/00-elements/typeography.scss */
+/* line 75, ../sass/00-elements/typeography.scss */
 h5 {
   font-size: calc(1.013333333333333rem + .5vw);
 }
 
-/* line 82, ../sass/00-elements/typeography.scss */
+/* line 78, ../sass/00-elements/typeography.scss */
 h6 {
   font-size: calc(0.7535rem + .85vw);
 }
 
 /* Tables */
-/* line 86, ../sass/00-elements/typeography.scss */
+/* line 82, ../sass/00-elements/typeography.scss */
 table {
   border-spacing: 0;
   width: 100%;
 }
 
-/* line 90, ../sass/00-elements/typeography.scss */
+/* line 86, ../sass/00-elements/typeography.scss */
 td,
 th {
   border-bottom: .1rem solid darkgrey;
   padding: 1.2rem 1.5rem;
   text-align: center;
 }
-/* line 96, ../sass/00-elements/typeography.scss */
+/* line 92, ../sass/00-elements/typeography.scss */
 td:first-child,
 th:first-child {
   padding-left: 0;
 }
-/* line 99, ../sass/00-elements/typeography.scss */
+/* line 95, ../sass/00-elements/typeography.scss */
 td:last-child,
 th:last-child {
   padding-right: 0;
 }
 
 /* Code blocks */
-/* line 105, ../sass/00-elements/typeography.scss */
+/* line 101, ../sass/00-elements/typeography.scss */
 code {
   vertical-align: bottom;
+}
+
+/*******
+
+
+color
+
+*****/
+/* Base for section */
+/* line 2, ../sass/00-elements/color-patches.scss */
+.board {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  height: auto;
+}
+
+/* line 10, ../sass/00-elements/color-patches.scss */
+.palet {
+  width: 19vw;
+  height: auto;
+  align-content: space-around;
 }
 
 /*******
@@ -230,7 +287,62 @@ templates grid/flex
 *****/
 /* line 1, ../sass/02-templates/grid-2-1.scss */
 #grid-2-1 {
-  display: grid;
+  display: flex;
+  flexflow: column;
+}
+/* line 4, ../sass/02-templates/grid-2-1.scss */
+#grid-2-1 div {
+  width: 100vw;
+}
+/* line 7, ../sass/02-templates/grid-2-1.scss */
+#grid-2-1 div.main {
+  order: 1;
+  height: 80vh;
+}
+/* line 11, ../sass/02-templates/grid-2-1.scss */
+#grid-2-1 div.second {
+  order: 3;
+  height: 100vh;
+}
+/* line 15, ../sass/02-templates/grid-2-1.scss */
+#grid-2-1 div.input {
+  order: 2;
+  height: 20vh;
+}
+@media screen and (minwidth: 400px) {
+  /* line 1, ../sass/02-templates/grid-2-1.scss */
+  #grid-2-1 {
+    flexflow: row;
+  }
+  /* line 21, ../sass/02-templates/grid-2-1.scss */
+  #grid-2-1 .input {
+    order: 1;
+  }
+  /* line 24, ../sass/02-templates/grid-2-1.scss */
+  #grid-2-1 div.main {
+    order: 2;
+    width: 65vw;
+  }
+  /* line 28, ../sass/02-templates/grid-2-1.scss */
+  #grid-2-1 div.second {
+    order: 3;
+    width: 35vw;
+    height: 80vh;
+  }
+}
+@media screen and (minwidth: 700px) {
+  /* line 35, ../sass/02-templates/grid-2-1.scss */
+  #grid-2-1.input {
+    order: 3;
+  }
+  /* line 38, ../sass/02-templates/grid-2-1.scss */
+  #grid-2-1 div.main {
+    order: 1;
+  }
+  /* line 41, ../sass/02-templates/grid-2-1.scss */
+  #grid-2-1 div.second {
+    order: 2;
+  }
 }
 
 /*******
@@ -240,10 +352,23 @@ Help Classes
 
 *****/
 /* line 1, ../sass/01-compenates/helpers.scss */
-.text-center {
-  text-align: center;
+.hidden {
+  display: none;
+  visibility: hidden;
 }
 
+/* line 5, ../sass/01-compenates/helpers.scss */
+.visibil {
+  display: block;
+  visibility: visible;
+}
+
+/*******
+
+
+alt sheets
+
+*****/
 /* Print Style */
 @media print {
   /* line 3, ../sass/print.scss */

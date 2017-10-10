@@ -1,4 +1,45 @@
 #grid-2-1{
-  display: grid;
-  //grid-template: ;
+  display: flex;
+  flexflow: column;
+  & div{
+    width: 100vw;
+  }
+  & div.main{
+    order: 1;
+    height: 80vh;
+  }
+  & div.second{
+    order: 3;
+    height: 100vh;
+  }
+  & div.input{
+    order: 2;
+    height: 20vh;
+  }
+  @media screen and (minwidth: 400px){
+    flexflow: row;
+    & .input{
+      order: 1;
+    }
+    & div.main{
+      order: 2;
+      width: 65vw;
+    }
+    & div.second{
+      order: 3;
+      width: 35vw;
+      height: 80vh;
+    }
+  }
+  @media screen and (minwidth: 700px){
+    &.input{
+      order: 3;
+    }
+    & div.main{
+      order: 1;
+    }
+    & div.second{
+      order: 2;
+    }
+  }
 }

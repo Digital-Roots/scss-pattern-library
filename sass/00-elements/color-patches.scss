@@ -1,0 +1,14 @@
+/* Base for section */
+.board{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  height: auto;
+}
+.palet{
+  width: 19vw;
+  height: auto;
+  align-content: space-around;
+}

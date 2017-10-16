@@ -1,0 +1,23 @@
+<!-- Text Stroke -->
+<filter id="Text-Stroke">
+  <!-- 1. Thicken the input with feMorphology: -->
+  <feMorphology operator="dilate" radius="2" in="SourceAlpha" result="thickened" />
+  <!-- 2. Cut off the SourceAlpha -->
+  <feComposite operator="out" in="SourceAlpha" in2="thickened" />
+</filter>
+
+<!-- Torn Look -->
+<filter id="Torn-Look">
+  <!-- 1. create an feTurbulence fractal fill -->
+  <feTurbulence result="TURBULENCE" baseFrequency="0.08" numOctaves="1" seed="1" />
+  <!-- 2. create a displacement map that takes the fractal fill as an input to distort the target: -->
+  <feDisplacementMap in="SourceGraphic" in2="TURBULENCE" scale="9" />
+</filter>
+
+<!-- Color Fill -->
+<filter id="Color-Fill">
+  <!-- 1. Create a colored filled area -->
+  <feFlood flood-color="#F79308" result="COLOR" />
+  <!-- 2. Cut off the SourceAlpha -->
+  <feComposite operator="in" in="COLOR" in2="SourceAlpha" />
+</filter>

@@ -352,6 +352,23 @@ button.inverse {
   background-color: black;
 }
 
+/* line 3, ../sass/01-compenates/filters.scss */
+.filter-gray-50 {
+  filter: grayscale(0.5);
+}
+/* line 6, ../sass/01-compenates/filters.scss */
+.filter-gray-100 {
+  filter: grayscale(1);
+}
+/* line 11, ../sass/01-compenates/filters.scss */
+.filter-sepia-50 {
+  filter: sepia(0.5);
+}
+/* line 14, ../sass/01-compenates/filters.scss */
+.filter-sepia-100 {
+  filter: sepia(1);
+}
+
 /*******
 
 
@@ -448,16 +465,6 @@ templates grid/flex
 .side-nav {
   display: flex;
   flex-flow: column;
-}
-
-/* line 1, ../sass/02-templates/masonry-board.scss */
-.board {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 100vw;
-  font-size: 0;
-  overflow-x: hidden;
 }
 
 /*******

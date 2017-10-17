@@ -15,4 +15,21 @@
       filter: sepia(1);
     }
   }
+  &-text{
+    &-Text-Stroke{
+      filter: url(filters.svg#Text-Stroke);
+    }
+    &-Torn-Look{
+      filter: url(filters.svg#Torn-Look);
+    }
+    &-Color-Fill{
+      filter: url(filters.svg#Color-Fill);
+    }
+    &-Offsetting{
+      filter: url(filters.svg#Offsetting);
+    }
+    &-Extrusion{
+      filter: url(filters.svg#Extrusion);
+    }
+  }
 }

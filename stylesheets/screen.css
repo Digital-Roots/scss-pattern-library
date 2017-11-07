@@ -89,7 +89,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*******
 
 
-Base
+Base/Varibles
 
 *****/
 /*******
@@ -368,6 +368,26 @@ button.inverse {
 .filter-sepia-100 {
   filter: sepia(1);
 }
+/* line 19, ../sass/01-compenates/filters.scss */
+.filter-text-Text-Stroke {
+  filter: url(filters.svg#Text-Stroke);
+}
+/* line 22, ../sass/01-compenates/filters.scss */
+.filter-text-Torn-Look {
+  filter: url(filters.svg#Torn-Look);
+}
+/* line 25, ../sass/01-compenates/filters.scss */
+.filter-text-Color-Fill {
+  filter: url(filters.svg#Color-Fill);
+}
+/* line 28, ../sass/01-compenates/filters.scss */
+.filter-text-Offsetting {
+  filter: url(filters.svg#Offsetting);
+}
+/* line 31, ../sass/01-compenates/filters.scss */
+.filter-text-Extrusion {
+  filter: url(filters.svg#Extrusion);
+}
 
 /*******
 
@@ -376,144 +396,12 @@ templates grid/flex
 
 
 *****/
-/* line 1, ../sass/02-templates/grid-2-1.scss */
-.grid-2-1 {
-  padding: calc(1rem / 4);
-  display: flex;
-  flex-flow: column;
-  justify-content: space-between;
-  align-items: stretch;
-  height: 100vh;
-}
-/* line 8, ../sass/02-templates/grid-2-1.scss */
-.grid-2-1 main {
-  display: flex;
-  flex-flow: column nowrap;
-  order: 2;
-  width: 100%;
-  height: 50vh;
-}
-/* line 14, ../sass/02-templates/grid-2-1.scss */
-.grid-2-1 main h1 {
-  margin-top: 0;
-}
-@media screen and (min-width: 700px) {
-  /* line 8, ../sass/02-templates/grid-2-1.scss */
-  .grid-2-1 main {
-    order: 1;
-    flex-flow: row;
-  }
-}
-/* line 21, ../sass/02-templates/grid-2-1.scss */
-.grid-2-1 main .main {
-  order: 1;
-  text-align: center;
-  align-self: stretch;
-}
-@media screen and (min-width: 400px) {
-  /* line 21, ../sass/02-templates/grid-2-1.scss */
-  .grid-2-1 main .main {
-    flex: 2 50%;
-  }
-}
-/* line 29, ../sass/02-templates/grid-2-1.scss */
-.grid-2-1 main .second {
-  order: 2;
-  text-align: center;
-  align-self: stretch;
-}
-@media screen and (min-width: 400px) {
-  /* line 29, ../sass/02-templates/grid-2-1.scss */
-  .grid-2-1 main .second {
-    flex: 1 50%;
-  }
-}
-/* line 38, ../sass/02-templates/grid-2-1.scss */
-.grid-2-1 footer, .grid-2-1 div.footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  order: 1;
-  width: 100%;
-  height: 10vh;
-  padding: 0;
-  margin: 0;
-}
-@media screen and (min-width: 700px) {
-  /* line 38, ../sass/02-templates/grid-2-1.scss */
-  .grid-2-1 footer, .grid-2-1 div.footer {
-    order: 2;
-    justify-content: center;
-    align-items: flex-end;
-  }
-}
-
-/* line 1, ../sass/02-templates/nav-file.scss */
-.nav, .nav-center {
-  display: flex;
-  flex-flow: row wrap;
-}
-/* line 4, ../sass/02-templates/nav-file.scss */
-.nav-center {
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
-/* line 12, ../sass/02-templates/nav-file.scss */
-.side-nav {
-  display: flex;
-  flex-flow: column;
-}
-
 /*******
 
 
 Help Classes
 
 *****/
-/* line 1, ../sass/00-elements/helpers.scss */
-.hidden {
-  display: none;
-  visibility: hidden;
-}
-
-/* line 5, ../sass/00-elements/helpers.scss */
-.visibile {
-  display: block;
-  visibility: visible;
-}
-
-/* line 9, ../sass/00-elements/helpers.scss */
-.text-center {
-  text-align: center;
-}
-
-/* line 12, ../sass/00-elements/helpers.scss */
-.frame-w100-height15 {
-  width: 100%;
-  height: 15vh;
-  display: block;
-}
-
-/* line 17, ../sass/00-elements/helpers.scss */
-.text-block {
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-}
-
-/* line 22, ../sass/00-elements/helpers.scss */
-.hero-title {
-  font-size: 275%;
-}
-
-/* line 25, ../sass/00-elements/helpers.scss */
-.hero-sub-title {
-  font-size: 150%;
-}
-
 /*******
 
 

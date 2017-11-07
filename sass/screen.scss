@@ -17,17 +17,6 @@ license: MIT
 Base/Varibles
 
 *****/
-//var and base for display
-.base{
-  overflow-x: hidden;
-}
-*{
-  box-sizing: border-box;
-}
-section{
-  height: 100vh;
-  width: 100vw;
-}
 /*******
 
 
@@ -63,3 +52,4 @@ alternative sheets
 
 *****/
 @import "../sass/print.scss";
+@import "../sass/03-display-theme/main.scss";

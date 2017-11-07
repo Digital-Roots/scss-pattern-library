@@ -1,0 +1,21 @@
+//main style sheet for pattern library web example
+.side-scroll{
+  overflow-x: scroll;
+}
+.base{
+  overflow-x: hidden;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+*{
+  box-sizing: border-box;
+}
+section{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}

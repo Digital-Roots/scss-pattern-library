@@ -22,7 +22,7 @@ html {
 @each $name, $file in (ubuntu, Ubuntu-C){
   @font-face {
     font-family: #{$name};
-    src: url('#{$file}.ttf');
+    src: url('font/#{$file}.ttf');
   }
   .#{$name}{
     font-family: #{$name};

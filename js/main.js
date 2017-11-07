@@ -2,11 +2,11 @@ $(document).ready(function(){
   $("#leafy").click(function(){
     $("span.name").empty("span.name");
     $("code.class").empty("code.class");
-    if($('main#type-face').attr('class') == ''){
-      $("main#type-face").addClass("leafy");
+    if($('section#type-face').attr('class') == ''){
+      $("section#type-face").addClass("leafy");
     }else{
-      $("main#type-face").removeAttr('class');
-      $("main#type-face").addClass("leafy");
+      $("section#type-face").removeAttr('class');
+      $("section#type-face").addClass("leafy");
     }
     $("span.name").append("leafy");
     $("code.class").append('class= leafy');
@@ -14,11 +14,11 @@ $(document).ready(function(){
   $("#Brela").click(function(){
     $("span.name").empty("span.name");
     $("code.class").empty("code.class");
-    if($('main#type-face').attr('class') == ''){
-      $("main#type-face").addClass("Brela");
+    if($('section#type-face').attr('class') == ''){
+      $("section#type-face").addClass("Brela");
     }else{
-      $("main#type-face").removeAttr('class');
-      $("main#type-face").addClass("Brela");
+      $("section#type-face").removeAttr('class');
+      $("section#type-face").addClass("Brela");
     }
     $("span.name").append("Brela");
     $("code.class").append('class= Brela');
@@ -26,11 +26,11 @@ $(document).ready(function(){
   $("#BRUX").click(function(){
     $("span.name").empty("span.name");
     $("code.class").empty("code.class");
-    if($('main#type-face').attr('class') == ''){
-      $("main#type-face").addClass("BRUX");
+    if($('section#type-face').attr('class') == ''){
+      $("section#type-face").addClass("BRUX");
     }else{
-      $("main#type-face").removeAttr('class');
-      $("main#type-face").addClass("BRUX");
+      $("section#type-face").removeAttr('class');
+      $("section#type-face").addClass("BRUX");
     }
     $("span.name").append("BRUX");
     $("code.class").append('class= BRUX');
@@ -38,11 +38,11 @@ $(document).ready(function(){
   $("#Hamurz").click(function(){
     $("span.name").empty("span.name");
     $("code.class").empty("code.class");
-    if($('main#type-face').attr('class') == ''){
-      $("main#type-face").addClass("Hamurz");
+    if($('section#type-face').attr('class') == ''){
+      $("section#type-face").addClass("Hamurz");
     }else{
-      $("main#type-face").removeAttr('class');
-      $("main#type-face").addClass("Hamurz");
+      $("section#type-face").removeAttr('class');
+      $("section#type-face").addClass("Hamurz");
     }
     $("span.name").append("Hamurz");
     $("code.class").append('class= Hamurz');
@@ -50,11 +50,11 @@ $(document).ready(function(){
   $("#kust").click(function(){
     $("span.name").empty("span.name");
     $("code.class").empty("code.class");
-    if($('main#type-face').attr('class') == ''){
-      $("main#type-face").addClass("kust");
+    if($('section#type-face').attr('class') == ''){
+      $("section#type-face").addClass("kust");
     }else{
-      $("main#type-face").removeAttr('class');
-      $("main#type-face").addClass("kust");
+      $("section#type-face").removeAttr('class');
+      $("section#type-face").addClass("kust");
     }
     $("span.name").append("kust");
     $("code.class").append('class= kust');
@@ -62,11 +62,11 @@ $(document).ready(function(){
   $("#tinny-hands").click(function(){
     $("span.name").empty("span.name");
     $("code.class").empty("code.class");
-    if($('main#type-face').attr('class') == ''){
-      $("main#type-face").addClass("tinny-hands");
+    if($('section#type-face').attr('class') == ''){
+      $("section#type-face").addClass("tinny-hands");
     }else{
-      $("main#type-face").removeAttr('class');
-      $("main#type-face").addClass("tinny-hands");
+      $("section#type-face").removeAttr('class');
+      $("section#type-face").addClass("tinny-hands");
     }
     $("span.name").append("tinny hands");
     $("code.class").append('class= tinny-hands');
@@ -74,11 +74,11 @@ $(document).ready(function(){
   $("#ubuntu").click(function(){
     $("span.name").empty("span.name");
     $("code.class").empty("code.class");
-    if($('main#type-face').attr('class') == ''){
-      $("main#type-face").addClass("ubuntu");
+    if($('section#type-face').attr('class') == ''){
+      $("section#type-face").addClass("ubuntu");
     }else{
-      $("main#type-face").removeAttr('class');
-      $("main#type-face").addClass("ubuntu");
+      $("section#type-face").removeAttr('class');
+      $("section#type-face").addClass("ubuntu");
     }
     $("span.name").append("ubuntu");
     $("code.class").append('class= ubuntu');

@@ -31,10 +31,11 @@ section{
 /*******
 
 
-Typeography
+Elements
 
 *****/
 @import "../sass/00-elements/color.scss";
+// compile must have colors before site brand settings
 $brand-color: $listlyblue;
 $second-brand: $listlyorange;
 @import "../sass/00-elements/images.scss";
@@ -50,15 +51,8 @@ Compenates
 /*******
 
 
-templates grid/flex
+templates
 
-
-*****/
-
-/*******
-
-
-Help Classes
 
 *****/
 

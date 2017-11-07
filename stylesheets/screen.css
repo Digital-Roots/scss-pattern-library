@@ -100,9 +100,229 @@ section {
 /*******
 
 
-Typeography
+Elements
 
 *****/
+/* line 97, ../sass/00-elements/color.scss */
+.facebook {
+  background-color: #3b5998;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.twitter {
+  background-color: #00b6f1;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.youtube {
+  background-color: #ff0000;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.instagrammagenta {
+  background-color: #c32aa3;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.instagramblue {
+  background-color: #4c5fd7;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.instagrampurple {
+  background-color: #7232bd;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.instagramorange {
+  background-color: #f46f30;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.instagramyellow {
+  background-color: #ffdc7d;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.pinterest {
+  background-color: #cb2027;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.googleplus {
+  background-color: #df4a32;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.linkedin {
+  background-color: #007bb6;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.vimeoblue {
+  background-color: #45bbff;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.vimeogreen {
+  background-color: #aad450;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.vimeoorange {
+  background-color: #f7b42c;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.vimeopink {
+  background-color: #f27490;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.tumblr {
+  background-color: #2c4762;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.snapchat {
+  background-color: #fffc00;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.whatsappgreen {
+  background-color: #25d366;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.whatsappteal1 {
+  background-color: #075e54;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.whatsappteal2 {
+  background-color: #128c7e;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.foursquarepink {
+  background-color: #fc4575;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.foursquareblue {
+  background-color: #2d5be3;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.swarm {
+  background-color: #ffb000;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.skypeblue {
+  background-color: #00aff0;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.skypegreen {
+  background-color: #7fba00;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.stumbleupon {
+  background-color: #eb4924;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.flickrpink {
+  background-color: #f40083;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.flickrblue {
+  background-color: #006add;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.yahoo {
+  background-color: #430297;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.soundcloud {
+  background-color: #ff5500;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.spotifygreen {
+  background-color: #1ed760;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.spotifydarkgreen {
+  background-color: #1db954;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.dribbble {
+  background-color: #ea4c89;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.reddit {
+  background-color: #ff5700;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.deviantart {
+  background-color: #4a5d4e;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.pocket {
+  background-color: #ee4056;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.quora {
+  background-color: #aa2200;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.quorablue {
+  background-color: #2b6dad;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.slideshareorange {
+  background-color: #f7941e;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.slideshareorange {
+  background-color: #1191d0;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.fivehundredpx {
+  background-color: #0099e5;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.listlyorange {
+  background-color: #df6d46;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.listlyblue {
+  background-color: #52b1b3;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.vine {
+  background-color: #00b489;
+}
+
 /* line 1, ../sass/00-elements/images.scss */
 img {
   width: 100%;
@@ -412,14 +632,8 @@ button.inverse {
 /*******
 
 
-templates grid/flex
+templates
 
-
-*****/
-/*******
-
-
-Help Classes
 
 *****/
 /*******

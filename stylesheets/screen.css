@@ -318,8 +318,8 @@ img.profile-round {
 }
 /* line 9, ../sass/00-elements/images.scss */
 img.header {
-  border-bottom: #df6d46 solid 1px;
-  box-shadow: inset 0px 1px 2px #52b1b3;
+  border-bottom: #00b6f1 solid 1px;
+  box-shadow: inset 0px 1px 2px #3b5998;
 }
 
 /* base type */
@@ -471,7 +471,7 @@ h6 {
   margin-top: calc(.35 + .3vh);
   margin-bottom: .2rem;
   line-height: calc(1 + .25vw);
-  text-shadow: 1px 1px 3px darkgrey, 1px 1px 2px lightgrey;
+  text-shadow: 1px 1px 3px #3b5998, 1px 1px 2px #00b6f1;
 }
 
 /* line 73, ../sass/00-elements/typeography.scss */
@@ -518,7 +518,7 @@ table {
 /* line 100, ../sass/00-elements/typeography.scss */
 td,
 th {
-  border-bottom: .1rem solid darkgrey;
+  border-bottom: 0.1rem solid #3b5998;
   padding: 1.2rem 1.5rem;
   text-align: center;
 }
@@ -728,9 +728,9 @@ section {
 }
 /* line 23, ../sass/03-display-theme/main.scss */
 section:nth-child(odd) {
-  background-color: #df6d46;
+  background-color: #ff5700;
 }
 /* line 26, ../sass/03-display-theme/main.scss */
 section:nth-child(even) {
-  background-color: #52b1b3;
+  background-color: #1ed760;
 }

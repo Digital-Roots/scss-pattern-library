@@ -21,9 +21,9 @@ section{
   justify-content: center;
   align-items: center;
   &:nth-child(odd){
-    background-color: $second-brand;
+    background-color: $reddit;
   }
   &:nth-child(even){
-    background-color: $brand-color;
+    background-color: $spotifygreen;
   }
 }

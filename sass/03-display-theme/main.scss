@@ -7,6 +7,8 @@
   display: flex;
   flex-flow: column;
   justify-content: center;
+  width: 100vw;
+  height: 100%;
 }
 *{
   box-sizing: border-box;
@@ -18,4 +20,10 @@ section{
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  &:nth-child(odd){
+    background-color: $second-brand;
+  }
+  &:nth-child(even){
+    background-color: $brand-color;
+  }
 }

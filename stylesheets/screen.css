@@ -88,223 +88,443 @@ Elements
 
 *****/
 /* line 97, ../sass/00-elements/color.scss */
-.facebook {
+.facebook, .facebook-button {
   background-color: #3b5998;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.facebook-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.twitter {
+.twitter, .twitter-button {
   background-color: #00b6f1;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.twitter-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.youtube {
+.youtube, .youtube-button {
   background-color: #ff0000;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.youtube-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.instagrammagenta {
+.instagrammagenta, .instagrammagenta-button {
   background-color: #c32aa3;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.instagrammagenta-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.instagramblue {
+.instagramblue, .instagramblue-button {
   background-color: #4c5fd7;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.instagramblue-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.instagrampurple {
+.instagrampurple, .instagrampurple-button {
   background-color: #7232bd;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.instagrampurple-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.instagramorange {
+.instagramorange, .instagramorange-button {
   background-color: #f46f30;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.instagramorange-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.instagramyellow {
+.instagramyellow, .instagramyellow-button {
   background-color: #ffdc7d;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.instagramyellow-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.pinterest {
+.pinterest, .pinterest-button {
   background-color: #cb2027;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.pinterest-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.googleplus {
+.googleplus, .googleplus-button {
   background-color: #df4a32;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.googleplus-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.linkedin {
+.linkedin, .linkedin-button {
   background-color: #007bb6;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.linkedin-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.vimeoblue {
+.vimeoblue, .vimeoblue-button {
   background-color: #45bbff;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.vimeoblue-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.vimeogreen {
+.vimeogreen, .vimeogreen-button {
   background-color: #aad450;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.vimeogreen-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.vimeoorange {
+.vimeoorange, .vimeoorange-button {
   background-color: #f7b42c;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.vimeoorange-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.vimeopink {
+.vimeopink, .vimeopink-button {
   background-color: #f27490;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.vimeopink-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.tumblr {
+.tumblr, .tumblr-button {
   background-color: #2c4762;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.tumblr-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.snapchat {
+.snapchat, .snapchat-button {
   background-color: #fffc00;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.snapchat-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.whatsappgreen {
+.whatsappgreen, .whatsappgreen-button {
   background-color: #25d366;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.whatsappgreen-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.whatsappteal1 {
+.whatsappteal1, .whatsappteal1-button {
   background-color: #075e54;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.whatsappteal1-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.whatsappteal2 {
+.whatsappteal2, .whatsappteal2-button {
   background-color: #128c7e;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.whatsappteal2-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.foursquarepink {
+.foursquarepink, .foursquarepink-button {
   background-color: #fc4575;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.foursquarepink-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.foursquareblue {
+.foursquareblue, .foursquareblue-button {
   background-color: #2d5be3;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.foursquareblue-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.swarm {
+.swarm, .swarm-button {
   background-color: #ffb000;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.swarm-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.skypeblue {
+.skypeblue, .skypeblue-button {
   background-color: #00aff0;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.skypeblue-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.skypegreen {
+.skypegreen, .skypegreen-button {
   background-color: #7fba00;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.skypegreen-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.stumbleupon {
+.stumbleupon, .stumbleupon-button {
   background-color: #eb4924;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.stumbleupon-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.flickrpink {
+.flickrpink, .flickrpink-button {
   background-color: #f40083;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.flickrpink-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.flickrblue {
+.flickrblue, .flickrblue-button {
   background-color: #006add;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.flickrblue-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.yahoo {
+.yahoo, .yahoo-button {
   background-color: #430297;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.yahoo-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.soundcloud {
+.soundcloud, .soundcloud-button {
   background-color: #ff5500;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.soundcloud-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.spotifygreen {
+.spotifygreen, .spotifygreen-button {
   background-color: #1ed760;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.spotifygreen-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.spotifydarkgreen {
+.spotifydarkgreen, .spotifydarkgreen-button {
   background-color: #1db954;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.spotifydarkgreen-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.dribbble {
+.dribbble, .dribbble-button {
   background-color: #ea4c89;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.dribbble-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.reddit {
+.reddit, .reddit-button {
   background-color: #ff5700;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.reddit-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.deviantart {
+.deviantart, .deviantart-button {
   background-color: #4a5d4e;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.deviantart-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.pocket {
+.pocket, .pocket-button {
   background-color: #ee4056;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.pocket-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.quora {
+.quora, .quora-button {
   background-color: #aa2200;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.quora-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.quorablue {
+.quorablue, .quorablue-button {
   background-color: #2b6dad;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.quorablue-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.slideshareorange {
+.slideshareorange, .slideshareorange-button {
   background-color: #f7941e;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.slideshareorange-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.slideshareorange {
+.slideshareorange, .slideshareorange-button {
   background-color: #1191d0;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.slideshareorange-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.fivehundredpx {
+.fivehundredpx, .fivehundredpx-button {
   background-color: #0099e5;
 }
+/* line 99, ../sass/00-elements/color.scss */
+.fivehundredpx-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
 
 /* line 97, ../sass/00-elements/color.scss */
-.listlyorange {
+.listlyorange, .listlyorange-button {
   background-color: #df6d46;
 }
-
-/* line 97, ../sass/00-elements/color.scss */
-.listlyblue {
-  background-color: #52b1b3;
+/* line 99, ../sass/00-elements/color.scss */
+.listlyorange-button {
+  color: white;
+  text-shadow: black .5px .5px;
 }
 
 /* line 97, ../sass/00-elements/color.scss */
-.vine {
+.listlyblue, .listlyblue-button {
+  background-color: #52b1b3;
+}
+/* line 99, ../sass/00-elements/color.scss */
+.listlyblue-button {
+  color: white;
+  text-shadow: black .5px .5px;
+}
+
+/* line 97, ../sass/00-elements/color.scss */
+.vine, .vine-button {
   background-color: #00b489;
+}
+/* line 99, ../sass/00-elements/color.scss */
+.vine-button {
+  color: white;
+  text-shadow: black .5px .5px;
 }
 
 /* line 1, ../sass/00-elements/images.scss */
@@ -317,7 +537,7 @@ img.profile-round {
   border-radius: 100%;
 }
 /* line 9, ../sass/00-elements/images.scss */
-img.header {
+img.hero {
   border-bottom: #00b6f1 solid 1px;
   box-shadow: inset 0px 1px 2px #3b5998;
 }

@@ -1,487 +1,66 @@
 /*
-Creator: Robert Edwardes
-Website: digitalroots.io
-Project Name: RINO
-license: MIT
- */
- /*******
-
-
- reset
-
- *****/
-/* line 5, ../../../.rvm/gems/ruby-2.4.1@global/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-/* line 22, ../../../.rvm/gems/ruby-2.4.1@global/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-html {
-  line-height: 1;
-}
-
-/* line 24, ../../../.rvm/gems/ruby-2.4.1@global/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 26, ../../../.rvm/gems/ruby-2.4.1@global/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 28, ../../../.rvm/gems/ruby-2.4.1@global/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-/* line 30, ../../../.rvm/gems/ruby-2.4.1@global/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 103, ../../../.rvm/gems/ruby-2.4.1@global/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-/* line 32, ../../../.rvm/gems/ruby-2.4.1@global/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
-
-/* line 116, ../../../.rvm/gems/ruby-2.4.1@global/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
-}
-
-/* Add CSS and Imports after this line */
-/* line 15, ../sass/screen.scss */
-.base {
-  overflow-x: hidden;
-}
-
-/* line 18, ../sass/screen.scss */
-* {
-  box-sizing: border-box;
-}
-
-/* line 21, ../sass/screen.scss */
-section {
-  height: 100vh;
-  width: 100vw;
-}
-
-/*******
-
-
-Base/Varibles
-
-*****/
-/*******
-
-
-Typeography
-
-*****/
-/* base type */
-/* line 2, ../sass/00-elements/typeography.scss */
-html {
-  /* Change default typefaces here */
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: calc(.875 + 0.45vw);
-  -webkit-font-smoothing: antialiased;
-}
-
-/* web fonts */
-/* otf fonts */
-@font-face {
-  font-family: leafy;
-  src: url("fonts/leafy.otf");
-}
-/* line 15, ../sass/00-elements/typeography.scss */
-.leafy {
-  font-family: leafy;
-  font-size: calc(.875 + 0.45vw);
-  -webkit-font-smoothing: antialiased;
-}
-
-@font-face {
-  font-family: Brela;
-  src: url("fonts/brelaregular.otf");
-}
-/* line 15, ../sass/00-elements/typeography.scss */
-.Brela {
-  font-family: Brela;
-  font-size: calc(.875 + 0.45vw);
-  -webkit-font-smoothing: antialiased;
-}
-
-@font-face {
-  font-family: BRUX;
-  src: url("fonts/BFTinyHand-Regular.otf");
-}
-/* line 15, ../sass/00-elements/typeography.scss */
-.BRUX {
-  font-family: BRUX;
-  font-size: calc(.875 + 0.45vw);
-  -webkit-font-smoothing: antialiased;
-}
-
-@font-face {
-  font-family: Hamurz;
-  src: url("fonts/Hamurz Free Version.otf");
-}
-/* line 15, ../sass/00-elements/typeography.scss */
-.Hamurz {
-  font-family: Hamurz;
-  font-size: calc(.875 + 0.45vw);
-  -webkit-font-smoothing: antialiased;
-}
-
-@font-face {
-  font-family: kust;
-  src: url("fonts/kust.otf");
-}
-/* line 15, ../sass/00-elements/typeography.scss */
-.kust {
-  font-family: kust;
-  font-size: calc(.875 + 0.45vw);
-  -webkit-font-smoothing: antialiased;
-}
-
-@font-face {
-  font-family: tinny-hands;
-  src: url("fonts/BFTinyHand-Regular.otf");
-}
-/* line 15, ../sass/00-elements/typeography.scss */
-.tinny-hands {
-  font-family: tinny-hands;
-  font-size: calc(.875 + 0.45vw);
-  -webkit-font-smoothing: antialiased;
-}
-
-/* tff fonts */
-@font-face {
-  font-family: ubuntu;
-  src: url(".ttf");
-}
-/* line 27, ../sass/00-elements/typeography.scss */
-.ubuntu {
-  font-family: ubuntu;
-  font-size: calc(.875 + 0.45vw);
-  -webkit-font-smoothing: antialiased;
-}
-
-@font-face {
-  font-family: Ubuntu-C;
-  src: url(".ttf");
-}
-/* line 27, ../sass/00-elements/typeography.scss */
-.Ubuntu-C {
-  font-family: Ubuntu-C;
-  font-size: calc(.875 + 0.45vw);
-  -webkit-font-smoothing: antialiased;
-}
-
-/* Copy & Lists */
-/* line 34, ../sass/00-elements/typeography.scss */
-p {
-  line-height: calc(1.5rem + 0.45vw);
-  margin-top: 1.02rem;
-  margin-bottom: 0.35rem;
-}
-
-/* line 39, ../sass/00-elements/typeography.scss */
-ul,
-ol {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-/* line 44, ../sass/00-elements/typeography.scss */
-ul li,
-ol li {
-  line-height: 1.5;
-}
-
-/* line 48, ../sass/00-elements/typeography.scss */
-ul ul,
-ol ul,
-ul ol,
-ol ol {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-/* line 55, ../sass/00-elements/typeography.scss */
-blockquote {
-  line-height: 1.5;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-/* Headings */
-/* line 61, ../sass/00-elements/typeography.scss */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  /* Change heading typefaces here */
-  margin-top: calc(.35 + .3vh);
-  margin-bottom: .2rem;
-  line-height: calc(1 + .25vw);
-  text-shadow: 1px 1px 3px darkgrey, 1px 1px 2px lightgrey;
-}
-
-/* line 73, ../sass/00-elements/typeography.scss */
-h1 {
-  font-size: 2.642rem;
-  line-height: 2.15;
-  margin-top: 2.85rem;
-}
-
-/* line 78, ../sass/00-elements/typeography.scss */
-h2 {
-  font-size: 2.328rem;
-  line-height: 2.05;
-}
-
-/* line 82, ../sass/00-elements/typeography.scss */
-h3 {
-  font-size: calc(2.114rem + .1vw);
-  line-height: 1.5;
-}
-
-/* line 86, ../sass/00-elements/typeography.scss */
-h4 {
-  font-size: calc(1.407rem + .5vw);
-}
-
-/* line 89, ../sass/00-elements/typeography.scss */
-h5 {
-  font-size: calc(1.013333333333333rem + .5vw);
-}
-
-/* line 92, ../sass/00-elements/typeography.scss */
-h6 {
-  font-size: calc(0.5535rem + .85vw);
-}
-
-/* Tables */
-/* line 96, ../sass/00-elements/typeography.scss */
-table {
-  border-spacing: 0;
-  width: 100%;
-}
-
-/* line 100, ../sass/00-elements/typeography.scss */
-td,
-th {
-  border-bottom: .1rem solid darkgrey;
-  padding: 1.2rem 1.5rem;
-  text-align: center;
-}
-/* line 106, ../sass/00-elements/typeography.scss */
-td:first-child,
-th:first-child {
-  padding-left: 0;
-}
-/* line 109, ../sass/00-elements/typeography.scss */
-td:last-child,
-th:last-child {
-  padding-right: 0;
-}
-
-/* Code blocks */
-/* line 115, ../sass/00-elements/typeography.scss */
-code {
-  vertical-align: bottom;
-  background-color: rgba(100, 100, 100, 0.3);
-}
-
-/*******
-
-
-Compenates
-
-*****/
-/* line 1, ../sass/01-compenates/buttons.scss */
-button, button.inverse {
-  border: none;
-  border-radius: 0;
-  font-size: 1rem;
-  padding: .2rem;
-  margin: .3rem;
-}
-@media screen and (min-width: 700px) {
-  /* line 1, ../sass/01-compenates/buttons.scss */
-  button, button.inverse {
-    font-size: 1.2rem;
-    padding: .25rem;
-    margin: .25rem;
-  }
-}
-@media screen and (min-width: 900px) {
-  /* line 1, ../sass/01-compenates/buttons.scss */
-  button, button.inverse {
-    font-size: 1.75rem;
-    padding: .25rem;
-    margin: .3rem;
-  }
-}
-/* line 17, ../sass/01-compenates/buttons.scss */
-button.inverse {
-  color: white;
-  background-color: black;
-}
-
-/* line 3, ../sass/01-compenates/filters.scss */
-.filter-gray-50 {
-  filter: grayscale(0.5);
-}
-/* line 6, ../sass/01-compenates/filters.scss */
-.filter-gray-100 {
-  filter: grayscale(1);
-}
-/* line 11, ../sass/01-compenates/filters.scss */
-.filter-sepia-50 {
-  filter: sepia(0.5);
-}
-/* line 14, ../sass/01-compenates/filters.scss */
-.filter-sepia-100 {
-  filter: sepia(1);
-}
-/* line 19, ../sass/01-compenates/filters.scss */
-.filter-text-Text-Stroke {
-  filter: url(filters.svg#Text-Stroke);
-}
-/* line 22, ../sass/01-compenates/filters.scss */
-.filter-text-Torn-Look {
-  filter: url(filters.svg#Torn-Look);
-}
-/* line 25, ../sass/01-compenates/filters.scss */
-.filter-text-Color-Fill {
-  filter: url(filters.svg#Color-Fill);
-}
-/* line 28, ../sass/01-compenates/filters.scss */
-.filter-text-Offsetting {
-  filter: url(filters.svg#Offsetting);
-}
-/* line 31, ../sass/01-compenates/filters.scss */
-.filter-text-Extrusion {
-  filter: url(filters.svg#Extrusion);
-}
-
-/*******
-
-
-templates grid/flex
-
-
-*****/
-/*******
-
-
-Help Classes
-
-*****/
-/*******
-
-
-alternative sheets
-
-*****/
-/* Print Style */
-@media print {
-  /* line 3, ../sass/print.scss */
-  *,
-  *:before,
-  *:after {
-    background: transparent !important;
-    color: #000 !important;
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  /* line 12, ../sass/print.scss */
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  /* line 17, ../sass/print.scss */
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-
-  /* line 21, ../sass/print.scss */
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-
-  /* line 25, ../sass/print.scss */
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: "";
-  }
-
-  /* line 30, ../sass/print.scss */
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  /* line 36, ../sass/print.scss */
-  thead {
-    display: table-header-group;
-  }
-
-  /* line 40, ../sass/print.scss */
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  /* line 45, ../sass/print.scss */
-  img {
-    max-width: 100% !important;
-  }
-
-  /* line 49, ../sass/print.scss */
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  /* line 56, ../sass/print.scss */
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-}
+Error: File to import not found or unreadable: ,,/sass/00-elements/images.scss.
+       Load paths:
+         Compass::SpriteImporter
+         /Users/robbieedwardes/Github-site/scss-pattern-library/sass
+         /Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/compass-core-1.0.3/stylesheets
+        on line 28 of /Users/robbieedwardes/Github-site/scss-pattern-library/sass/screen.scss
+
+23: 
+24: 
+25: Typeography
+26: 
+27: *****\/
+28: @import ",,/sass/00-elements/images.scss";
+29: @import "../sass/00-elements/color.scss";
+30: @import "../sass/00-elements/typeography.scss";
+31: /*******
+32: 
+33: 
+
+Backtrace:
+/Users/robbieedwardes/Github-site/scss-pattern-library/sass/screen.scss:28
+/Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/sass-3.4.25/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/sass-3.4.25/lib/sass/tree/import_node.rb:45:in `import'
+/Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/sass-3.4.25/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/sass-3.4.25/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
+/Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
+/Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
+/Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
+/Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/sass-3.4.25/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/sass-3.4.25/lib/sass/tree/root_node.rb:20:in `render'
+/Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
+/Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
+/Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+/Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+/Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+/Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+/Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:331:in `block in watch'
+/Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
+/Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
+/Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: ,,/sass/00-elements/images.scss.\A        Load paths:\A          Compass::SpriteImporter\A          /Users/robbieedwardes/Github-site/scss-pattern-library/sass\A          /Users/robbieedwardes/.rvm/gems/ruby-2.4.1@global/gems/compass-core-1.0.3/stylesheets\A         on line 28 of /Users/robbieedwardes/Github-site/scss-pattern-library/sass/screen.scss\A \A 23: \A 24: \A 25: Typeography\A 26: \A 27: *****/\A 28: @import \",,/sass/00-elements/images.scss\";\A 29: @import \"../sass/00-elements/color.scss\";\A 30: @import \"../sass/00-elements/typeography.scss\";\A 31: /*******\A 32: \A 33: "; }

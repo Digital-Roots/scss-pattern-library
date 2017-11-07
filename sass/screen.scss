@@ -11,17 +11,6 @@ license: MIT
 
  *****/
 @import "compass/reset";
-/* Add CSS and Imports after this line */
-.base{
-  overflow-x: hidden;
-}
-*{
-  box-sizing: border-box;
-}
-section{
-  height: 100vh;
-  width: 100vw;
-}
 /*******
 
 
@@ -36,6 +25,8 @@ Base/Varibles
 Typeography
 
 *****/
+@import ",,/sass/00-elements/images.scss";
+@import "../sass/00-elements/color.scss";
 @import "../sass/00-elements/typeography.scss";
 /*******
 
@@ -67,3 +58,17 @@ alternative sheets
 
 *****/
 @import "../sass/print.scss";
+
+//var and base for display
+$brand-color: $listlyblue;
+$second-brand: $listlyorange;
+.base{
+  overflow-x: hidden;
+}
+*{
+  box-sizing: border-box;
+}
+section{
+  height: 100vh;
+  width: 100vw;
+}

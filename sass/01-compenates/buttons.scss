@@ -1,4 +1,4 @@
-button{
+button, [class$="-button"]{
   border: none;
   border-radius: 0;
   font-size: 1rem;
@@ -23,6 +23,7 @@ button{
 @each $type in $colors {
   .#{nth($type, 1)} {
     background-color: #{nth($type, 2)};
+    color: #{nth($type, 2)};
     &-button{
       @extend .#{nth($type, 1)};
       color: white;

@@ -1,4 +1,4 @@
-button, [class$="-button"]{
+button, [classß$="-button"]{
   border: none;
   border-radius: 0;
   font-size: 1rem;
@@ -14,11 +14,6 @@ button, [class$="-button"]{
     padding: .25rem;
     margin: .3rem;
   }
-  &.inverse{
-    @extend button;
-    color: white;
-    background-color: black
-  }
 }
 @each $type in $colors {
   .#{nth($type, 1)} {
@@ -31,3 +26,15 @@ button, [class$="-button"]{
     }
   }
 }
+@each $type in $colors {
+  button.#{nth($type, 1)}{
+    @extend .#{nth($type, 1)};
+    color: white;
+    text-shadow: black .5px .5px;
+  }
+}
+button.inverse{
+    @extend button;
+    color: white;
+    background-color: black
+  }

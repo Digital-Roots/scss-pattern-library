@@ -33,8 +33,22 @@ button, [classß$="-button"]{
     text-shadow: black .5px .5px;
   }
 }
-button.inverse{
-    @extend button;
-    color: white;
-    background-color: black
+button.inverse, [class$="-inverse"], .inverse{
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 0;
+  font-size: 1rem;
+  padding: .2rem;
+  margin: .3rem;
+  @media screen and (min-width: 700px){
+    font-size: 1.2rem;
+    padding: .25rem;
+    margin: .25rem;
   }
+  @media screen and (min-width: 900px){
+    font-size: 1.75rem;
+    padding: .25rem;
+    margin: .3rem;
+  }
+}

@@ -303,7 +303,7 @@ Compenates
 
 *****/
 /* line 1, ../sass/01-compenates/buttons.scss */
-button, button.inverse, [classß$="-button"] {
+button, [classß$="-button"] {
   border: none;
   border-radius: 0;
   font-size: 1rem;
@@ -312,7 +312,7 @@ button, button.inverse, [classß$="-button"] {
 }
 @media screen and (min-width: 700px) {
   /* line 1, ../sass/01-compenates/buttons.scss */
-  button, button.inverse, [classß$="-button"] {
+  button, [classß$="-button"] {
     font-size: 1.2rem;
     padding: .25rem;
     margin: .25rem;
@@ -320,7 +320,7 @@ button, button.inverse, [classß$="-button"] {
 }
 @media screen and (min-width: 900px) {
   /* line 1, ../sass/01-compenates/buttons.scss */
-  button, button.inverse, [classß$="-button"] {
+  button, [classß$="-button"] {
     font-size: 1.75rem;
     padding: .25rem;
     margin: .3rem;
@@ -1076,9 +1076,30 @@ button.vine, button.vine-button {
 }
 
 /* line 36, ../sass/01-compenates/buttons.scss */
-button.inverse {
+button.inverse, [class$="-inverse"], .inverse {
   color: white;
   background-color: black;
+  border: none;
+  border-radius: 0;
+  font-size: 1rem;
+  padding: .2rem;
+  margin: .3rem;
+}
+@media screen and (min-width: 700px) {
+  /* line 36, ../sass/01-compenates/buttons.scss */
+  button.inverse, [class$="-inverse"], .inverse {
+    font-size: 1.2rem;
+    padding: .25rem;
+    margin: .25rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* line 36, ../sass/01-compenates/buttons.scss */
+  button.inverse, [class$="-inverse"], .inverse {
+    font-size: 1.75rem;
+    padding: .25rem;
+    margin: .3rem;
+  }
 }
 
 /* line 3, ../sass/01-compenates/filters.scss */

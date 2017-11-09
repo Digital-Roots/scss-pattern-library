@@ -92,25 +92,6 @@ h5 {
 h6 {
   font-size: calc(0.5535rem + .85vw);
 }
-/* Tables */
-table{
-	border-spacing: 0;
-	width: 100%;
-}
-td,
-th{
-	border-bottom: .1rem solid $brand-color;
-	padding: 1.2rem 1.5rem;
-	text-align: center;
-
-	&:first-child{
-		padding-left: 0;
-  }
-	&:last-child{
-    padding-right: 0;
-  }
-}
-
 /* Code blocks */
 code {
   vertical-align: bottom;

@@ -1,3 +1,4 @@
+// typeography
 $(document).ready(function(){
   $("#leafy").click(function(){
     $("span.name").empty("span.name");

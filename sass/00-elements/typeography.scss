@@ -19,16 +19,14 @@ html {
   }
 }
 /* tff fonts */
-@each $name, $file in (ubuntu, Ubuntu-C){
-  @font-face {
-    font-family: #{$name};
-    src: url('font/#{$file}.ttf');
-  }
-  .#{$name}{
-    font-family: #{$name};
-    font-size: calc(.875 + 0.45vw);
-    -webkit-font-smoothing: antialiased;
-  }
+@font-face {
+  font-family: ubuntu;
+  src: url('font/UbuntuC.ttf');
+}
+.ubuntu{
+  font-family: ubuntu;
+  font-size: calc(.875 + 0.45vw);
+  -webkit-font-smoothing: antialiased;
 }
 /* Copy & Lists */
 p {

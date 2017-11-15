@@ -88,7 +88,8 @@ $(document).ready(function(){
   $('select#color-selector').change(function(){
     var str = "";
     $('select#color-selector option:selected').each(function(){
-      
+      str += $(this);
     });
+    $('div.color-pallet').addClass(str);
   });
 });

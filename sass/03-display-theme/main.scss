@@ -41,3 +41,15 @@ section.grid-wrap{
 .grid-a{
 
 }
+.color-pallet{
+  height: 33vh;
+  width: 33vw;
+  display: block;
+}
+#color-pallet{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  
+}

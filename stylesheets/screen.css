@@ -1252,3 +1252,17 @@ section:nth-child(even) {
 }
 
 /* select out of form fo color palet*/
+/* line 44, ../sass/03-display-theme/main.scss */
+.color-pallet {
+  height: 33vh;
+  width: 33vw;
+  display: block;
+}
+
+/* line 49, ../sass/03-display-theme/main.scss */
+#color-pallet {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}

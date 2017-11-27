@@ -84,12 +84,8 @@ $(document).ready(function(){
     $("span.name").append("ubuntu");
     $("code.class").append('class= ubuntu');
   });
-  //color palet
-  $('select#color-selector').change(function(){
-    var str = "";
-    $('select#color-selector option:selected').each(function(){
-      str += $(this);
-    });
-    $('div.color-pallet').addClass(str);
+    //color palet
+  $('select#color-selector').on('change', function() {
+    $('div.color-pallet').addClass(this.value);
   });
 });

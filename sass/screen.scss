@@ -29,14 +29,16 @@ $brand-color: $facebook;
 $second-brand: $twitter;
 @import "../sass/00-elements/images.scss";
 @import "../sass/00-elements/typeography.scss";
+@import "../sass/00-elements/buttons.scss";
+@import "../sass/00-elements/filters.scss";
+@import "../sass/00-elements/filers.svg";
 /*******
 
 
 Compenates
 
 *****/
-@import "../sass/01-compenates/buttons.scss";
-@import "../sass/01-compenates/filters.scss";
+
 /*******
 
 

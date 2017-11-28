@@ -11,27 +11,23 @@ license: MIT
 
  *****/
 @import "compass/reset";
-/* Add CSS and Imports after this line */
-.base{
-  overflow-x: hidden;
-}
-*{
-  box-sizing: border-box;
-}
 /*******
 
 
 Base/Varibles
 
 *****/
-// $primary:
-// $secondary:
 /*******
 
 
-Typeography
+Elements
 
 *****/
+@import "../sass/00-elements/color.scss";
+// compile must have colors before site brand settings
+$brand-color: $facebook;
+$second-brand: $twitter;
+@import "../sass/00-elements/images.scss";
 @import "../sass/00-elements/typeography.scss";
 /*******
 
@@ -44,19 +40,11 @@ Compenates
 /*******
 
 
-templates grid/flex
+templates
 
 
 *****/
-@import "../sass/02-templates/grid-2-1.scss";
-@import "../sass/02-templates/nav-file.scss";
-/*******
 
-
-Help Classes
-
-*****/
-@import "../sass/00-elements/helpers.scss";
 /*******
 
 
@@ -64,3 +52,4 @@ alternative sheets
 
 *****/
 @import "../sass/print.scss";
+@import "../sass/03-display-theme/main.scss";

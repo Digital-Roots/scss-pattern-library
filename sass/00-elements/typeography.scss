@@ -19,16 +19,14 @@ html {
   }
 }
 /* tff fonts */
-@each $name, $file in (ubuntu, Ubuntu-C){
-  @font-face {
-    font-family: #{$name};
-    src: url('#{$file}.ttf');
-  }
-  .#{$name}{
-    font-family: #{$name};
-    font-size: calc(.875 + 0.45vw);
-    -webkit-font-smoothing: antialiased;
-  }
+@font-face {
+  font-family: ubuntu;
+  src: url('font/UbuntuC.ttf');
+}
+.ubuntu{
+  font-family: ubuntu;
+  font-size: calc(.875 + 0.45vw);
+  -webkit-font-smoothing: antialiased;
 }
 /* Copy & Lists */
 p {
@@ -68,7 +66,7 @@ h6 {
   margin-top: calc(.35 + .3vh);
   margin-bottom: .2rem;
   line-height: calc(1 + .25vw);
-  text-shadow: 1px 1px 3px darkgrey, 1px 1px 2px lightgrey;
+  text-shadow: 1px 1px 3px $brand-color, 1px 1px 2px $second-brand;
 }
 h1 {
   font-size: 2.642rem;
@@ -92,25 +90,6 @@ h5 {
 h6 {
   font-size: calc(0.5535rem + .85vw);
 }
-/* Tables */
-table{
-	border-spacing: 0;
-	width: 100%;
-}
-td,
-th{
-	border-bottom: .1rem solid darkgrey;
-	padding: 1.2rem 1.5rem;
-	text-align: center;
-
-	&:first-child{
-		padding-left: 0;
-  }
-	&:last-child{
-    padding-right: 0;
-  }
-}
-
 /* Code blocks */
 code {
   vertical-align: bottom;

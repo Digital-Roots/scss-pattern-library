@@ -1253,7 +1253,7 @@ section:nth-child(even) {
 
 /* select out of form fo color palet*/
 /* line 44, ../sass/03-display-theme/main.scss */
-.color-pallet {
+#colors {
   height: 33vh;
   width: 33vw;
   display: block;

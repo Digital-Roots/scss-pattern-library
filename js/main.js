@@ -86,6 +86,7 @@ $(document).ready(function(){
   });
     //color palet
   $('select#color-selector').on('change', function() {
-    $('div.color-pallet').addClass(this.value);
+    $("#colors").removeAttr('class');
+    $('#colors').addClass(this.value);
   });
 });

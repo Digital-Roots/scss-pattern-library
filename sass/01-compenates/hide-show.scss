@@ -4,9 +4,6 @@
   text-align: $text-align;
   border: thin solid black;
 }
-@mixin nav-style($color){
-  background-color: $color;
-}
 [id*="hide-show-"]:not(:target){
   display: none;
 }

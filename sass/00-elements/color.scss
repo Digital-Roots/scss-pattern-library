@@ -90,3 +90,13 @@ listlyorange $listlyorange,
 listlyblue $listlyblue,
 vine $vine
 );
+@each $type in $colors {
+.#{nth($type, 1)}-txt {
+  color: #{nth($type, 2)};
+  }
+}
+@each $type in $colors {
+.#{nth($type, 1)}-bg {
+  background-color: #{nth($type, 2)};
+  }
+}

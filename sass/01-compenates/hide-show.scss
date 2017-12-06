@@ -1,0 +1,57 @@
+@mixin modal-base($color: #d6d6bc, $padding: 20px, $text-align: center){
+  background: ‎$color;
+  padding: $padding;
+  text-align: $text-align;
+  border: thin solid black;
+}
+[id*="hide-show-"]:not(:target){
+  display: none;
+}
+[id*="hide-show-"]:target{
+  display: block;
+}
+[id*="modal-container-"]{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal{
+  @include modal-base;
+  width: 70%;
+  &-LG{
+    @include modal-base;
+    width: 100%;
+  }
+  &-SM{
+    @include modal-base;
+    width: 35%;
+  }
+}
+.modal-right{
+  @include modal-base($text-align: right);
+   &-LG{
+     @include modal-base($text-align: right);
+     width: 100%;
+   }
+   &-SM{
+     @include modal-base($text-align: right);
+     width: 35%;
+   }
+}
+
+[id*="modal-container-"]:not(:target){
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s, visibility 1s;
+}
+[id*="modal-container-"]:target{
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1s, visibility 1s;
+}

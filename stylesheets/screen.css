@@ -892,14 +892,20 @@ section:nth-child(even) {
 }
 
 /* select out of form fo color palet*/
-/* line 44, ../sass/03-display-theme/main.scss */
+/* line 32, ../sass/03-display-theme/main.scss */
+select#color-selector {
+  width: 50vw;
+  font-size: 1.2rem;
+}
+
+/* line 45, ../sass/03-display-theme/main.scss */
 #colors {
-  height: 33vh;
-  width: 33vw;
+  height: 50vh;
+  width: 50vw;
   display: block;
 }
 
-/* line 49, ../sass/03-display-theme/main.scss */
+/* line 50, ../sass/03-display-theme/main.scss */
 #color-pallet {
   display: flex;
   flex-flow: column;
@@ -907,7 +913,7 @@ section:nth-child(even) {
   align-items: center;
 }
 
-/* line 57, ../sass/03-display-theme/main.scss */
+/* line 58, ../sass/03-display-theme/main.scss */
 button, [classß$="-button"] {
   border: none;
   border-radius: 0;
@@ -916,7 +922,7 @@ button, [classß$="-button"] {
   margin: .3rem;
 }
 @media screen and (min-width: 700px) {
-  /* line 57, ../sass/03-display-theme/main.scss */
+  /* line 58, ../sass/03-display-theme/main.scss */
   button, [classß$="-button"] {
     font-size: 1.2rem;
     padding: .25rem;
@@ -924,7 +930,7 @@ button, [classß$="-button"] {
   }
 }
 @media screen and (min-width: 900px) {
-  /* line 57, ../sass/03-display-theme/main.scss */
+  /* line 58, ../sass/03-display-theme/main.scss */
   button, [classß$="-button"] {
     font-size: 1.75rem;
     padding: .25rem;
@@ -932,7 +938,7 @@ button, [classß$="-button"] {
   }
 }
 
-/* line 74, ../sass/03-display-theme/main.scss */
+/* line 75, ../sass/03-display-theme/main.scss */
 .inverse {
   color: white;
   background-color: black;
@@ -943,7 +949,7 @@ button, [classß$="-button"] {
   margin: .3rem;
 }
 @media screen and (min-width: 700px) {
-  /* line 74, ../sass/03-display-theme/main.scss */
+  /* line 75, ../sass/03-display-theme/main.scss */
   .inverse {
     font-size: 1.2rem;
     padding: .25rem;
@@ -951,7 +957,7 @@ button, [classß$="-button"] {
   }
 }
 @media screen and (min-width: 900px) {
-  /* line 74, ../sass/03-display-theme/main.scss */
+  /* line 75, ../sass/03-display-theme/main.scss */
   .inverse {
     font-size: 1.75rem;
     padding: .25rem;

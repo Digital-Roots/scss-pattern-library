@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*
 Creator: Robert Edwardes
 Website: digitalroots.io
@@ -89,222 +88,222 @@ Elements
 
 *****/
 /* line 94, ../sass/00-elements/color.scss */
-.facebook-txt {
+.facebook {
   color: #3b5998;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.twitter-txt {
+.twitter {
   color: #00b6f1;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.youtube-txt {
+.youtube {
   color: #ff0000;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.instagrammagenta-txt {
+.instagrammagenta {
   color: #c32aa3;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.instagramblue-txt {
+.instagramblue {
   color: #4c5fd7;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.instagrampurple-txt {
+.instagrampurple {
   color: #7232bd;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.instagramorange-txt {
+.instagramorange {
   color: #f46f30;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.instagramyellow-txt {
+.instagramyellow {
   color: #ffdc7d;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.pinterest-txt {
+.pinterest {
   color: #cb2027;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.googleplus-txt {
+.googleplus {
   color: #df4a32;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.linkedin-txt {
+.linkedin {
   color: #007bb6;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.vimeoblue-txt {
+.vimeoblue {
   color: #45bbff;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.vimeogreen-txt {
+.vimeogreen {
   color: #aad450;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.vimeoorange-txt {
+.vimeoorange {
   color: #f7b42c;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.vimeopink-txt {
+.vimeopink {
   color: #f27490;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.tumblr-txt {
+.tumblr {
   color: #2c4762;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.snapchat-txt {
+.snapchat {
   color: #fffc00;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.whatsappgreen-txt {
+.whatsappgreen {
   color: #25d366;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.whatsappteal1-txt {
+.whatsappteal1 {
   color: #075e54;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.whatsappteal2-txt {
+.whatsappteal2 {
   color: #128c7e;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.foursquarepink-txt {
+.foursquarepink {
   color: #fc4575;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.foursquareblue-txt {
+.foursquareblue {
   color: #2d5be3;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.swarm-txt {
+.swarm {
   color: #ffb000;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.skypeblue-txt {
+.skypeblue {
   color: #00aff0;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.skypegreen-txt {
+.skypegreen {
   color: #7fba00;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.stumbleupon-txt {
+.stumbleupon {
   color: #eb4924;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.flickrpink-txt {
+.flickrpink {
   color: #f40083;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.flickrblue-txt {
+.flickrblue {
   color: #006add;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.yahoo-txt {
+.yahoo {
   color: #430297;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.soundcloud-txt {
+.soundcloud {
   color: #ff5500;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.spotifygreen-txt {
+.spotifygreen {
   color: #1ed760;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.spotifydarkgreen-txt {
+.spotifydarkgreen {
   color: #1db954;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.dribbble-txt {
+.dribbble {
   color: #ea4c89;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.reddit-txt {
+.reddit {
   color: #ff5700;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.deviantart-txt {
+.deviantart {
   color: #4a5d4e;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.pocket-txt {
+.pocket {
   color: #ee4056;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.quora-txt {
+.quora {
   color: #aa2200;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.quorablue-txt {
+.quorablue {
   color: #2b6dad;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.slideshareorange-txt {
+.slideshareorange {
   color: #f7941e;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.slideshareorange-txt {
+.slideshareblue {
   color: #1191d0;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.fivehundredpx-txt {
+.fivehundredpx {
   color: #0099e5;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.listlyorange-txt {
+.listlyorange {
   color: #df6d46;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.listlyblue-txt {
+.listlyblue {
   color: #52b1b3;
 }
 
 /* line 94, ../sass/00-elements/color.scss */
-.vine-txt {
+.vine {
   color: #00b489;
 }
 
@@ -504,7 +503,7 @@ Elements
 }
 
 /* line 99, ../sass/00-elements/color.scss */
-.slideshareorange-bg {
+.slideshareblue-bg {
   background-color: #1191d0;
 }
 
@@ -725,6 +724,58 @@ code {
   background-color: rgba(100, 100, 100, 0.3);
 }
 
+/* line 2, ../sass/00-elements/buttons.scss */
+a.button, a.rounded, a.circle {
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+  text-align: center;
+  line-height: 28px;
+}
+
+/* line 15, ../sass/00-elements/buttons.scss */
+a.button, a.rounded, a.circle, button, .rounded, .circle {
+  min-height: 2.5rem;
+  height: 100%;
+  width: 8.75rem;
+  font-size: 1rem;
+}
+/* line 20, ../sass/00-elements/buttons.scss */
+a.button .information, a.rounded .information, a.circle .information, button .information, .rounded .information, .circle .information {
+  color: #007bb6;
+}
+/* line 23, ../sass/00-elements/buttons.scss */
+a.button .success, a.rounded .success, a.circle .success, button .success, .rounded .success, .circle .success {
+  color: #00b489;
+}
+/* line 26, ../sass/00-elements/buttons.scss */
+a.button .danger, a.rounded .danger, a.circle .danger, button .danger, .rounded .danger, .circle .danger {
+  color: #ff0000;
+}
+/* line 29, ../sass/00-elements/buttons.scss */
+a.button .inactive, a.rounded .inactive, a.circle .inactive, button .inactive, .rounded .inactive, .circle .inactive {
+  color: #dce3de;
+}
+/* line 32, ../sass/00-elements/buttons.scss */
+a.button .neutral, a.rounded .neutral, a.circle .neutral, button .neutral, .rounded .neutral, .circle .neutral {
+  color: #4a5d4e;
+}
+
+/* line 36, ../sass/00-elements/buttons.scss */
+.rounded {
+  border-radius: .987rem;
+}
+
+/* line 41, ../sass/00-elements/buttons.scss */
+.circle {
+  border-radius: 100%;
+}
+
 /* line 3, ../sass/00-elements/filters.scss */
 .filter-gray-50 {
   filter: grayscale(0.5);
@@ -891,30 +942,8 @@ section:nth-child(even) {
   background-color: #1ed760;
 }
 
-/* select out of form fo color palet*/
 /* line 32, ../sass/03-display-theme/main.scss */
-select#color-selector {
-  width: 50vw;
-  font-size: 1.2rem;
-}
-
-/* line 45, ../sass/03-display-theme/main.scss */
-#colors {
-  height: 50vh;
-  width: 50vw;
-  display: block;
-}
-
-/* line 50, ../sass/03-display-theme/main.scss */
-#color-pallet {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/* line 58, ../sass/03-display-theme/main.scss */
-button, [classß$="-button"] {
+button, .rounded, .circle {
   border: none;
   border-radius: 0;
   font-size: 1rem;
@@ -922,23 +951,23 @@ button, [classß$="-button"] {
   margin: .3rem;
 }
 @media screen and (min-width: 700px) {
-  /* line 58, ../sass/03-display-theme/main.scss */
-  button, [classß$="-button"] {
+  /* line 32, ../sass/03-display-theme/main.scss */
+  button, .rounded, .circle {
     font-size: 1.2rem;
     padding: .25rem;
     margin: .25rem;
   }
 }
 @media screen and (min-width: 900px) {
-  /* line 58, ../sass/03-display-theme/main.scss */
-  button, [classß$="-button"] {
+  /* line 32, ../sass/03-display-theme/main.scss */
+  button, .rounded, .circle {
     font-size: 1.75rem;
     padding: .25rem;
     margin: .3rem;
   }
 }
 
-/* line 75, ../sass/03-display-theme/main.scss */
+/* line 49, ../sass/03-display-theme/main.scss */
 .inverse {
   color: white;
   background-color: black;
@@ -949,7 +978,7 @@ button, [classß$="-button"] {
   margin: .3rem;
 }
 @media screen and (min-width: 700px) {
-  /* line 75, ../sass/03-display-theme/main.scss */
+  /* line 49, ../sass/03-display-theme/main.scss */
   .inverse {
     font-size: 1.2rem;
     padding: .25rem;
@@ -957,10 +986,31 @@ button, [classß$="-button"] {
   }
 }
 @media screen and (min-width: 900px) {
-  /* line 75, ../sass/03-display-theme/main.scss */
+  /* line 49, ../sass/03-display-theme/main.scss */
   .inverse {
     font-size: 1.75rem;
     padding: .25rem;
     margin: .3rem;
   }
+}
+
+/* line 68, ../sass/03-display-theme/main.scss */
+#colors {
+  height: 50vh;
+  width: 50vw;
+  display: block;
+}
+
+/* line 73, ../sass/03-display-theme/main.scss */
+#color-pallet {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 80, ../sass/03-display-theme/main.scss */
+select#color-selector {
+  width: 50vw;
+  font-size: 1.2rem;
 }

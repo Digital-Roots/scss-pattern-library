@@ -1,1 +1,52 @@
-
+//rest
+a.button{
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+  text-align: center;
+  line-height: 28px;
+}
+//base
+a.button, button{
+  min-height: 2.5rem;
+  height: 100%;
+  width: 8.75rem;
+  font-size: 1rem;
+  & .information{
+    background-color: $linkedin;
+    color: #3b3b3b;
+  }
+  & .success{
+    background-color: $vine;
+    color: #3b3b3b;
+  }
+  & .danger{
+    background-color: $youtube;
+    color: #3b3b3b;
+  }
+  & .inactive{
+    color: lighten($deviantart, 55%);
+    border-color: lighten($deviantart, 55%);
+    background-color: transparent;
+  }
+  & .neutral{
+    color: $deviantart;
+    border-color: $deviantart;
+    background-color: transparent;
+  }
+}
+.rounded{
+  @extend button ;
+  @extend .button ;
+  border-radius: .987rem;
+}
+.circle{
+  @extend button ;
+  @extend .button ;
+  border-radius: 100%;
+}

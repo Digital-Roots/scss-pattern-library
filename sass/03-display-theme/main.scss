@@ -28,34 +28,8 @@ section{
     background-color: $spotifygreen;
   }
 }
-/* select out of form fo color palet*/
-select#color-selector{
-  width: 50vw;
-  font-size: 1.2rem;
-  &option{
-
-  }
-}
-section.grid-wrap{
-
-}
-.grid-a{
-
-}
-#colors{
-  height: 50vh;
-  width: 50vw;
-  display: block;
-}
-#color-pallet{
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-
-}
 //base
-button, [classß$="-button"]{
+button{
   border: none;
   border-radius: 0;
   font-size: 1rem;
@@ -90,4 +64,23 @@ button, [classß$="-button"]{
     padding: .25rem;
     margin: .3rem;
   }
+}
+#colors{
+  height: 50vh;
+  width: 50vw;
+  display: block;
+}
+#color-pallet{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+}
+select#color-selector{
+  width: 50vw;
+  font-size: 1.2rem;
+}
+[aria-labelledby="Buttons"]{
+
 }

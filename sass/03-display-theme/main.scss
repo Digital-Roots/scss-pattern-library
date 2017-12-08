@@ -29,40 +29,42 @@ section{
   }
 }
 //base
-button{
-  border: none;
-  border-radius: 0;
-  font-size: 1rem;
-  padding: .2rem;
-  margin: .3rem;
-  @media screen and (min-width: 700px){
-    font-size: 1.2rem;
-    padding: .25rem;
-    margin: .25rem;
-  }
-  @media screen and (min-width: 900px){
-    font-size: 1.75rem;
-    padding: .25rem;
+[aria-labelledby="typeography"]{
+  button{
+    border: none;
+    border-radius: 0;
+    font-size: 1rem;
+    padding: .2rem;
     margin: .3rem;
+    @media screen and (min-width: 700px){
+      font-size: 1.2rem;
+      padding: .25rem;
+      margin: .25rem;
+    }
+    @media screen and (min-width: 900px){
+      font-size: 1.75rem;
+      padding: .25rem;
+      margin: .3rem;
+    }
   }
-}
-.inverse{
-  color: white;
-  background-color: black;
-  border: none;
-  border-radius: 0;
-  font-size: 1rem;
-  padding: .2rem;
-  margin: .3rem;
-  @media screen and (min-width: 700px){
-    font-size: 1.2rem;
-    padding: .25rem;
-    margin: .25rem;
-  }
-  @media screen and (min-width: 900px){
-    font-size: 1.75rem;
-    padding: .25rem;
+  .inverse{
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 0;
+    font-size: 1rem;
+    padding: .2rem;
     margin: .3rem;
+    @media screen and (min-width: 700px){
+      font-size: 1.2rem;
+      padding: .25rem;
+      margin: .25rem;
+    }
+    @media screen and (min-width: 900px){
+      font-size: 1.75rem;
+      padding: .25rem;
+      margin: .3rem;
+    }
   }
 }
 #colors{

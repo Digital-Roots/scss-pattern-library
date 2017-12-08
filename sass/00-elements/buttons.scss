@@ -17,26 +17,52 @@ a.button, button{
   height: 100%;
   width: 8.75rem;
   font-size: 1rem;
-  & .information{
-    background-color: $linkedin;
+  &.information{
+    border-top: 1px solid lighten($blue, 15%);
+    border-right: 1px solid darken($blue, 20%);
+    border-bottom: 1px solid darken($blue, 20%);
+    border-left: 1px solid lighten($blue, 15%);
+    background-color: $blue;
     color: #3b3b3b;
   }
-  & .success{
-    background-color: $vine;
+  &.success{
+    border-top: 1px solid lighten($green, 15%);
+    border-right: 1px solid darken($green, 20%);
+    border-bottom: 1px solid darken($green, 20%);
+    border-left: 1px solid lighten($green, 15%);
+    background-color: $green;
     color: #3b3b3b;
   }
-  & .danger{
-    background-color: $youtube;
+  &.danger{
+    border-top: 1px solid lighten($red, 15%);
+    border-right: 1px solid darken($red, 20%);
+    border-bottom: 1px solid darken($red, 20%);
+    border-left: 1px solid lighten($red, 15%);
+    background-color: $red;
     color: #3b3b3b;
   }
-  & .inactive{
-    color: lighten($deviantart, 55%);
-    border-color: lighten($deviantart, 55%);
+  &.danger-outline{
+    border-top: 1px solid darken($red, 25%);
+    border-right: 1px solid $red;
+    border-bottom: 1px solid $red;
+    border-left: 1px solid darken($red, 25%);
+    color: $red;
     background-color: transparent;
   }
-  & .neutral{
-    color: $deviantart;
-    border-color: $deviantart;
+  &.inactive{
+    color: lighten($neutral, 35%);
+    border-top: 1px solid lighten($neutral, 35%);
+    border-right: 1px solid lighten($neutral, 55%);
+    border-bottom: 1px solid lighten($neutral, 55%);
+    border-left: 1px solid lighten($neutral, 35%);
+    background-color: transparent;
+  }
+  &.neutral{
+    color: $neutral;
+    border-top: 1px solid darken($neutral, 15%);
+    border-right: 1px solid lighten($neutral, 5%);
+    border-bottom: 1px solid lighten($neutral, 5%);
+    border-left: 1px solid darken($neutral, 15%);
     background-color: transparent;
   }
 }
@@ -49,4 +75,10 @@ a.button, button{
   @extend button ;
   @extend .button ;
   border-radius: 100%;
+  &.cross-sprit{
+    content: url('sprit.svg#cross')
+  }
+  &.check-sprit{
+    content: url('sprit.svg#check');
+  }
 }

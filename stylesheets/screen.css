@@ -725,7 +725,7 @@ code {
 }
 
 /* line 2, ../sass/00-elements/buttons.scss */
-a.button, a.rounded, a.circle {
+a.btn, a.rounded, a.circle {
   text-decoration: none;
   background-color: #EEEEEE;
   color: #333333;
@@ -735,45 +735,92 @@ a.button, a.rounded, a.circle {
   border-bottom: 1px solid #333333;
   border-left: 1px solid #CCCCCC;
   text-align: center;
-  line-height: 28px;
+  line-height: 1.8;
+  display: inline-block;
 }
 
-/* line 15, ../sass/00-elements/buttons.scss */
-a.button, a.rounded, a.circle, button, .rounded, .circle {
+/* line 16, ../sass/00-elements/buttons.scss */
+a.btn, a.rounded, a.circle, button, .rounded, .circle {
   min-height: 2.5rem;
   height: 100%;
-  width: 8.75rem;
+  min-width: 8.75rem;
   font-size: 1rem;
 }
-/* line 20, ../sass/00-elements/buttons.scss */
-a.button .information, a.rounded .information, a.circle .information, button .information, .rounded .information, .circle .information {
-  color: #007bb6;
-}
-/* line 23, ../sass/00-elements/buttons.scss */
-a.button .success, a.rounded .success, a.circle .success, button .success, .rounded .success, .circle .success {
-  color: #00b489;
-}
-/* line 26, ../sass/00-elements/buttons.scss */
-a.button .danger, a.rounded .danger, a.circle .danger, button .danger, .rounded .danger, .circle .danger {
-  color: #ff0000;
+/* line 21, ../sass/00-elements/buttons.scss */
+a.btn.information, a.information.rounded, a.information.circle, button.information, .information.rounded, .information.circle {
+  border-top: 1px solid #04adff;
+  border-right: 1px solid #003650;
+  border-bottom: 1px solid #003650;
+  border-left: 1px solid #04adff;
+  background-color: #007bb6;
+  color: #3b3b3b;
 }
 /* line 29, ../sass/00-elements/buttons.scss */
-a.button .inactive, a.rounded .inactive, a.circle .inactive, button .inactive, .rounded .inactive, .circle .inactive {
-  color: #dce3de;
+a.btn.success, a.success.rounded, a.success.circle, button.success, .success.rounded, .success.circle {
+  border-top: 1px solid #02ffc2;
+  border-right: 1px solid #004e3b;
+  border-bottom: 1px solid #004e3b;
+  border-left: 1px solid #02ffc2;
+  background-color: #00b489;
+  color: #3b3b3b;
 }
-/* line 32, ../sass/00-elements/buttons.scss */
-a.button .neutral, a.rounded .neutral, a.circle .neutral, button .neutral, .rounded .neutral, .circle .neutral {
+/* line 37, ../sass/00-elements/buttons.scss */
+a.btn.danger, a.danger.rounded, a.danger.circle, button.danger, .danger.rounded, .danger.circle {
+  border-top: 1px solid #ff4d4d;
+  border-right: 1px solid #990000;
+  border-bottom: 1px solid #990000;
+  border-left: 1px solid #ff4d4d;
+  background-color: #ff0000;
+  color: #3b3b3b;
+}
+/* line 45, ../sass/00-elements/buttons.scss */
+a.btn.danger-outline, a.danger-outline.rounded, a.danger-outline.circle, button.danger-outline, .danger-outline.rounded, .danger-outline.circle {
+  border-top: 1px solid maroon;
+  border-right: 1px solid #ff0000;
+  border-bottom: 1px solid #ff0000;
+  border-left: 1px solid maroon;
+  color: #ff0000;
+  background-color: transparent;
+}
+/* line 53, ../sass/00-elements/buttons.scss */
+a.btn.inactive, a.inactive.rounded, a.inactive.circle, button.inactive, .inactive.rounded, .inactive.circle {
+  color: #a3b6a7;
+  border-top: 1px solid #a3b6a7;
+  border-right: 1px solid #dce3de;
+  border-bottom: 1px solid #dce3de;
+  border-left: 1px solid #a3b6a7;
+  background-color: transparent;
+}
+/* line 61, ../sass/00-elements/buttons.scss */
+a.btn.neutral, a.neutral.rounded, a.neutral.circle, button.neutral, .neutral.rounded, .neutral.circle {
   color: #4a5d4e;
+  text-shadow: 1px 1px 1px #a3b6a7;
+  border-top: 1px solid #28322a;
+  border-right: 1px solid #556b5a;
+  border-bottom: 1px solid #556b5a;
+  border-left: 1px solid #28322a;
+  background-color: rgba(74, 93, 78, 0.1);
 }
 
-/* line 36, ../sass/00-elements/buttons.scss */
+/* line 71, ../sass/00-elements/buttons.scss */
 .rounded {
   border-radius: .987rem;
 }
 
-/* line 41, ../sass/00-elements/buttons.scss */
+/* line 76, ../sass/00-elements/buttons.scss */
 .circle {
-  border-radius: 100%;
+  border-radius: 50%;
+  word-wrap: break-word;
+  min-width: 0 !important;
+  min-height: 0 !important;
+}
+/* line 83, ../sass/00-elements/buttons.scss */
+.circle.cross-sprit {
+  content: url("sprit.svg#cross");
+}
+/* line 86, ../sass/00-elements/buttons.scss */
+.circle.check-sprit {
+  content: url("sprit.svg#check");
 }
 
 /* line 3, ../sass/00-elements/filters.scss */
@@ -934,16 +981,24 @@ section {
   padding: 0 7.5px;
 }
 /* line 24, ../sass/03-display-theme/main.scss */
-section:nth-child(odd) {
+section:nth-child(1) {
   background-color: #ff5700;
 }
 /* line 27, ../sass/03-display-theme/main.scss */
-section:nth-child(even) {
-  background-color: #1ed760;
+section:nth-child(2) {
+  background-color: lightgrey;
+}
+/* line 30, ../sass/03-display-theme/main.scss */
+section:nth-child(3) {
+  background-color: #ffdc7d;
+}
+/* line 33, ../sass/03-display-theme/main.scss */
+section:nth-child(4) {
+  background-color: #c32aa3;
 }
 
-/* line 32, ../sass/03-display-theme/main.scss */
-button, .rounded, .circle {
+/* line 39, ../sass/03-display-theme/main.scss */
+[aria-labelledby="typeography"] button, [aria-labelledby="typeography"] .rounded, [aria-labelledby="typeography"] .circle {
   border: none;
   border-radius: 0;
   font-size: 1rem;
@@ -951,24 +1006,23 @@ button, .rounded, .circle {
   margin: .3rem;
 }
 @media screen and (min-width: 700px) {
-  /* line 32, ../sass/03-display-theme/main.scss */
-  button, .rounded, .circle {
+  /* line 39, ../sass/03-display-theme/main.scss */
+  [aria-labelledby="typeography"] button, [aria-labelledby="typeography"] .rounded, [aria-labelledby="typeography"] .circle {
     font-size: 1.2rem;
     padding: .25rem;
     margin: .25rem;
   }
 }
 @media screen and (min-width: 900px) {
-  /* line 32, ../sass/03-display-theme/main.scss */
-  button, .rounded, .circle {
+  /* line 39, ../sass/03-display-theme/main.scss */
+  [aria-labelledby="typeography"] button, [aria-labelledby="typeography"] .rounded, [aria-labelledby="typeography"] .circle {
     font-size: 1.75rem;
     padding: .25rem;
     margin: .3rem;
   }
 }
-
-/* line 49, ../sass/03-display-theme/main.scss */
-.inverse {
+/* line 56, ../sass/03-display-theme/main.scss */
+[aria-labelledby="typeography"] .inverse {
   color: white;
   background-color: black;
   border: none;
@@ -978,30 +1032,30 @@ button, .rounded, .circle {
   margin: .3rem;
 }
 @media screen and (min-width: 700px) {
-  /* line 49, ../sass/03-display-theme/main.scss */
-  .inverse {
+  /* line 56, ../sass/03-display-theme/main.scss */
+  [aria-labelledby="typeography"] .inverse {
     font-size: 1.2rem;
     padding: .25rem;
     margin: .25rem;
   }
 }
 @media screen and (min-width: 900px) {
-  /* line 49, ../sass/03-display-theme/main.scss */
-  .inverse {
+  /* line 56, ../sass/03-display-theme/main.scss */
+  [aria-labelledby="typeography"] .inverse {
     font-size: 1.75rem;
     padding: .25rem;
     margin: .3rem;
   }
 }
 
-/* line 68, ../sass/03-display-theme/main.scss */
+/* line 76, ../sass/03-display-theme/main.scss */
 #colors {
   height: 50vh;
   width: 50vw;
   display: block;
 }
 
-/* line 73, ../sass/03-display-theme/main.scss */
+/* line 81, ../sass/03-display-theme/main.scss */
 #color-pallet {
   display: flex;
   flex-flow: column;
@@ -1009,7 +1063,7 @@ button, .rounded, .circle {
   align-items: center;
 }
 
-/* line 80, ../sass/03-display-theme/main.scss */
+/* line 88, ../sass/03-display-theme/main.scss */
 select#color-selector {
   width: 50vw;
   font-size: 1.2rem;

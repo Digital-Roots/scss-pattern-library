@@ -25,7 +25,7 @@ a.btn, button{
     border-left: 1px solid lighten($blue, 15%);
     background-color: $blue;
     color: #3b3b3b;
-    text-shadow: .5px 1px 1px black;
+    text-shadow: .5px 1px 1px lightgrey;
   }
   &.success{
     border-top: 1px solid lighten($green, 15%);
@@ -34,7 +34,7 @@ a.btn, button{
     border-left: 1px solid lighten($green, 15%);
     background-color: $green;
     color: #3b3b3b;
-    text-shadow: .5px 1px 1px black;
+    text-shadow: .5px 1px 1px lightgrey;
   }
   &.danger{
     border-top: 1px solid lighten($red, 15%);
@@ -42,7 +42,7 @@ a.btn, button{
     border-bottom: 1px solid darken($red, 20%);
     border-left: 1px solid lighten($red, 15%);
     background-color: $red;
-    color: #3b3b3b;
+    color: grey;
     text-shadow: .5px 1px 1px black;
   }
   &.danger-outline{
@@ -79,6 +79,7 @@ a.btn, button{
     border-bottom: 1px solid lighten($neutral, 5%);
     border-left: 1px solid darken($neutral, 15%);
     background-color: $neutral;
+    text-shadow: .5px 1px 1px black;
   }
 }
 .rounded{

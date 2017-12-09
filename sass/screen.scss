@@ -1,7 +1,6 @@
 /*
 Creator: Robert Edwardes
 Website: digitalroots.io
-Project Name: RINO
 license: MIT
  */
  /*******
@@ -24,7 +23,7 @@ Elements
 
 *****/
 @import "../sass/00-elements/color.scss";
-// compile must have colors before site brand settings
+// compile must have colors before site color settings
 $brand-color: $facebook;
 $second-brand: $twitter;
 $red: $pinterest;

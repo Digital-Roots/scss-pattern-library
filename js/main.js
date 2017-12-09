@@ -89,4 +89,11 @@ $(document).ready(function(){
     $("#colors").removeAttr('class');
     $('#colors').addClass(this.value + "-bg");
   });
+  // ajax
+  $('#button-display + nav button').click(function(){
+    var btn = $(this.value);
+    $.getJSON("data.json",function(){
+      $('#button-display').append(btn);
+    });
+  });
 });

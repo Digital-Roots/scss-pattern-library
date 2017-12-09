@@ -87,6 +87,6 @@ $(document).ready(function(){
     //color palet
   $('select#color-selector').on('change', function() {
     $("#colors").removeAttr('class');
-    $('#colors').addClass(this.value);
+    $('#colors').addClass(this.value + "-bg");
   });
 });

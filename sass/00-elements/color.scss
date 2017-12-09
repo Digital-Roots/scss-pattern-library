@@ -84,14 +84,14 @@ pocket $pocket,
 quora $quora,
 quorablue $quorablue,
 slideshareorange $slideshareorange,
-slideshareorange $slideshareblue,
+slideshareblue $slideshareblue,
 fivehundredpx $fivehundredpx,
 listlyorange $listlyorange,
 listlyblue $listlyblue,
 vine $vine
 );
 @each $type in $colors {
-.#{nth($type, 1)}-txt {
+.#{nth($type, 1)} {
   color: #{nth($type, 2)};
   }
 }

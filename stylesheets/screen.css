@@ -794,6 +794,15 @@ a.btn.inactive, a.inactive.rounded, a.inactive.circle, button.inactive, .inactiv
 /* line 61, ../sass/00-elements/buttons.scss */
 a.btn.neutral, a.neutral.rounded, a.neutral.circle, button.neutral, .neutral.rounded, .neutral.circle {
   color: #4a5d4e;
+  border-top: 1px solid #28322a;
+  border-right: 1px solid #556b5a;
+  border-bottom: 1px solid #556b5a;
+  border-left: 1px solid #28322a;
+  background-color: transparent;
+}
+/* line 69, ../sass/00-elements/buttons.scss */
+a.btn.neutral, a.neutral.rounded, a.neutral.circle, button.neutral, .neutral.rounded, .neutral.circle {
+  color: #4a5d4e;
   text-shadow: 1px 1px 1px #a3b6a7;
   border-top: 1px solid #28322a;
   border-right: 1px solid #556b5a;
@@ -802,23 +811,23 @@ a.btn.neutral, a.neutral.rounded, a.neutral.circle, button.neutral, .neutral.rou
   background-color: rgba(74, 93, 78, 0.1);
 }
 
-/* line 71, ../sass/00-elements/buttons.scss */
+/* line 79, ../sass/00-elements/buttons.scss */
 .rounded {
   border-radius: .987rem;
 }
 
-/* line 76, ../sass/00-elements/buttons.scss */
+/* line 84, ../sass/00-elements/buttons.scss */
 .circle {
   border-radius: 50%;
   word-wrap: break-word;
   min-width: 0 !important;
   min-height: 0 !important;
 }
-/* line 83, ../sass/00-elements/buttons.scss */
+/* line 91, ../sass/00-elements/buttons.scss */
 .circle.cross-sprit {
   content: url("sprit.svg#cross");
 }
-/* line 86, ../sass/00-elements/buttons.scss */
+/* line 94, ../sass/00-elements/buttons.scss */
 .circle.check-sprit {
   content: url("sprit.svg#check");
 }
@@ -1048,23 +1057,47 @@ section:nth-child(4) {
   }
 }
 
-/* line 76, ../sass/03-display-theme/main.scss */
-#colors {
+/* line 78, ../sass/03-display-theme/main.scss */
+[aria-labelledby="color pallet"] #colors {
   height: 50vh;
   width: 50vw;
   display: block;
 }
-
-/* line 81, ../sass/03-display-theme/main.scss */
-#color-pallet {
+/* line 83, ../sass/03-display-theme/main.scss */
+[aria-labelledby="color pallet"] #color-pallet {
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
 }
-
-/* line 88, ../sass/03-display-theme/main.scss */
-select#color-selector {
+/* line 90, ../sass/03-display-theme/main.scss */
+[aria-labelledby="color pallet"] select#color-selector {
   width: 50vw;
   font-size: 1.2rem;
+}
+
+/* line 97, ../sass/03-display-theme/main.scss */
+[aria-labelledby="Buttons"] * {
+  border: red;
+}
+/* line 100, ../sass/03-display-theme/main.scss */
+[aria-labelledby="Buttons"] main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 105, ../sass/03-display-theme/main.scss */
+[aria-labelledby="Buttons"] main div {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+}
+/* line 111, ../sass/03-display-theme/main.scss */
+[aria-labelledby="Buttons"] main nav {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
 }

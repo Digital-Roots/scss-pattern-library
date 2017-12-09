@@ -25,31 +25,102 @@ section{
     background-color: $reddit;
   }
   &:nth-child(even){
-    background-color: $spotifygreen;
+    background-color: lightgrey;
   }
 }
-/* select out of form fo color palet*/
-select{
-
-  &option{
-
+//base
+[aria-labelledby="typeography"]{
+  button{
+    border: none;
+    border-radius: 0;
+    font-size: 1rem;
+    padding: .2rem;
+    margin: .3rem;
+    @media screen and (min-width: 700px){
+      font-size: 1.2rem;
+      padding: .25rem;
+      margin: .25rem;
+    }
+    @media screen and (min-width: 900px){
+      font-size: 1.75rem;
+      padding: .25rem;
+      margin: .3rem;
+    }
+  }
+  .inverse{
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 0;
+    font-size: 1rem;
+    padding: .2rem;
+    margin: .3rem;
+    @media screen and (min-width: 700px){
+      font-size: 1.2rem;
+      padding: .25rem;
+      margin: .25rem;
+    }
+    @media screen and (min-width: 900px){
+      font-size: 1.75rem;
+      padding: .25rem;
+      margin: .3rem;
+    }
   }
 }
-section.grid-wrap{
 
-}
-.grid-a{
+[aria-labelledby="color pallet"]{
+  #colors{
+    height: 50vh;
+    width: 50vw;
+    display: block;
+  }
+  #color-pallet{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 
+  }
+  select#color-selector{
+    width: 50vw;
+    font-size: 1.2rem;
+  }
 }
-#colors{
-  height: 33vh;
-  width: 33vw;
-  display: block;
-}
-#color-pallet{
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
 
+[aria-labelledby="Buttons"]{
+  & main{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 100vw;
+    & div#button-display{
+      display: flex;
+      flex-flow: row;
+      justify-content: space-around;
+      align-items: center;
+      width: 100vw;
+      height: 100%;
+      & .col{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-around;
+      }
+    }
+    & header{
+      text-align: center;
+      height: 15vh;
+      width: 100vw;
+    }
+    & nav{
+      display: flex;
+      flex-flow: row;
+      justify-content: space-around;
+      align-items: center;
+      width: 100vw;
+      height: 15vh;
+    }
+  }
 }

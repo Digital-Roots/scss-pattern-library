@@ -1003,23 +1003,15 @@ section {
   padding: 0 7.5px;
 }
 /* line 24, ../sass/03-display-theme/main.scss */
-section:nth-child(1) {
+section:nth-child(odd) {
   background-color: #ff5700;
 }
 /* line 27, ../sass/03-display-theme/main.scss */
-section:nth-child(2) {
+section:nth-child(even) {
   background-color: lightgrey;
 }
-/* line 30, ../sass/03-display-theme/main.scss */
-section:nth-child(3) {
-  background-color: #ffdc7d;
-}
-/* line 33, ../sass/03-display-theme/main.scss */
-section:nth-child(4) {
-  background-color: #c32aa3;
-}
 
-/* line 39, ../sass/03-display-theme/main.scss */
+/* line 33, ../sass/03-display-theme/main.scss */
 [aria-labelledby="typeography"] button, [aria-labelledby="typeography"] .rounded, [aria-labelledby="typeography"] .circle {
   border: none;
   border-radius: 0;
@@ -1028,7 +1020,7 @@ section:nth-child(4) {
   margin: .3rem;
 }
 @media screen and (min-width: 700px) {
-  /* line 39, ../sass/03-display-theme/main.scss */
+  /* line 33, ../sass/03-display-theme/main.scss */
   [aria-labelledby="typeography"] button, [aria-labelledby="typeography"] .rounded, [aria-labelledby="typeography"] .circle {
     font-size: 1.2rem;
     padding: .25rem;
@@ -1036,14 +1028,14 @@ section:nth-child(4) {
   }
 }
 @media screen and (min-width: 900px) {
-  /* line 39, ../sass/03-display-theme/main.scss */
+  /* line 33, ../sass/03-display-theme/main.scss */
   [aria-labelledby="typeography"] button, [aria-labelledby="typeography"] .rounded, [aria-labelledby="typeography"] .circle {
     font-size: 1.75rem;
     padding: .25rem;
     margin: .3rem;
   }
 }
-/* line 56, ../sass/03-display-theme/main.scss */
+/* line 50, ../sass/03-display-theme/main.scss */
 [aria-labelledby="typeography"] .inverse {
   color: white;
   background-color: black;
@@ -1054,7 +1046,7 @@ section:nth-child(4) {
   margin: .3rem;
 }
 @media screen and (min-width: 700px) {
-  /* line 56, ../sass/03-display-theme/main.scss */
+  /* line 50, ../sass/03-display-theme/main.scss */
   [aria-labelledby="typeography"] .inverse {
     font-size: 1.2rem;
     padding: .25rem;
@@ -1062,7 +1054,7 @@ section:nth-child(4) {
   }
 }
 @media screen and (min-width: 900px) {
-  /* line 56, ../sass/03-display-theme/main.scss */
+  /* line 50, ../sass/03-display-theme/main.scss */
   [aria-labelledby="typeography"] .inverse {
     font-size: 1.75rem;
     padding: .25rem;
@@ -1070,26 +1062,26 @@ section:nth-child(4) {
   }
 }
 
-/* line 78, ../sass/03-display-theme/main.scss */
+/* line 72, ../sass/03-display-theme/main.scss */
 [aria-labelledby="color pallet"] #colors {
   height: 50vh;
   width: 50vw;
   display: block;
 }
-/* line 83, ../sass/03-display-theme/main.scss */
+/* line 77, ../sass/03-display-theme/main.scss */
 [aria-labelledby="color pallet"] #color-pallet {
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
 }
-/* line 90, ../sass/03-display-theme/main.scss */
+/* line 84, ../sass/03-display-theme/main.scss */
 [aria-labelledby="color pallet"] select#color-selector {
   width: 50vw;
   font-size: 1.2rem;
 }
 
-/* line 97, ../sass/03-display-theme/main.scss */
+/* line 91, ../sass/03-display-theme/main.scss */
 [aria-labelledby="Buttons"] main {
   display: flex;
   flex-flow: column nowrap;
@@ -1098,7 +1090,7 @@ section:nth-child(4) {
   width: 100vw;
   height: 100vw;
 }
-/* line 104, ../sass/03-display-theme/main.scss */
+/* line 98, ../sass/03-display-theme/main.scss */
 [aria-labelledby="Buttons"] main div#button-display {
   display: flex;
   flex-flow: row;
@@ -1107,20 +1099,20 @@ section:nth-child(4) {
   width: 100vw;
   height: 100%;
 }
-/* line 111, ../sass/03-display-theme/main.scss */
+/* line 105, ../sass/03-display-theme/main.scss */
 [aria-labelledby="Buttons"] main div#button-display .col {
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: space-around;
 }
-/* line 118, ../sass/03-display-theme/main.scss */
+/* line 112, ../sass/03-display-theme/main.scss */
 [aria-labelledby="Buttons"] main header {
   text-align: center;
   height: 15vh;
   width: 100vw;
 }
-/* line 123, ../sass/03-display-theme/main.scss */
+/* line 117, ../sass/03-display-theme/main.scss */
 [aria-labelledby="Buttons"] main nav {
   display: flex;
   flex-flow: row;

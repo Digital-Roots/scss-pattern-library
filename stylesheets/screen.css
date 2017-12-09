@@ -384,6 +384,26 @@ button.inverse, [class$="-inverse"], .inverse {
 .filter-text-Extrusion {
   filter: url(filters.svg#Extrusion);
 }
+/* line 19, ../sass/01-compenates/filters.scss */
+.filter-text-Text-Stroke {
+  filter: url(filters.svg#Text-Stroke);
+}
+/* line 22, ../sass/01-compenates/filters.scss */
+.filter-text-Torn-Look {
+  filter: url(filters.svg#Torn-Look);
+}
+/* line 25, ../sass/01-compenates/filters.scss */
+.filter-text-Color-Fill {
+  filter: url(filters.svg#Color-Fill);
+}
+/* line 28, ../sass/01-compenates/filters.scss */
+.filter-text-Offsetting {
+  filter: url(filters.svg#Offsetting);
+}
+/* line 31, ../sass/01-compenates/filters.scss */
+.filter-text-Extrusion {
+  filter: url(filters.svg#Extrusion);
+}
 
 /* line 38, ../sass/01-compenates/buttons.scss */
 .youtube, .youtube-button, button.youtube {

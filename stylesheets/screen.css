@@ -735,7 +735,7 @@ a.btn, a.rounded, a.circle {
   border-bottom: 1px solid #333333;
   border-left: 1px solid #CCCCCC;
   text-align: center;
-  line-height: 1.8;
+  line-height: 2;
   display: inline-block;
 }
 
@@ -753,8 +753,8 @@ a.btn.information, a.information.rounded, a.information.circle, button.informati
   border-bottom: 1px solid #003650;
   border-left: 1px solid #04adff;
   background-color: #007bb6;
-  color: #3b3b3b;
-  text-shadow: .5px 1px 1px lightgrey;
+  color: #2b2b2b;
+  text-shadow: 0.5px 1px 1px #006a9d;
 }
 /* line 30, ../sass/00-elements/buttons.scss */
 a.btn.success, a.success.rounded, a.success.circle, button.success, .success.rounded, .success.circle {
@@ -763,28 +763,28 @@ a.btn.success, a.success.rounded, a.success.circle, button.success, .success.rou
   border-bottom: 1px solid #004e3b;
   border-left: 1px solid #02ffc2;
   background-color: #00b489;
-  color: #3b3b3b;
-  text-shadow: .5px 1px 1px lightgrey;
+  color: #2b2b2b;
+  text-shadow: 0.5px 1px 1px #009b76;
 }
 /* line 39, ../sass/00-elements/buttons.scss */
 a.btn.danger, a.danger.rounded, a.danger.circle, button.danger, .danger.rounded, .danger.circle {
-  border-top: 1px solid #ff4d4d;
-  border-right: 1px solid #990000;
-  border-bottom: 1px solid #990000;
-  border-left: 1px solid #ff4d4d;
-  background-color: #ff0000;
-  color: grey;
-  text-shadow: .5px 1px 1px black;
+  border-top: 1px solid #e45459;
+  border-right: 1px solid #731216;
+  border-bottom: 1px solid #731216;
+  border-left: 1px solid #e45459;
+  background-color: #cb2027;
+  text-shadow: 0.5px 1px 1px #b51d23;
+  color: #2b2b2b;
 }
 /* line 48, ../sass/00-elements/buttons.scss */
 a.btn.danger-outline, a.danger-outline.rounded, a.danger-outline.circle, button.danger-outline, .danger-outline.rounded, .danger-outline.circle {
-  text-shadow: 1px 1px 1px #ff4d4d;
-  border-top: 1px solid maroon;
-  border-right: 1px solid #ff0000;
-  border-bottom: 1px solid #ff0000;
-  border-left: 1px solid maroon;
-  color: #ff0000;
-  background-color: rgba(255, 0, 0, 0.1);
+  text-shadow: 1px 1px 1px #e45459;
+  border-top: 1px solid #5d0f12;
+  border-right: 1px solid #cb2027;
+  border-bottom: 1px solid #cb2027;
+  border-left: 1px solid #5d0f12;
+  color: #cb2027;
+  background-color: rgba(203, 32, 39, 0.1);
 }
 /* line 58, ../sass/00-elements/buttons.scss */
 a.btn.inactive, a.inactive.rounded, a.inactive.circle, button.inactive, .inactive.rounded, .inactive.circle {
@@ -797,7 +797,7 @@ a.btn.inactive, a.inactive.rounded, a.inactive.circle, button.inactive, .inactiv
 }
 /* line 66, ../sass/00-elements/buttons.scss */
 a.btn.neutral-outline, a.neutral-outline.rounded, a.neutral-outline.circle, button.neutral-outline, .neutral-outline.rounded, .neutral-outline.circle {
-  color: #4a5d4e;
+  color: #3f4f42;
   text-shadow: 1px 1px 1px #6c8872;
   border-top: 1px solid #28322a;
   border-right: 1px solid #556b5a;
@@ -807,13 +807,13 @@ a.btn.neutral-outline, a.neutral-outline.rounded, a.neutral-outline.circle, butt
 }
 /* line 75, ../sass/00-elements/buttons.scss */
 a.btn.neutral, a.neutral.rounded, a.neutral.circle, button.neutral, .neutral.rounded, .neutral.circle {
-  color: grey;
+  color: #2b2b2b;
   border-top: 1px solid #28322a;
   border-right: 1px solid #556b5a;
   border-bottom: 1px solid #556b5a;
   border-left: 1px solid #28322a;
   background-color: #4a5d4e;
-  text-shadow: .5px 1px 1px black;
+  text-shadow: 0.5px 1px 1px #556b5a;
 }
 
 /* line 85, ../sass/00-elements/buttons.scss */

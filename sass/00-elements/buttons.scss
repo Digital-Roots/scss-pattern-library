@@ -25,6 +25,7 @@ a.btn, button{
     border-left: 1px solid lighten($blue, 15%);
     background-color: $blue;
     color: #3b3b3b;
+    text-shadow: .5px 1px 1px black;
   }
   &.success{
     border-top: 1px solid lighten($green, 15%);
@@ -33,6 +34,7 @@ a.btn, button{
     border-left: 1px solid lighten($green, 15%);
     background-color: $green;
     color: #3b3b3b;
+    text-shadow: .5px 1px 1px black;
   }
   &.danger{
     border-top: 1px solid lighten($red, 15%);
@@ -41,8 +43,10 @@ a.btn, button{
     border-left: 1px solid lighten($red, 15%);
     background-color: $red;
     color: #3b3b3b;
+    text-shadow: .5px 1px 1px black;
   }
   &.danger-outline{
+    text-shadow: 1px 1px 1px  lighten($red, 15%);
     border-top: 1px solid darken($red, 25%);
     border-right: 1px solid $red;
     border-bottom: 1px solid $red;
@@ -59,14 +63,22 @@ a.btn, button{
     border-left: 1px solid lighten($neutral, 35%);
     background-color: transparentize($inabg, .8);
   }
-  &.neutral{
+  &.neutral-outline{
     color: $neutral;
-    text-shadow: 1px 1px 1px  lighten($neutral, 35%);
+    text-shadow: 1px 1px 1px  lighten($neutral, 15%);
     border-top: 1px solid darken($neutral, 15%);
     border-right: 1px solid lighten($neutral, 5%);
     border-bottom: 1px solid lighten($neutral, 5%);
     border-left: 1px solid darken($neutral, 15%);
     background-color: transparentize($neutral, .9);
+  }
+  &.neutral{
+    color: grey;
+    border-top: 1px solid darken($neutral, 15%);
+    border-right: 1px solid lighten($neutral, 5%);
+    border-bottom: 1px solid lighten($neutral, 5%);
+    border-left: 1px solid darken($neutral, 15%);
+    background-color: $neutral;
   }
 }
 .rounded{

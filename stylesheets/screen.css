@@ -754,7 +754,7 @@ a.btn.information, a.information.rounded, a.information.circle, button.informati
   border-left: 1px solid #04adff;
   background-color: #007bb6;
   color: #3b3b3b;
-  text-shadow: .5px 1px 1px black;
+  text-shadow: .5px 1px 1px lightgrey;
 }
 /* line 30, ../sass/00-elements/buttons.scss */
 a.btn.success, a.success.rounded, a.success.circle, button.success, .success.rounded, .success.circle {
@@ -764,7 +764,7 @@ a.btn.success, a.success.rounded, a.success.circle, button.success, .success.rou
   border-left: 1px solid #02ffc2;
   background-color: #00b489;
   color: #3b3b3b;
-  text-shadow: .5px 1px 1px black;
+  text-shadow: .5px 1px 1px lightgrey;
 }
 /* line 39, ../sass/00-elements/buttons.scss */
 a.btn.danger, a.danger.rounded, a.danger.circle, button.danger, .danger.rounded, .danger.circle {
@@ -773,7 +773,7 @@ a.btn.danger, a.danger.rounded, a.danger.circle, button.danger, .danger.rounded,
   border-bottom: 1px solid #990000;
   border-left: 1px solid #ff4d4d;
   background-color: #ff0000;
-  color: #3b3b3b;
+  color: grey;
   text-shadow: .5px 1px 1px black;
 }
 /* line 48, ../sass/00-elements/buttons.scss */
@@ -813,14 +813,15 @@ a.btn.neutral, a.neutral.rounded, a.neutral.circle, button.neutral, .neutral.rou
   border-bottom: 1px solid #556b5a;
   border-left: 1px solid #28322a;
   background-color: #4a5d4e;
+  text-shadow: .5px 1px 1px black;
 }
 
-/* line 84, ../sass/00-elements/buttons.scss */
+/* line 85, ../sass/00-elements/buttons.scss */
 .rounded {
   border-radius: .987rem;
 }
 
-/* line 89, ../sass/00-elements/buttons.scss */
+/* line 90, ../sass/00-elements/buttons.scss */
 .circle {
   border-radius: 50%;
   word-wrap: break-word;
@@ -829,11 +830,11 @@ a.btn.neutral, a.neutral.rounded, a.neutral.circle, button.neutral, .neutral.rou
   height: 48px;
   width: 48px;
 }
-/* line 98, ../sass/00-elements/buttons.scss */
+/* line 99, ../sass/00-elements/buttons.scss */
 .circle.cross-sprit {
   content: url("sprit.svg#cross");
 }
-/* line 101, ../sass/00-elements/buttons.scss */
+/* line 102, ../sass/00-elements/buttons.scss */
 .circle.check-sprit {
   content: url("sprit.svg#check");
 }

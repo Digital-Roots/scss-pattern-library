@@ -132,6 +132,10 @@ section{
       justify-content: center;
       height: 15vh;
       width: 100vw;
+      & div{
+        display: flex;
+        flex-flow: row;
+      }
     }
     & nav{
       display: flex;

@@ -89,18 +89,15 @@ $(document).ready(function(){
     $("#colors").removeAttr('class');
     $('#colors').addClass(this.value + "-bg");
   });
-<<<<<<< HEAD
   // ajax
   $('#button-display + nav button').click(function(){
     var btn = $(this.value);
     $.getJSON("data.json",function(){
       $('#button-display').append(btn);
     });
-=======
   //Buttons
   $('select#button-bg-color').on('change', function(){
     $('#button-display').removeAttr('class');
     $('#button-display').addClass(this.value);
->>>>>>> master
   });
 });

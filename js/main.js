@@ -89,4 +89,9 @@ $(document).ready(function(){
     $("#colors").removeAttr('class');
     $('#colors').addClass(this.value + "-bg");
   });
+  //Buttons
+  $('select#button-bg-color').on('change', function(){
+    $('#button-display').removeAttr('class');
+    $('#button-display').addClass(this.value);
+  });
 });

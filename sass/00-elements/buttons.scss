@@ -55,22 +55,12 @@ a.btn, button{
   }
   $inabg: lighten($grey, 35%);
   &.inactive{
-    color: lighten($grey, 5%);
-    text-shadow: .5px .5px 1px lighten($grey, 55%);
+    color: lighten($grey, 25%);
     border-top: 1px solid lighten($grey, 15%);
     border-right: 1px solid lighten($grey, 35%);
     border-bottom: 1px solid lighten($grey, 35%);
     border-left: 1px solid lighten($grey, 15%);
     background-color: transparentize($inabg, .8);
-  }
-  &.neutral-outline{
-    color: darken($grey, 5%);
-    text-shadow: 1px 1px 1px  lighten($grey, 15%);
-    border-top: 1px solid darken($grey, 15%);
-    border-right: 1px solid lighten($grey, 5%);
-    border-bottom: 1px solid lighten($grey, 5%);
-    border-left: 1px solid darken($grey, 15%);
-    background-color: transparentize($grey, .9);
   }
   &.neutral{
     color: #2b2b2b;

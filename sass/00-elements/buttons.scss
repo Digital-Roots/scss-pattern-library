@@ -15,7 +15,6 @@ a.btn{
 //base
 a.btn, button{
   min-height: 2.5rem;
-  height: 100%;
   min-width: 8.75rem;
   font-size: 1rem;
   &.information{
@@ -46,7 +45,7 @@ a.btn, button{
     color: #2b2b2b;
   }
   &.danger-outline{
-    text-shadow: 1px 1px 1px  lighten($red, 15%);
+    text-shadow: .75px .75px 1px  darken($red, 15%);
     border-top: 1px solid darken($red, 25%);
     border-right: 1px solid $red;
     border-bottom: 1px solid $red;
@@ -56,11 +55,12 @@ a.btn, button{
   }
   $inabg: lighten($grey, 35%);
   &.inactive{
-    color: lighten($grey, 35%);
-    border-top: 1px solid lighten($grey, 35%);
-    border-right: 1px solid lighten($grey, 55%);
-    border-bottom: 1px solid lighten($grey, 55%);
-    border-left: 1px solid lighten($grey, 35%);
+    color: lighten($grey, 5%);
+    text-shadow: .5px .5px 1px lighten($grey, 55%);
+    border-top: 1px solid lighten($grey, 15%);
+    border-right: 1px solid lighten($grey, 35%);
+    border-bottom: 1px solid lighten($grey, 35%);
+    border-left: 1px solid lighten($grey, 15%);
     background-color: transparentize($inabg, .8);
   }
   &.neutral-outline{

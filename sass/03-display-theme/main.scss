@@ -22,7 +22,7 @@ section{
   align-items: center;
   padding: 0 7.5px;
   &:nth-child(odd){
-    background-color: $reddit;
+    background-color: grey;
   }
   &:nth-child(even){
     background-color: lightgrey;
@@ -110,7 +110,9 @@ section{
       }
     }
     & header{
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       height: 15vh;
       width: 100vw;
     }

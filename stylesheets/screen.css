@@ -788,7 +788,7 @@ a.btn.danger-outline, a.danger-outline.rounded, a.danger-outline.circle, button.
 /* line 57, ../sass/00-elements/buttons.scss */
 a.btn.inactive, a.inactive.rounded, a.inactive.circle, button.inactive, .inactive.rounded, .inactive.circle {
   color: #556b5a;
-  text-shadow: 0.5px 0.5px 1px #dce3de;
+  text-shadow: 0.5px 0.5px 1px #dce3de, 0.75px 0.75px 1px #3f4f42;
   border-top: 1px solid #6c8872;
   border-right: 1px solid #a3b6a7;
   border-bottom: 1px solid #a3b6a7;
@@ -798,12 +798,12 @@ a.btn.inactive, a.inactive.rounded, a.inactive.circle, button.inactive, .inactiv
 /* line 66, ../sass/00-elements/buttons.scss */
 a.btn.neutral-outline, a.neutral-outline.rounded, a.neutral-outline.circle, button.neutral-outline, .neutral-outline.rounded, .neutral-outline.circle {
   color: #3f4f42;
-  text-shadow: 1px 1px 1px #6c8872;
+  text-shadow: 0.5px 0.5px 0.5px #a3b6a7, 0.75px 0.75px 1px #3f4f42;
   border-top: 1px solid #28322a;
   border-right: 1px solid #556b5a;
   border-bottom: 1px solid #556b5a;
   border-left: 1px solid #28322a;
-  background-color: rgba(74, 93, 78, 0.1);
+  background-color: rgba(74, 93, 78, 0.15);
 }
 /* line 75, ../sass/00-elements/buttons.scss */
 a.btn.neutral, a.neutral.rounded, a.neutral.circle, button.neutral, .neutral.rounded, .neutral.circle {

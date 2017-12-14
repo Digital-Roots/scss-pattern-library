@@ -87,10 +87,4 @@ a.btn, button{
   min-height: 0 !important;
   height: 48px;
   width: 48px;
-  &.cross-sprit{
-    content: url('sprit.svg#cross');
-  }
-  &.check-sprit{
-    content: url('sprit.svg#check');
-  }
 }

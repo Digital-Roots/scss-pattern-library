@@ -819,14 +819,6 @@ a.btn.neutral, a.neutral.rounded, a.neutral.circle, button.neutral, .neutral.rou
   height: 48px;
   width: 48px;
 }
-/* line 90, ../sass/00-elements/buttons.scss */
-.circle.cross-sprit {
-  content: url("sprit.svg#cross");
-}
-/* line 93, ../sass/00-elements/buttons.scss */
-.circle.check-sprit {
-  content: url("sprit.svg#check");
-}
 
 /* line 3, ../sass/00-elements/filters.scss */
 .filter-gray-50 {

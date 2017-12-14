@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/data.json"></script>
     <script src="js/main.js"></script>
     <script src-"js/modernizer-custom.js"></script>
@@ -13,6 +14,7 @@
     <link href="spirt.svg" />
     <link href="stylesheets/screen.css" rel="stylesheet" type="text/css" />
     <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!--[if IE]>
     <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <![endif]-->
@@ -93,12 +95,12 @@
         </nav>
       </footer>
     </section>
-    <section role="region" aria-labelledby="Buttons">
+    <section id="button" role="region" aria-labelledby="Buttons">
       <main>
         <header>
           <h3><span id="title">basic</span> button</h3>
           <div>
-            <h5>background color </h5>
+            <h5>background color icons from <a href="https://material.io/icons/">material design</a></h5>
             <select id="button-bg-color">
               <option select value="lightgrey">light grey</option>
               <option value="grey">grey</option>
@@ -113,35 +115,35 @@
             <button class="information">information basic</button>
             <button class="rounded information">information Roudned</button>
             <a class="btn information">a.btn</a>
-            <button class="circle information">C</button>
+            <button class="circle information material-icons">done</button>
           </div>
           <div class="col">
             <button class="success">success basic</button>
             <button class="rounded success">success Roudned</button>
             <a class="btn success">a.btn</a>
-            <button class="circle success">C</button>
+            <button class="circle success material-icons">done</button>
           </div>
           <div class="col">
             <button class="danger">danger basic</button>
             <button class="rounded danger">danger Roudned</button>
             <a class="btn danger">a.btn</a>
-            <button class="circle danger">C</button>
+            <button class="circle danger cross-sprit material-icons">close</button>
             <button class="danger-outline">danger-outline basic</button>
             <button class="rounded danger-outline">danger-outline Roudned</button>
             <a class="btn danger-outline">a.btn</a>
-            <button class="circle danger-outline">C</button>
+            <button class="circle danger-outline cross-sprit material-icons">close</button>
           </div>
           <div class="col">
             <button class="neutral">neutral basic</button>
             <button class="rounded neutral">neutral Roudned</button>
             <a class="btn neutral">a.btn</a>
-            <button class="circle neutral">C</button>
+            <button class="circle neutral material-icons">close</button>
           </div>
           <div class="col">
             <button class="inactive">inactive basic</button>
             <button class="rounded inactive">inactive Roudned</button>
             <a class="btn inactive">a.btn</a>
-            <button class="circle inactive">C</button>
+            <button class="circle inactive material-icons">close</button>
           </div>
         </div>
         <nav>
@@ -151,6 +153,9 @@
           <button class="inactive">3D Animated</button>
         </nav>
       </main>
+    </section>
+    <section>
+
     </section>
   </body>
 </html>

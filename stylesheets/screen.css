@@ -1110,13 +1110,17 @@ section:nth-child(even) {
   justify-content: center;
   height: 15vh;
   width: 100vw;
+  min-width: 100%;
 }
-/* line 135, ../sass/03-display-theme/main.scss */
+/* line 136, ../sass/03-display-theme/main.scss */
 [aria-labelledby="Buttons"] main header div {
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
   display: flex;
   flex-flow: row;
 }
-/* line 140, ../sass/03-display-theme/main.scss */
+/* line 144, ../sass/03-display-theme/main.scss */
 [aria-labelledby="Buttons"] main nav {
   display: flex;
   flex-flow: row;

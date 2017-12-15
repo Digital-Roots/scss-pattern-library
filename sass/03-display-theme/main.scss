@@ -132,7 +132,11 @@ section{
       justify-content: center;
       height: 15vh;
       width: 100vw;
+      min-width: 100%;
       & div{
+        align-items: center;
+        justify-content: space-around;
+        width: 100vw;
         display: flex;
         flex-flow: row;
       }
@@ -146,4 +150,7 @@ section{
       height: 15vh;
     }
   }
+}
+[labelledby="images"]{
+
 }

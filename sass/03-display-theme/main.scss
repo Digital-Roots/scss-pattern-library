@@ -22,10 +22,10 @@ section{
   align-items: center;
   padding: 0 7.5px;
   &:nth-child(odd){
-    background-color: $reddit;
+    background-color: lightgrey;
   }
   &:nth-child(even){
-    background-color: lightgrey;
+    background-color: grey;
   }
 }
 //base
@@ -102,7 +102,23 @@ section{
       align-items: center;
       width: 100vw;
       height: 100%;
+      &.grey{
+        background: grey;
+      }
+      &.lightgrey{
+        background-color: lightgrey;
+      }
+      &.white{
+        background-color: white;
+      }
+      &.black{
+        background-color: black;
+      }
+      &.hex3b{
+        background-color: #3b3b3b;
+      }
       & .col{
+        height: 70vh;
         display: flex;
         flex-flow: column;
         align-items: center;
@@ -110,9 +126,20 @@ section{
       }
     }
     & header{
-      text-align: center;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
       height: 15vh;
       width: 100vw;
+      min-width: 100%;
+      & div{
+        align-items: center;
+        justify-content: space-around;
+        width: 100vw;
+        display: flex;
+        flex-flow: row;
+      }
     }
     & nav{
       display: flex;
@@ -123,4 +150,7 @@ section{
       height: 15vh;
     }
   }
+}
+[labelledby="images"]{
+
 }

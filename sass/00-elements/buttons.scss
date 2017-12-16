@@ -15,7 +15,11 @@ a.btn{
 //base
 $dfad: darken($grey, 35%);
 $inabg: lighten($grey, 35%);
-a.btn, button{
+$invertblue: invert($blue);
+$invertred: invert($red);
+$invertgreen: invert($green);
+$invertgrey: invert($inabg);
+a.btn, button, a[class~="btn"]{
   min-height: 2.5rem;
   min-width: 8.75rem;
   font-size: 1rem;
@@ -88,6 +92,85 @@ a.btn, button{
     filter: invert(0);
     box-shadow: none;
   }
+  &.flat{
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+    transition: 0;
+    filter: invert(0);
+    box-shadow: none;
+    transition: none;
+    &.information{
+      transition: .2s;
+      background-color: $blue;
+      &:hover{
+        border-top: 4px solid $invertblue;
+        border-left: 4px solid $invertblue;
+        border-right: 4px solid $invertblue;
+      }
+      &:active{
+        border: none;
+        box-shadow: 1px 2px 3px $green;
+      }
+      &:focus{
+          border: 4px inset $invertblue;
+      }
+    }
+    &.success{
+      transition: .2s;
+      background-color: $green;
+      &:hover{
+        border-top: 4px solid $invertgreen;
+        border-left: 4px solid $invertgreen;
+        border-right: 4px solid $invertgreen;
+      }
+      &:active{
+        border: none;
+        box-shadow: 1px 2px 3px $red;
+      }
+      &:focus{
+       border: 4px inset $invertgreen;
+
+      }
+    }
+    &.danger{
+      transition: .2s;
+      background-color: $red;
+      &:hover{
+        border-top: 4px solid $invertred;
+        border-left: 4px solid $invertred;
+        border-right: 4px solid $invertred;
+      }
+      &:active{
+        border: none;
+        box-shadow: 1px 2px 3px $blue;
+      }
+      &:focus{
+        border: 4px inset $invertred;
+      }
+    }
+    &.neutral{
+      transition: .2s;
+      background-color: $inabg;
+      &:hover{
+        border-top: 4px solid $invertgrey;
+        border-left: 4px solid $invertgrey;
+        border-right: 4px solid $invertgrey;
+      }
+      &:active{
+        border: none;
+        box-shadow: 1px 2px 3px $invertgrey;
+      }
+      &:focus{
+        border: 4px inset $invertgrey;
+      }
+    }
+  }
+}
+a.circle{
+  line-height: 1.5;
+  font-size:  1.7rem;
 }
 .rounded{
   @extend button ;
@@ -95,6 +178,9 @@ a.btn, button{
   border-radius: .987rem;
 }
 .circle{
+  &:active{
+    box-shadow: -5px 5px 2px transparentize($inabg, .8), -10px 10px 5px transparentize($dfad, .6);
+  }
   @extend button ;
   @extend.btn ;
   border-radius: 50%;
@@ -103,7 +189,4 @@ a.btn, button{
   min-height: 0 !important;
   height: 48px;
   width: 48px;
-  &:active{
-    box-shadow: 0px 5px 10px transparentize($inabg, .8), 0px 9px 12px transparentize($dfad, .6);
-  }
 }

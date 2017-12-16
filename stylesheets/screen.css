@@ -738,14 +738,14 @@ a.btn, a.rounded, a.circle {
   display: inline-block;
 }
 
-/* line 18, ../sass/00-elements/buttons.scss */
-a.btn, a.rounded, a.circle, button, .rounded, .circle {
+/* line 22, ../sass/00-elements/buttons.scss */
+a.btn, a.rounded, a.circle, button, .rounded, .circle, a[class~="btn"] {
   min-height: 2.5rem;
   min-width: 8.75rem;
   font-size: 1rem;
 }
-/* line 22, ../sass/00-elements/buttons.scss */
-a.btn.information, a.information.rounded, a.information.circle, button.information, .information.rounded, .information.circle {
+/* line 26, ../sass/00-elements/buttons.scss */
+a.btn.information, a.information.rounded, a.information.circle, button.information, .information.rounded, .information.circle, a[class~="btn"].information {
   border-top: 1px solid #04adff;
   border-right: 1px solid #003650;
   border-bottom: 1px solid #003650;
@@ -754,8 +754,8 @@ a.btn.information, a.information.rounded, a.information.circle, button.informati
   color: #2b2b2b;
   text-shadow: 0.5px 1px 1px #006a9d;
 }
-/* line 31, ../sass/00-elements/buttons.scss */
-a.btn.success, a.success.rounded, a.success.circle, button.success, .success.rounded, .success.circle {
+/* line 35, ../sass/00-elements/buttons.scss */
+a.btn.success, a.success.rounded, a.success.circle, button.success, .success.rounded, .success.circle, a[class~="btn"].success {
   border-top: 1px solid #02ffc2;
   border-right: 1px solid #004e3b;
   border-bottom: 1px solid #004e3b;
@@ -764,8 +764,8 @@ a.btn.success, a.success.rounded, a.success.circle, button.success, .success.rou
   color: #2b2b2b;
   text-shadow: 0.5px 1px 1px #009b76;
 }
-/* line 40, ../sass/00-elements/buttons.scss */
-a.btn.danger, a.danger.rounded, a.danger.circle, button.danger, .danger.rounded, .danger.circle {
+/* line 44, ../sass/00-elements/buttons.scss */
+a.btn.danger, a.danger.rounded, a.danger.circle, button.danger, .danger.rounded, .danger.circle, a[class~="btn"].danger {
   border-top: 1px solid #e45459;
   border-right: 1px solid #731216;
   border-bottom: 1px solid #731216;
@@ -774,8 +774,8 @@ a.btn.danger, a.danger.rounded, a.danger.circle, button.danger, .danger.rounded,
   text-shadow: 0.5px 1px 1px #b51d23;
   color: #2b2b2b;
 }
-/* line 49, ../sass/00-elements/buttons.scss */
-a.btn.danger-outline, a.danger-outline.rounded, a.danger-outline.circle, button.danger-outline, .danger-outline.rounded, .danger-outline.circle {
+/* line 53, ../sass/00-elements/buttons.scss */
+a.btn.danger-outline, a.danger-outline.rounded, a.danger-outline.circle, button.danger-outline, .danger-outline.rounded, .danger-outline.circle, a[class~="btn"].danger-outline {
   text-shadow: 0.75px 0.75px 1px #89161a;
   border-top: 1px solid #5d0f12;
   border-right: 1px solid #cb2027;
@@ -784,8 +784,8 @@ a.btn.danger-outline, a.danger-outline.rounded, a.danger-outline.circle, button.
   color: #cb2027;
   background-color: rgba(203, 32, 39, 0.1);
 }
-/* line 58, ../sass/00-elements/buttons.scss */
-a.btn.neutral, a.neutral.rounded, a.neutral.circle, button.neutral, .neutral.rounded, .neutral.circle {
+/* line 62, ../sass/00-elements/buttons.scss */
+a.btn.neutral, a.neutral.rounded, a.neutral.circle, button.neutral, .neutral.rounded, .neutral.circle, a[class~="btn"].neutral {
   color: #2b2b2b;
   border-top: 1px solid #28322a;
   border-right: 1px solid #556b5a;
@@ -795,23 +795,23 @@ a.btn.neutral, a.neutral.rounded, a.neutral.circle, button.neutral, .neutral.rou
   background-color: #4a5d4e;
   text-shadow: 1px 1px 1px #556b5a;
 }
-/* line 68, ../sass/00-elements/buttons.scss */
-a.btn:hover, a.rounded:hover, a.circle:hover, button:hover, .rounded:hover, .circle:hover {
+/* line 72, ../sass/00-elements/buttons.scss */
+a.btn:hover, a.rounded:hover, a.circle:hover, button:hover, .rounded:hover, .circle:hover, a[class~="btn"]:hover {
   transition: .8s;
   filter: invert(0.4);
 }
-/* line 72, ../sass/00-elements/buttons.scss */
-a.btn:active, a.rounded:active, a.circle:active, button:active, .rounded:active, .circle:active {
+/* line 76, ../sass/00-elements/buttons.scss */
+a.btn:active, a.rounded:active, a.circle:active, button:active, .rounded:active, .circle:active, a[class~="btn"]:active {
   filter: invert(0);
   transition: .2s;
   box-shadow: 5px 5px 10px rgba(163, 182, 167, 0.2), 9px 9px 12px rgba(0, 0, 0, 0.4);
 }
-/* line 77, ../sass/00-elements/buttons.scss */
-a.btn:focus, a.rounded:focus, a.circle:focus, button:focus, .rounded:focus, .circle:focus {
+/* line 81, ../sass/00-elements/buttons.scss */
+a.btn:focus, a.rounded:focus, a.circle:focus, button:focus, .rounded:focus, .circle:focus, a[class~="btn"]:focus {
   filter: grayscale(0.5);
 }
-/* line 80, ../sass/00-elements/buttons.scss */
-a.btn.inactive, a.inactive.rounded, a.inactive.circle, button.inactive, .inactive.rounded, .inactive.circle {
+/* line 84, ../sass/00-elements/buttons.scss */
+a.btn.inactive, a.inactive.rounded, a.inactive.circle, button.inactive, .inactive.rounded, .inactive.circle, a[class~="btn"].inactive {
   color: #87a08c;
   border-top: 1px solid #6c8872;
   border-right: 1px solid #a3b6a7;
@@ -822,13 +822,110 @@ a.btn.inactive, a.inactive.rounded, a.inactive.circle, button.inactive, .inactiv
   filter: invert(0);
   box-shadow: none;
 }
+/* line 95, ../sass/00-elements/buttons.scss */
+a.btn.flat, a.flat.rounded, a.flat.circle, button.flat, .flat.rounded, .flat.circle, a[class~="btn"].flat {
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
+  transition: 0;
+  filter: invert(0);
+  box-shadow: none;
+  transition: none;
+}
+/* line 104, ../sass/00-elements/buttons.scss */
+a.btn.flat.information, a.flat.information.rounded, a.flat.information.circle, button.flat.information, .flat.information.rounded, .flat.information.circle, a[class~="btn"].flat.information {
+  transition: .2s;
+  background-color: #007bb6;
+}
+/* line 107, ../sass/00-elements/buttons.scss */
+a.btn.flat.information:hover, a.flat.information.rounded:hover, a.flat.information.circle:hover, button.flat.information:hover, .flat.information.rounded:hover, .flat.information.circle:hover, a[class~="btn"].flat.information:hover {
+  border-top: 4px solid #ff8449;
+  border-left: 4px solid #ff8449;
+  border-right: 4px solid #ff8449;
+}
+/* line 112, ../sass/00-elements/buttons.scss */
+a.btn.flat.information:active, a.flat.information.rounded:active, a.flat.information.circle:active, button.flat.information:active, .flat.information.rounded:active, .flat.information.circle:active, a[class~="btn"].flat.information:active {
+  border: none;
+  box-shadow: 1px 2px 3px #00b489;
+}
+/* line 116, ../sass/00-elements/buttons.scss */
+a.btn.flat.information:focus, a.flat.information.rounded:focus, a.flat.information.circle:focus, button.flat.information:focus, .flat.information.rounded:focus, .flat.information.circle:focus, a[class~="btn"].flat.information:focus {
+  border: 4px inset #ff8449;
+}
+/* line 120, ../sass/00-elements/buttons.scss */
+a.btn.flat.success, a.flat.success.rounded, a.flat.success.circle, button.flat.success, .flat.success.rounded, .flat.success.circle, a[class~="btn"].flat.success {
+  transition: .2s;
+  background-color: #00b489;
+}
+/* line 123, ../sass/00-elements/buttons.scss */
+a.btn.flat.success:hover, a.flat.success.rounded:hover, a.flat.success.circle:hover, button.flat.success:hover, .flat.success.rounded:hover, .flat.success.circle:hover, a[class~="btn"].flat.success:hover {
+  border-top: 4px solid #ff4b76;
+  border-left: 4px solid #ff4b76;
+  border-right: 4px solid #ff4b76;
+}
+/* line 128, ../sass/00-elements/buttons.scss */
+a.btn.flat.success:active, a.flat.success.rounded:active, a.flat.success.circle:active, button.flat.success:active, .flat.success.rounded:active, .flat.success.circle:active, a[class~="btn"].flat.success:active {
+  border: none;
+  box-shadow: 1px 2px 3px #cb2027;
+}
+/* line 132, ../sass/00-elements/buttons.scss */
+a.btn.flat.success:focus, a.flat.success.rounded:focus, a.flat.success.circle:focus, button.flat.success:focus, .flat.success.rounded:focus, .flat.success.circle:focus, a[class~="btn"].flat.success:focus {
+  border: 4px inset #ff4b76;
+}
+/* line 137, ../sass/00-elements/buttons.scss */
+a.btn.flat.danger, a.flat.danger.rounded, a.flat.danger.circle, button.flat.danger, .flat.danger.rounded, .flat.danger.circle, a[class~="btn"].flat.danger {
+  transition: .2s;
+  background-color: #cb2027;
+}
+/* line 140, ../sass/00-elements/buttons.scss */
+a.btn.flat.danger:hover, a.flat.danger.rounded:hover, a.flat.danger.circle:hover, button.flat.danger:hover, .flat.danger.rounded:hover, .flat.danger.circle:hover, a[class~="btn"].flat.danger:hover {
+  border-top: 4px solid #34dfd8;
+  border-left: 4px solid #34dfd8;
+  border-right: 4px solid #34dfd8;
+}
+/* line 145, ../sass/00-elements/buttons.scss */
+a.btn.flat.danger:active, a.flat.danger.rounded:active, a.flat.danger.circle:active, button.flat.danger:active, .flat.danger.rounded:active, .flat.danger.circle:active, a[class~="btn"].flat.danger:active {
+  border: none;
+  box-shadow: 1px 2px 3px #007bb6;
+}
+/* line 149, ../sass/00-elements/buttons.scss */
+a.btn.flat.danger:focus, a.flat.danger.rounded:focus, a.flat.danger.circle:focus, button.flat.danger:focus, .flat.danger.rounded:focus, .flat.danger.circle:focus, a[class~="btn"].flat.danger:focus {
+  border: 4px inset #34dfd8;
+}
+/* line 153, ../sass/00-elements/buttons.scss */
+a.btn.flat.neutral, a.flat.neutral.rounded, a.flat.neutral.circle, button.flat.neutral, .flat.neutral.rounded, .flat.neutral.circle, a[class~="btn"].flat.neutral {
+  transition: .2s;
+  background-color: #a3b6a7;
+}
+/* line 156, ../sass/00-elements/buttons.scss */
+a.btn.flat.neutral:hover, a.flat.neutral.rounded:hover, a.flat.neutral.circle:hover, button.flat.neutral:hover, .flat.neutral.rounded:hover, .flat.neutral.circle:hover, a[class~="btn"].flat.neutral:hover {
+  border-top: 4px solid #5c4958;
+  border-left: 4px solid #5c4958;
+  border-right: 4px solid #5c4958;
+}
+/* line 161, ../sass/00-elements/buttons.scss */
+a.btn.flat.neutral:active, a.flat.neutral.rounded:active, a.flat.neutral.circle:active, button.flat.neutral:active, .flat.neutral.rounded:active, .flat.neutral.circle:active, a[class~="btn"].flat.neutral:active {
+  border: none;
+  box-shadow: 1px 2px 3px #5c4958;
+}
+/* line 165, ../sass/00-elements/buttons.scss */
+a.btn.flat.neutral:focus, a.flat.neutral.rounded:focus, a.flat.neutral.circle:focus, button.flat.neutral:focus, .flat.neutral.rounded:focus, .flat.neutral.circle:focus, a[class~="btn"].flat.neutral:focus {
+  border: 4px inset #5c4958;
+}
 
-/* line 92, ../sass/00-elements/buttons.scss */
+/* line 171, ../sass/00-elements/buttons.scss */
+a.circle {
+  line-height: 1.5;
+  font-size: 1.7rem;
+}
+
+/* line 175, ../sass/00-elements/buttons.scss */
 .rounded {
   border-radius: .987rem;
 }
 
-/* line 97, ../sass/00-elements/buttons.scss */
+/* line 180, ../sass/00-elements/buttons.scss */
 .circle {
   border-radius: 50%;
   word-wrap: break-word;
@@ -837,9 +934,9 @@ a.btn.inactive, a.inactive.rounded, a.inactive.circle, button.inactive, .inactiv
   height: 48px;
   width: 48px;
 }
-/* line 106, ../sass/00-elements/buttons.scss */
+/* line 181, ../sass/00-elements/buttons.scss */
 .circle:active {
-  box-shadow: 0px 5px 10px rgba(163, 182, 167, 0.2), 0px 9px 12px rgba(0, 0, 0, 0.4);
+  box-shadow: -5px 5px 2px rgba(163, 182, 167, 0.2), -10px 10px 5px rgba(0, 0, 0, 0.4);
 }
 
 /* line 3, ../sass/00-elements/filters.scss */
@@ -1090,7 +1187,7 @@ section:nth-child(even) {
 /* line 98, ../sass/03-display-theme/main.scss */
 [aria-labelledby="Buttons"] main div#button-display {
   display: flex;
-  flex-flow: row;
+  flex-flow: column;
   justify-content: space-around;
   align-items: center;
   width: 100vw;
@@ -1117,14 +1214,23 @@ section:nth-child(even) {
   background-color: #3b3b3b;
 }
 /* line 120, ../sass/03-display-theme/main.scss */
-[aria-labelledby="Buttons"] main div#button-display .col {
+[aria-labelledby="Buttons"] main div#button-display div {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+}
+/* line 127, ../sass/03-display-theme/main.scss */
+[aria-labelledby="Buttons"] main div#button-display div.col {
   height: 70vh;
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: space-around;
 }
-/* line 128, ../sass/03-display-theme/main.scss */
+/* line 136, ../sass/03-display-theme/main.scss */
 [aria-labelledby="Buttons"] main header {
   display: flex;
   flex-flow: column;
@@ -1134,7 +1240,7 @@ section:nth-child(even) {
   width: 100vw;
   min-width: 100%;
 }
-/* line 136, ../sass/03-display-theme/main.scss */
+/* line 144, ../sass/03-display-theme/main.scss */
 [aria-labelledby="Buttons"] main header div {
   align-items: center;
   justify-content: space-around;
@@ -1142,7 +1248,7 @@ section:nth-child(even) {
   display: flex;
   flex-flow: row;
 }
-/* line 144, ../sass/03-display-theme/main.scss */
+/* line 152, ../sass/03-display-theme/main.scss */
 [aria-labelledby="Buttons"] main nav {
   display: flex;
   flex-flow: row;

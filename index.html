@@ -7,11 +7,9 @@
     <meta name="viewport" content="width=device-width" />
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/data.json"></script>
     <script src="js/main.js"></script>
     <script src-"js/modernizer-custom.js"></script>
     <link href="filter.svg"/>
-    <link href="spirt.svg" />
     <link href="stylesheets/screen.css" rel="stylesheet" type="text/css" />
     <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -98,7 +96,7 @@
     <section id="button" role="region" aria-labelledby="Buttons">
       <main>
         <header>
-          <h3><span id="title">Flat/Float</span> button</h3>
+          <h3><span id="title">Transition</span> button</h3>
           <div>
             <h6>icons from <a href="https://material.io/icons/">material design</a></h6>
             <span><h5> background color </h5>
@@ -112,7 +110,7 @@
           </div>
         </header>
         <div id="button-display" class="lightgrey">
-          <div id="raised-button" style="display: none; visibility: hidden;">
+          <div id="raised-btn" style="display: none; visibility: hidden;">
             <div class="col">
               <button class="information">information basic</button>
               <button class="rounded information">information Roudned</button>
@@ -148,13 +146,30 @@
               <button class="circle inactive material-icons">close</button>
             </div>
           </div>
-          <div id="flat-float-btn">
+          <div id="flat-float-btn" style="display: none; visibility: hidden;">
             <div class="col">
               <a class="flat btn success">success flat</a>
               <a class="flat btn danger">danger flat</a>
               <a class="flat btn information">information flat</a>
-              <a class="flat btn neutral">neutral flat</a>
+              <a class="flat btn inactive">inactive flat</a>
               <a class="circle flat neutral material-icons">done</a>
+            </div>
+            <div class="col">
+              <a class="flat btn success large">Large btn</a>
+              <a class="flat btn danger">Normal btn</a>
+              <a class="flat btn information small">SM btn</a>
+            </div>
+            <div class="col">
+              <a class="btn success float">success float</a>
+              <a class="float btn danger">danger float</a>
+              <a class="float btn information">information float</a>
+              <a class="float btn inactive">inactive float</a>
+              <a class="circle float neutral material-icons">done</a>
+            </div>
+          </div>
+          <div id="transition-btn">
+            <div class="col">
+
             </div>
             <div class="col">
 
@@ -176,7 +191,7 @@
     </section>
     <section role="region" labelledby="images">
       <header>
-
+        <img class="hero" src=""  />
       </header>
       <main>
 

@@ -1,5 +1,5 @@
 //rest
-a.btn{
+a.btn, a[class~="btn"]{
   text-decoration: none;
   background-color: #EEEEEE;
   color: #333333;
@@ -22,6 +22,7 @@ $invertgrey: invert($inabg);
 a.btn, button, a[class~="btn"]{
   min-height: 2.5rem;
   min-width: 8.75rem;
+  width: 15vw;
   font-size: 1rem;
   &.information{
     border-top: 1px solid lighten($blue, 15%);
@@ -71,7 +72,7 @@ a.btn, button, a[class~="btn"]{
   }
   &:hover{
     transition: .8s;
-    filter: invert(.4);
+    filter: opacity(.5);
   }
   &:active{
     filter: invert(0);
@@ -89,8 +90,26 @@ a.btn, button, a[class~="btn"]{
     border-left: 1px solid lighten($grey, 15%);
     background-color: transparentize($inabg, .8);
     transition: 0;
-    filter: invert(0);
+    filter: opacity(1);
     box-shadow: none;
+  }
+  &.float{
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+    filter: opacity(1);
+    box-shadow: 0px 5.5px 5.5px $black, 0px 5.5px 5.5px $inabg, 0px -4.5px 4.5px $black, 0px -4.5px 4.5px $inabg;
+    &.inactive{
+      box-shadow: inset 0px 4px 8px $black, inset 0px 2px 5px $inabg, inset 0px -4px 8px $black, inset 0px -2px 5px $inabg;
+      &:hover{
+        text-decoration: line-through;
+      }
+    }
+    &.circle{
+      box-shadow: none;
+      box-shadow: 0px 4px 8px $black, 0px 2px 5px $inabg,-1px 2px 1px $black, -1px 1px $inabg, 3px 4px 8px $black, 3px 2px 5px $inabg;
+    }
   }
   &.flat{
     border-top: 0;
@@ -98,16 +117,23 @@ a.btn, button, a[class~="btn"]{
     border-bottom: 0;
     border-left: 0;
     transition: 0;
-    filter: invert(0);
+    filter: opacity(1);
     box-shadow: none;
     transition: none;
+    &.inactive{
+      background: transparentize($grey, .4);
+      color: #3b3b3b;
+      &:hover{
+        text-decoration: line-through;
+      }
+    }
     &.information{
       transition: .2s;
       background-color: $blue;
       &:hover{
-        border-top: 4px solid $invertblue;
-        border-left: 4px solid $invertblue;
-        border-right: 4px solid $invertblue;
+        border-top: 2px solid $invertblue;
+        border-left: 2px solid $invertblue;
+        border-right: 2px solid $invertblue;
       }
       &:active{
         border: none;
@@ -121,9 +147,9 @@ a.btn, button, a[class~="btn"]{
       transition: .2s;
       background-color: $green;
       &:hover{
-        border-top: 4px solid $invertgreen;
-        border-left: 4px solid $invertgreen;
-        border-right: 4px solid $invertgreen;
+        border-top: 2px solid $invertgreen;
+        border-left: 2px solid $invertgreen;
+        border-right: 2px solid $invertgreen;
       }
       &:active{
         border: none;
@@ -138,9 +164,9 @@ a.btn, button, a[class~="btn"]{
       transition: .2s;
       background-color: $red;
       &:hover{
-        border-top: 4px solid $invertred;
-        border-left: 4px solid $invertred;
-        border-right: 4px solid $invertred;
+        border-top: 2px solid $invertred;
+        border-left: 2px solid $invertred;
+        border-right: 2px solid $invertred;
       }
       &:active{
         border: none;
@@ -154,9 +180,9 @@ a.btn, button, a[class~="btn"]{
       transition: .2s;
       background-color: $inabg;
       &:hover{
-        border-top: 4px solid $invertgrey;
-        border-left: 4px solid $invertgrey;
-        border-right: 4px solid $invertgrey;
+        border-top: 2px solid $invertgrey;
+        border-left: 2px solid $invertgrey;
+        border-right: 2px solid $invertgrey;
       }
       &:active{
         border: none;
@@ -165,6 +191,28 @@ a.btn, button, a[class~="btn"]{
       &:focus{
         border: 4px inset $invertgrey;
       }
+    }
+    &.large{
+      min-width: 15rem;
+      width: 24vw;
+      max-width: 500px;
+    }
+    &.small{
+      min-width: 36px;
+      width: 7vw;
+      max-width: 80px;
+      word-wrap: none;
+      max-height: 2.5rem;
+    }
+    &.icon{
+      min-height: 24px;
+      min-width: 24px;
+      width: 3.1vw;
+      height: 3.1vw;
+      max-widht: 48px;
+      max-height: 48px;
+      font-size: calc(.875rem + .5vw);
+      line-height: 1.5;
     }
   }
 }
@@ -187,6 +235,6 @@ a.circle{
   word-wrap: break-word;
   min-width: 0 !important;
   min-height: 0 !important;
-  height: 48px;
-  width: 48px;
+  height: 48px !important;
+  width: 48px !important;
 }

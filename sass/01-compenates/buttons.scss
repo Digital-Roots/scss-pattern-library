@@ -120,16 +120,17 @@ a.btn, button, a[class~="btn"]{
     filter: opacity(1);
     box-shadow: none;
     transition: none;
+    background-color: transparentize($black, .85);
     &.inactive{
-      background: transparentize($grey, .4);
-      color: #3b3b3b;
+      background: inherit;
+      color: $inabg;
       &:hover{
         text-decoration: line-through;
       }
     }
     &.information{
       transition: .2s;
-      background-color: $blue;
+      color: $blue;
       &:hover{
         border-top: 2px solid $invertblue;
         border-left: 2px solid $invertblue;
@@ -145,7 +146,7 @@ a.btn, button, a[class~="btn"]{
     }
     &.success{
       transition: .2s;
-      background-color: $green;
+      color: $green;
       &:hover{
         border-top: 2px solid $invertgreen;
         border-left: 2px solid $invertgreen;
@@ -162,7 +163,7 @@ a.btn, button, a[class~="btn"]{
     }
     &.danger{
       transition: .2s;
-      background-color: $red;
+      color: inherit;
       &:hover{
         border-top: 2px solid $invertred;
         border-left: 2px solid $invertred;
@@ -178,7 +179,7 @@ a.btn, button, a[class~="btn"]{
     }
     &.neutral{
       transition: .2s;
-      background-color: $inabg;
+      color: $inabg;
       &:hover{
         border-top: 2px solid $invertgrey;
         border-left: 2px solid $invertgrey;
@@ -227,7 +228,7 @@ a.circle{
 }
 .circle{
   &:active{
-    box-shadow: -5px 5px 2px transparentize($inabg, .8), -10px 10px 5px transparentize($dfad, .6);
+    box-shadow: 3px 3px 2px transparentize($inabg, .8), 6px 6px 5px transparentize($dfad, .6);
   }
   @extend button ;
   @extend.btn ;

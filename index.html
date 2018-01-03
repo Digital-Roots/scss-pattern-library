@@ -5,11 +5,11 @@
     <title>Pattern Library</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/main.js"></script>
     <script src-"js/modernizer-custom.js"></script>
     <link href="filter.svg"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="stylesheets/screen.css" rel="stylesheet" type="text/css" />
     <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -96,7 +96,7 @@
     <section id="button" role="region" aria-labelledby="Buttons">
       <main>
         <header>
-          <h3><span id="title">Transition</span> button</h3>
+          <h3><span class="title">Raised</span> button</h3>
           <div>
             <h6>icons from <a href="https://material.io/icons/">material design</a></h6>
             <span><h5> background color </h5>
@@ -110,7 +110,7 @@
           </div>
         </header>
         <div id="button-display" class="lightgrey">
-          <div id="raised-btn" style="display: none; visibility: hidden;">
+          <div id="raised-btn" class="show">
             <div class="col">
               <button class="information">information basic</button>
               <button class="rounded information">information Roudned</button>
@@ -146,7 +146,7 @@
               <button class="circle inactive material-icons">close</button>
             </div>
           </div>
-          <div id="flat-float-btn" style="display: none; visibility: hidden;">
+          <div id="flat-float-btn" class="hide">
             <div class="col">
               <a class="flat btn success">success flat</a>
               <a class="flat btn danger">danger flat</a>
@@ -167,31 +167,16 @@
               <a class="circle float neutral material-icons">done</a>
             </div>
           </div>
-          <div id="transition-btn">
-            <div class="col">
-
-            </div>
-            <div class="col">
-
-            </div>
-            <div class="col">
-
-            </div>
-            <div class="col">
-
-            </div>
-          </div>
         </div>
         <nav>
-          <button class="inactive">Flat/Floating</button>
-          <button class="inactive">Raised</button>
-          <button class="inactive">Transitions</button>
+          <button id="flat" class="flat information btn">Flat/Floating</button>
+          <button id="raised" class="raised btn success">Raised</button>
         </nav>
       </main>
     </section>
     <section role="region" labelledby="images">
       <header>
-        <img class="hero" src=""  />
+        <h3>Images</h3>
       </header>
       <main>
 

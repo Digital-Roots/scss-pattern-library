@@ -1,0 +1,241 @@
+//rest
+a.btn, a[class~="btn"]{
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+  text-align: center;
+  line-height: 2;
+  display: inline-block;
+}
+//base
+$dfad: darken($grey, 35%);
+$inabg: lighten($grey, 35%);
+$invertblue: invert($blue);
+$invertred: invert($red);
+$invertgreen: invert($green);
+$invertgrey: invert($inabg);
+a.btn, button, a[class~="btn"]{
+  min-height: 2.5rem;
+  min-width: 8.75rem;
+  width: 15vw;
+  font-size: 1rem;
+  &.information{
+    border-top: 1px solid lighten($blue, 15%);
+    border-right: 1px solid darken($blue, 20%);
+    border-bottom: 1px solid darken($blue, 20%);
+    border-left: 1px solid lighten($blue, 15%);
+    background-color: $blue;
+    color: #2b2b2b;
+    text-shadow: .5px 1px 1px darken($blue, 5%);
+  }
+  &.success{
+    border-top: 1px solid lighten($green, 15%);
+    border-right: 1px solid darken($green, 20%);
+    border-bottom: 1px solid darken($green, 20%);
+    border-left: 1px solid lighten($green, 15%);
+    background-color: $green;
+    color: #2b2b2b;
+    text-shadow: .5px 1px 1px darken($green, 5%);
+  }
+  &.danger{
+    border-top: 1px solid lighten($red, 15%);
+    border-right: 1px solid darken($red, 20%);
+    border-bottom: 1px solid darken($red, 20%);
+    border-left: 1px solid lighten($red, 15%);
+    background-color: $red;
+    text-shadow: .5px 1px 1px darken($red, 5%);
+    color: #2b2b2b;
+  }
+  &.danger-outline{
+    text-shadow: .75px .75px 1px  darken($red, 15%);
+    border-top: 1px solid darken($red, 25%);
+    border-right: 1px solid $red;
+    border-bottom: 1px solid $red;
+    border-left: 1px solid darken($red, 25%);
+    color: $red;
+    background-color: transparentize($red, .9);
+  }
+  &.neutral{
+    color: #2b2b2b;
+    border-top: 1px solid darken($grey, 15%);
+    border-right: 1px solid lighten($grey, 5%);
+    border-bottom: 1px solid lighten($grey, 5%);
+    border-left: 1px solid darken($grey, 15%);
+    box-shadow: .5px .5px 1px $inabg inset;
+    background-color: $grey;
+    text-shadow: 1px 1px 1px lighten($grey, 5%);
+  }
+  &:hover{
+    transition: .8s;
+    filter: opacity(.5);
+  }
+  &:active{
+    filter: invert(0);
+    transition: .2s;
+    box-shadow: 5px 5px 10px transparentize($inabg, .8), 9px 9px 12px transparentize($dfad, .6);
+  }
+  &:focus{
+    filter: grayscale(.5);
+  }
+  &.inactive{
+    color: lighten($grey, 25%);
+    border-top: 1px solid lighten($grey, 15%);
+    border-right: 1px solid lighten($grey, 35%);
+    border-bottom: 1px solid lighten($grey, 35%);
+    border-left: 1px solid lighten($grey, 15%);
+    background-color: transparentize($inabg, .8);
+    transition: 0;
+    filter: opacity(1);
+    box-shadow: none;
+  }
+  &.float{
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+    filter: opacity(1);
+    box-shadow: 0px 5.5px 5.5px $black, 0px 5.5px 5.5px $inabg, 0px -4.5px 4.5px $black, 0px -4.5px 4.5px $inabg;
+    &.inactive{
+      box-shadow: inset 0px 4px 8px $black, inset 0px 2px 5px $inabg, inset 0px -4px 8px $black, inset 0px -2px 5px $inabg;
+      &:hover{
+        text-decoration: line-through;
+      }
+    }
+    &.circle{
+      box-shadow: none;
+      box-shadow: 0px 4px 8px $black, 0px 2px 5px $inabg,-1px 2px 1px $black, -1px 1px $inabg, 3px 4px 8px $black, 3px 2px 5px $inabg;
+    }
+  }
+  &.flat{
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+    transition: 0;
+    filter: opacity(1);
+    box-shadow: none;
+    transition: none;
+    background-color: transparentize($black, .85);
+    &.inactive{
+      background: inherit;
+      color: $inabg;
+      &:hover{
+        text-decoration: line-through;
+      }
+    }
+    &.information{
+      transition: .2s;
+      color: $blue;
+      &:hover{
+        border-top: 2px solid $invertblue;
+        border-left: 2px solid $invertblue;
+        border-right: 2px solid $invertblue;
+      }
+      &:active{
+        border: none;
+        box-shadow: 1px 2px 3px $green;
+      }
+      &:focus{
+          border: 4px inset $invertblue;
+      }
+    }
+    &.success{
+      transition: .2s;
+      color: $green;
+      &:hover{
+        border-top: 2px solid $invertgreen;
+        border-left: 2px solid $invertgreen;
+        border-right: 2px solid $invertgreen;
+      }
+      &:active{
+        border: none;
+        box-shadow: 1px 2px 3px $red;
+      }
+      &:focus{
+       border: 4px inset $invertgreen;
+
+      }
+    }
+    &.danger{
+      transition: .2s;
+      color: inherit;
+      &:hover{
+        border-top: 2px solid $invertred;
+        border-left: 2px solid $invertred;
+        border-right: 2px solid $invertred;
+      }
+      &:active{
+        border: none;
+        box-shadow: 1px 2px 3px $blue;
+      }
+      &:focus{
+        border: 4px inset $invertred;
+      }
+    }
+    &.neutral{
+      transition: .2s;
+      color: $inabg;
+      &:hover{
+        border-top: 2px solid $invertgrey;
+        border-left: 2px solid $invertgrey;
+        border-right: 2px solid $invertgrey;
+      }
+      &:active{
+        border: none;
+        box-shadow: 1px 2px 3px $invertgrey;
+      }
+      &:focus{
+        border: 4px inset $invertgrey;
+      }
+    }
+    &.large{
+      min-width: 15rem;
+      width: 24vw;
+      max-width: 500px;
+    }
+    &.small{
+      min-width: 36px;
+      width: 7vw;
+      max-width: 80px;
+      word-wrap: none;
+      max-height: 2.5rem;
+    }
+    &.icon{
+      min-height: 24px;
+      min-width: 24px;
+      width: 3.1vw;
+      height: 3.1vw;
+      max-widht: 48px;
+      max-height: 48px;
+      font-size: calc(.875rem + .5vw);
+      line-height: 1.5;
+    }
+  }
+}
+a.circle{
+  line-height: 1.5;
+  font-size:  1.7rem;
+}
+.rounded{
+  @extend button ;
+  @extend.btn ;
+  border-radius: .987rem;
+}
+.circle{
+  &:active{
+    box-shadow: 3px 3px 2px transparentize($inabg, .8), 6px 6px 5px transparentize($dfad, .6);
+  }
+  @extend button ;
+  @extend.btn ;
+  border-radius: 50%;
+  word-wrap: break-word;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  height: 48px !important;
+  width: 48px !important;
+}

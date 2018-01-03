@@ -1,21 +1,5 @@
-.filter{
-  &-gray{
-    &-50{
-      filter: grayscale(.5);
-    }
-    &-100{
-      filter: grayscale(1);
-    }
-  }
-  &-sepia{
-    &-50{
-      filter: sepia(.5);
-    }
-    &-100{
-      filter: sepia(1);
-    }
-  }
-  &-text{
+.filter-{
+  &-type-{
     &-Text-Stroke{
       filter: url(filters.svg#Text-Stroke);
     }

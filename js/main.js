@@ -90,8 +90,16 @@ $(document).ready(function(){
     $('#colors').addClass(this.value + "-bg");
   });
   //Buttons
-  $('select#button-bg-color').on('change', function(){
-    $('#button-display').removeAttr('class');
+  $('select#button-bg-color').on('change', function() {
+    $("#button-display").removeAttr('class');
     $('#button-display').addClass(this.value);
+  });
+  $('button#flat').click(function(){
+    $('#flat-float-btn').removeAttr('class').addClass('show');
+    $('#raised-btn').removeAttr('class').addClass('hide');
+  });
+  $('button#raised').click(function(){
+    $('#raised-btn').removeAttr('class').addClass('show');
+    $('#flat-float-btn').removeAttr('class').addClass('hide');
   });
 });

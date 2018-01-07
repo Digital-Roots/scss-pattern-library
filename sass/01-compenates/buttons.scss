@@ -138,7 +138,7 @@ a.btn, button, a[class~="btn"]{
       }
       &:active{
         border: none;
-        box-shadow: 1px 2px 3px $green;
+        box-shadow: 1px 2px 3px $orange;
       }
       &:focus{
           border: 4px inset $invertblue;
@@ -163,7 +163,7 @@ a.btn, button, a[class~="btn"]{
     }
     &.danger{
       transition: .2s;
-      color: inherit;
+      color: $red;
       &:hover{
         border-top: 2px solid $invertred;
         border-left: 2px solid $invertred;

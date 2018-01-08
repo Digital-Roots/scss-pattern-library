@@ -93,34 +93,47 @@ a.btn, button, a[class~="btn"]{
     filter: opacity(1);
     box-shadow: none;
   }
-  &.float{
+  // &.float{
+  //   border-top: 0;
+  //   border-right: 0;
+  //   border-bottom: 0;
+  //   border-left: 0;
+  //   filter: opacity(1);
+  //   box-shadow: 0px 3.5px 5.5px $black, 0px 5.5px 5.5px $inabg, 0px -1.5px 1.5px $black, 0px -2.5px 2.5px $inabg, 1.85px 0px 2px $black, 1.85px 0px 2px $inabg, -1.85px 0px 2px $black, -1.85px 0px 2px $inabg;
+  //   &.inactive{
+  //     box-shadow: none;
+  //     &:hover{
+  //       text-decoration: line-through;
+  //     }
+  //   }
+  //   &.circle{
+  //     box-shadow: none;
+  //     box-shadow: 0px 4px 8px $black, 0px 2px 5px $inabg,-1px 2px 1px $black, -1px 1px $inabg, 3px 4px 8px $black, 3px 2px 5px $inabg;
+  //   }
+  // }
+  &.flat{
+    box-shadow: none;
+    transition: none;
     border-top: 0;
     border-right: 0;
     border-bottom: 0;
     border-left: 0;
     filter: opacity(1);
-    box-shadow: 0px 5.5px 5.5px $black, 0px 5.5px 5.5px $inabg, 0px -4.5px 4.5px $black, 0px -4.5px 4.5px $inabg;
     &.inactive{
-      box-shadow: inset 0px 4px 8px $black, inset 0px 2px 5px $inabg, inset 0px -4px 8px $black, inset 0px -2px 5px $inabg;
+      box-shadow: none;
       &:hover{
         text-decoration: line-through;
       }
     }
-    &.circle{
-      box-shadow: none;
-      box-shadow: 0px 4px 8px $black, 0px 2px 5px $inabg,-1px 2px 1px $black, -1px 1px $inabg, 3px 4px 8px $black, 3px 2px 5px $inabg;
+    & .tint-15{
+      background-color: transparentize($black, .85);
     }
-  }
-  &.flat{
-    border-top: 0;
-    border-right: 0;
-    border-bottom: 0;
-    border-left: 0;
-    transition: 0;
-    filter: opacity(1);
-    box-shadow: none;
-    transition: none;
-    background-color: transparentize($black, .85);
+    & .tint-50{
+      background-color: transparentize($black, .5);
+    }
+    & .tint-85{
+      background-color: transparentize($black, .15);
+    }
     &.inactive{
       background: inherit;
       color: $inabg;
@@ -128,69 +141,101 @@ a.btn, button, a[class~="btn"]{
         text-decoration: line-through;
       }
     }
-    &.information{
-      transition: .2s;
-      color: $blue;
-      &:hover{
-        border-top: 2px solid $invertblue;
-        border-left: 2px solid $invertblue;
-        border-right: 2px solid $invertblue;
-      }
-      &:active{
-        border: none;
-        box-shadow: 1px 2px 3px $orange;
-      }
-      &:focus{
+    &-clear{
+      background-color: rgba(0,0,0,0);
+      border: none;
+      &.information{
+        transition: .2s;
+        color: $blue;
+        box-shadow: none;
+        transition: none;
+        border-top: 0;
+        border-right: 0;
+        border-bottom: 0;
+        border-left: 0;
+        filter: grayscale(0);
+        &-inverse:hover{
+          border-top: 2px solid $invertblue;
+          border-left: 2px solid $invertblue;
+          border-right: 2px solid $invertblue;
+        }
+        &-inverse:active{
+          border: none;
+          box-shadow: 1px 2px 3px $orange;
+        }
+        &-inverse:focus{
           border: 4px inset $invertblue;
+        }
       }
-    }
-    &.success{
-      transition: .2s;
-      color: $green;
-      &:hover{
-        border-top: 2px solid $invertgreen;
-        border-left: 2px solid $invertgreen;
-        border-right: 2px solid $invertgreen;
-      }
-      &:active{
-        border: none;
-        box-shadow: 1px 2px 3px $red;
-      }
-      &:focus{
-       border: 4px inset $invertgreen;
+      &.success{
+        transition: .2s;
+        color: $green;
+        box-shadow: none;
+        transition: none;
+        border-top: 0;
+        border-right: 0;
+        border-bottom: 0;
+        border-left: 0;
+        filter: grayscale(0);
+        &-inverse:hover{
+          border-top: 2px solid $invertgreen;
+          border-left: 2px solid $invertgreen;
+          border-right: 2px solid $invertgreen;
+        }
+        &-inverse:active{
+          border: none;
+          box-shadow: 1px 2px 3px $red;
+        }
+        &-inverse:focus{
+          border: 4px inset $invertgreen;
 
+        }
       }
-    }
-    &.danger{
-      transition: .2s;
-      color: $red;
-      &:hover{
-        border-top: 2px solid $invertred;
-        border-left: 2px solid $invertred;
-        border-right: 2px solid $invertred;
+      &.danger{
+        transition: .2s;
+        color: $red;
+        box-shadow: none;
+        transition: none;
+        border-top: 0;
+        border-right: 0;
+        border-bottom: 0;
+        border-left: 0;
+        filter: grayscale(0);
+        &-inverse:hover{
+          border-top: 2px solid $invertred;
+          border-left: 2px solid $invertred;
+          border-right: 2px solid $invertred;
+        }
+        &-inverse:active{
+          border: none;
+          box-shadow: 1px 2px 3px $blue;
+        }
+        &-inverse:focus{
+          border: 4px inset $invertred;
+        }
       }
-      &:active{
-        border: none;
-        box-shadow: 1px 2px 3px $blue;
-      }
-      &:focus{
-        border: 4px inset $invertred;
-      }
-    }
-    &.neutral{
-      transition: .2s;
-      color: $inabg;
-      &:hover{
-        border-top: 2px solid $invertgrey;
-        border-left: 2px solid $invertgrey;
-        border-right: 2px solid $invertgrey;
-      }
-      &:active{
-        border: none;
-        box-shadow: 1px 2px 3px $invertgrey;
-      }
-      &:focus{
-        border: 4px inset $invertgrey;
+      &.neutral{
+        transition: .2s;
+        color: $inabg;
+        box-shadow: none;
+        transition: none;
+        border-top: 0;
+        border-right: 0;
+        border-bottom: 0;
+        border-left: 0;
+        filter: grayscale(0);
+        &-inverse:hover{
+          border-top: 2px solid $invertgrey;
+          border-left: 2px solid $invertgrey;
+          border-right: 2px solid $invertgrey;
+        }
+        &-inverse:active{
+          border: none;
+          box-shadow: 1px 2px 3px $invertgrey;
+        }
+        &-inverse:focus{
+          border: 4px inset $invertgrey;
+        }
       }
     }
     &.large{

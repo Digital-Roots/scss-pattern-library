@@ -1,0 +1,8 @@
+img{
+  width: 100%;
+  height: auto;
+}
+img[alt=""],
+img:not([alt]){
+  border: 5px dash #c00;
+}

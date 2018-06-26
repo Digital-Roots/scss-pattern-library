@@ -77,9 +77,293 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*******
 
 
-Base/Varibles
+alternative sheets
 
 *****/
+/* Print Style */
+@media print {
+  /* line 3, ../sass/print.scss */
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 12, ../sass/print.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 17, ../sass/print.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 21, ../sass/print.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 25, ../sass/print.scss */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  /* line 30, ../sass/print.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 36, ../sass/print.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* line 40, ../sass/print.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 45, ../sass/print.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  /* line 49, ../sass/print.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 56, ../sass/print.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+/* line 2, ../sass/03-lay-out/main.scss */
+.side-scroll {
+  overflow-x: scroll;
+}
+
+/* line 5, ../sass/03-lay-out/main.scss */
+.base {
+  overflow-x: hidden;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  width: 100vw;
+  height: 100%;
+}
+
+/* line 13, ../sass/03-lay-out/main.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 16, ../sass/03-lay-out/main.scss */
+section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 7.5px;
+}
+/* line 24, ../sass/03-lay-out/main.scss */
+section:nth-child(odd) {
+  background-color: lightgrey;
+}
+/* line 27, ../sass/03-lay-out/main.scss */
+section:nth-child(even) {
+  background-color: grey;
+}
+/* line 30, ../sass/03-lay-out/main.scss */
+section .no-bg {
+  background-color: none;
+}
+/* line 33, ../sass/03-lay-out/main.scss */
+section.x2 {
+  height: 200vh;
+}
+
+/* line 39, ../sass/03-lay-out/main.scss */
+[aria-labelledby="typeography"] button, [aria-labelledby="typeography"] .rounded, [aria-labelledby="typeography"] .circle {
+  border: none;
+  border-radius: 0;
+  font-size: 1rem;
+  padding: .2rem;
+  margin: .3rem;
+}
+@media screen and (min-width: 700px) {
+  /* line 39, ../sass/03-lay-out/main.scss */
+  [aria-labelledby="typeography"] button, [aria-labelledby="typeography"] .rounded, [aria-labelledby="typeography"] .circle {
+    font-size: 1.2rem;
+    padding: .25rem;
+    margin: .25rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* line 39, ../sass/03-lay-out/main.scss */
+  [aria-labelledby="typeography"] button, [aria-labelledby="typeography"] .rounded, [aria-labelledby="typeography"] .circle {
+    font-size: 1.75rem;
+    padding: .25rem;
+    margin: .3rem;
+  }
+}
+/* line 56, ../sass/03-lay-out/main.scss */
+[aria-labelledby="typeography"] .inverse {
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 0;
+  font-size: 1rem;
+  padding: .2rem;
+  margin: .3rem;
+}
+@media screen and (min-width: 700px) {
+  /* line 56, ../sass/03-lay-out/main.scss */
+  [aria-labelledby="typeography"] .inverse {
+    font-size: 1.2rem;
+    padding: .25rem;
+    margin: .25rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* line 56, ../sass/03-lay-out/main.scss */
+  [aria-labelledby="typeography"] .inverse {
+    font-size: 1.75rem;
+    padding: .25rem;
+    margin: .3rem;
+  }
+}
+
+/* line 78, ../sass/03-lay-out/main.scss */
+[aria-labelledby="color pallet"] #colors {
+  height: 50vh;
+  width: 50vw;
+  display: block;
+}
+/* line 83, ../sass/03-lay-out/main.scss */
+[aria-labelledby="color pallet"] #color-pallet {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+/* line 90, ../sass/03-lay-out/main.scss */
+[aria-labelledby="color pallet"] select#color-selector {
+  width: 50vw;
+  font-size: 1.2rem;
+}
+
+/* line 97, ../sass/03-lay-out/main.scss */
+[aria-labelledby="Buttons"] main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 100vw;
+}
+/* line 104, ../sass/03-lay-out/main.scss */
+[aria-labelledby="Buttons"] main div#button-display {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+}
+/* line 111, ../sass/03-lay-out/main.scss */
+[aria-labelledby="Buttons"] main div#button-display.grey {
+  background: grey;
+}
+/* line 114, ../sass/03-lay-out/main.scss */
+[aria-labelledby="Buttons"] main div#button-display.lightgrey {
+  background-color: lightgrey;
+}
+/* line 117, ../sass/03-lay-out/main.scss */
+[aria-labelledby="Buttons"] main div#button-display.white {
+  background-color: white;
+}
+/* line 120, ../sass/03-lay-out/main.scss */
+[aria-labelledby="Buttons"] main div#button-display.black {
+  background-color: black;
+}
+/* line 123, ../sass/03-lay-out/main.scss */
+[aria-labelledby="Buttons"] main div#button-display.hex3b {
+  background-color: #3b3b3b;
+}
+/* line 126, ../sass/03-lay-out/main.scss */
+[aria-labelledby="Buttons"] main div#button-display div {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+}
+/* line 133, ../sass/03-lay-out/main.scss */
+[aria-labelledby="Buttons"] main div#button-display div.col {
+  height: 70vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+}
+/* line 142, ../sass/03-lay-out/main.scss */
+[aria-labelledby="Buttons"] main header {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  height: 15vh;
+  width: 100vw;
+  min-width: 100%;
+}
+/* line 150, ../sass/03-lay-out/main.scss */
+[aria-labelledby="Buttons"] main header div {
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  display: flex;
+  flex-flow: row;
+}
+/* line 158, ../sass/03-lay-out/main.scss */
+[aria-labelledby="Buttons"] main nav {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 15vh;
+}
+
+/* forgot alt for image */
+/* line 2, ../sass/01-compenates/random.scss */
+.hide {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* line 6, ../sass/01-compenates/random.scss */
+.show {
+  display: inherit !important;
+  visibility: visible !important;
+}
+
 /*******
 
 
@@ -624,28 +908,6 @@ p {
 }
 
 /* line 37, ../sass/00-elements/typeography.scss */
-ul,
-ol {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-/* line 42, ../sass/00-elements/typeography.scss */
-ul li,
-ol li {
-  line-height: 1.5;
-}
-
-/* line 46, ../sass/00-elements/typeography.scss */
-ul ul,
-ol ul,
-ul ol,
-ol ol {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-/* line 53, ../sass/00-elements/typeography.scss */
 blockquote {
   line-height: 1.5;
   margin-top: 1.5rem;
@@ -653,7 +915,7 @@ blockquote {
 }
 
 /* Headings */
-/* line 59, ../sass/00-elements/typeography.scss */
+/* line 43, ../sass/00-elements/typeography.scss */
 h1,
 h2,
 h3,
@@ -667,65 +929,65 @@ h6 {
   text-shadow: 1px 1px 3px #3b5998, 1px 1px 2px #1ed760;
 }
 
-/* line 71, ../sass/00-elements/typeography.scss */
+/* line 55, ../sass/00-elements/typeography.scss */
 h1 {
   font-size: 2.642rem;
   line-height: 2.15;
   margin-top: 2.85rem;
 }
 
-/* line 76, ../sass/00-elements/typeography.scss */
+/* line 60, ../sass/00-elements/typeography.scss */
 h2 {
   font-size: 2.328rem;
   line-height: 2.05;
 }
 
-/* line 80, ../sass/00-elements/typeography.scss */
+/* line 64, ../sass/00-elements/typeography.scss */
 h3 {
   font-size: calc(2.114rem + .1vw);
   line-height: 1.5;
 }
 
-/* line 84, ../sass/00-elements/typeography.scss */
+/* line 68, ../sass/00-elements/typeography.scss */
 h4 {
   font-size: calc(1.407rem + .5vw);
 }
 
-/* line 87, ../sass/00-elements/typeography.scss */
+/* line 71, ../sass/00-elements/typeography.scss */
 h5 {
   font-size: calc(1.013333333333333rem + .5vw);
 }
 
-/* line 90, ../sass/00-elements/typeography.scss */
+/* line 74, ../sass/00-elements/typeography.scss */
 h6 {
   font-size: calc(0.5535rem + .85vw);
 }
 
 /* Code blocks */
-/* line 94, ../sass/00-elements/typeography.scss */
+/* line 78, ../sass/00-elements/typeography.scss */
 code {
   vertical-align: bottom;
   background-color: rgba(100, 100, 100, 0.3);
 }
 
 /* line 3, ../sass/00-elements/filters.scss */
-.filter--type--Text-Stroke {
+.filter--text--Text-Stroke {
   filter: url(filters.svg#Text-Stroke);
 }
 /* line 6, ../sass/00-elements/filters.scss */
-.filter--type--Torn-Look {
+.filter--text--Torn-Look {
   filter: url(filters.svg#Torn-Look);
 }
 /* line 9, ../sass/00-elements/filters.scss */
-.filter--type--Color-Fill {
+.filter--text--Color-Fill {
   filter: url(filters.svg#Color-Fill);
 }
 /* line 12, ../sass/00-elements/filters.scss */
-.filter--type--Offsetting {
+.filter--text--Offsetting {
   filter: url(filters.svg#Offsetting);
 }
 /* line 15, ../sass/00-elements/filters.scss */
-.filter--type--Extrusion {
+.filter--text--Extrusion {
   filter: url(filters.svg#Extrusion);
 }
 
@@ -834,6 +1096,28 @@ a.btn.inactive, a.inactive.rounded, a.inactive.circle, button.inactive, .inactiv
   transition: 0;
   filter: opacity(1);
   box-shadow: none;
+}
+/* line 96, ../sass/01-compenates/buttons.scss */
+a.btn.float, a.float.rounded, a.float.circle, button.float, .float.rounded, .float.circle, a[class~="btn"].float {
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
+  filter: opacity(1);
+  box-shadow: 0px 3.5px 5.5px #3b3b3b, 0px 5.5px 5.5px #a3b6a7, 0px -1.5px 1.5px #3b3b3b, 0px -2.5px 2.5px #a3b6a7, 1.85px 0px 2px #3b3b3b, 1.85px 0px 2px #a3b6a7, -1.85px 0px 2px #3b3b3b, -1.85px 0px 2px #a3b6a7;
+}
+/* line 103, ../sass/01-compenates/buttons.scss */
+a.btn.float.inactive, a.float.inactive.rounded, a.float.inactive.circle, button.float.inactive, .float.inactive.rounded, .float.inactive.circle, a[class~="btn"].float.inactive {
+  box-shadow: none;
+}
+/* line 105, ../sass/01-compenates/buttons.scss */
+a.btn.float.inactive:hover, a.float.inactive.rounded:hover, a.float.inactive.circle:hover, button.float.inactive:hover, .float.inactive.rounded:hover, .float.inactive.circle:hover, a[class~="btn"].float.inactive:hover {
+  text-decoration: line-through;
+}
+/* line 109, ../sass/01-compenates/buttons.scss */
+a.btn.float.circle, a.float.circle, button.float.circle, .float.circle, a[class~="btn"].float.circle {
+  box-shadow: none;
+  box-shadow: 0px 4px 8px #3b3b3b, 0px 2px 5px #a3b6a7, -1px 2px 1px #3b3b3b, -1px 1px #a3b6a7, 3px 4px 8px #3b3b3b, 3px 2px 5px #a3b6a7;
 }
 /* line 114, ../sass/01-compenates/buttons.scss */
 a.btn.flat, a.flat.rounded, a.flat.circle, button.flat, .flat.rounded, .flat.circle, a[class~="btn"].flat {
@@ -1038,6 +1322,29 @@ a.circle {
   box-shadow: 3px 3px 2px rgba(163, 182, 167, 0.2), 6px 6px 5px rgba(0, 0, 0, 0.4);
 }
 
+/* line 1, ../sass/01-compenates/list.scss */
+ul,
+ol,
+dl {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* line 7, ../sass/01-compenates/list.scss */
+ul li,
+ol li {
+  line-height: 1.5;
+}
+
+/* line 11, ../sass/01-compenates/list.scss */
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /*******
 
 
@@ -1045,294 +1352,105 @@ templates
 
 
 *****/
-/*******
-
-
-alternative sheets
-
-*****/
-/* Print Style */
-@media print {
-  /* line 3, ../sass/print.scss */
-  *,
-  *:before,
-  *:after {
-    background: transparent !important;
-    color: #000 !important;
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  /* line 12, ../sass/print.scss */
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  /* line 17, ../sass/print.scss */
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-
-  /* line 21, ../sass/print.scss */
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-
-  /* line 25, ../sass/print.scss */
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: "";
-  }
-
-  /* line 30, ../sass/print.scss */
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  /* line 36, ../sass/print.scss */
-  thead {
-    display: table-header-group;
-  }
-
-  /* line 40, ../sass/print.scss */
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  /* line 45, ../sass/print.scss */
-  img {
-    max-width: 100% !important;
-  }
-
-  /* line 49, ../sass/print.scss */
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  /* line 56, ../sass/print.scss */
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
+/* line 1, ../sass/03-lay-out/page-layout.scss */
+#landing-page, #donor-page, #event-page, #issues-page {
+  /* HTML5 display-role reset for older browsers */
 }
-/* line 2, ../sass/03-display-theme/main.scss */
-.side-scroll {
-  overflow-x: scroll;
+/* line 12, ../sass/01-compenates/random.scss */
+#landing-page div, #landing-page span, #landing-page applet, #landing-page object, #landing-page iframe,
+#landing-page h1, #landing-page h2, #landing-page h3, #landing-page h4, #landing-page h5, #landing-page h6, #landing-page p, #landing-page blockquote, #landing-page pre,
+#landing-page a, #landing-page abbr, #landing-page acronym, #landing-page address, #landing-page big, #landing-page cite, #landing-page code,
+#landing-page del, #landing-page dfn, #landing-page em, #landing-page img, #landing-page ins, #landing-page kbd, #landing-page q, #landing-page s, #landing-page samp,
+#landing-page small, #landing-page strike, #landing-page strong, #landing-page sub, #landing-page sup, #landing-page tt, #landing-page var,
+#landing-page b, #landing-page u, #landing-page i, #landing-page center,
+#landing-page dl, #landing-page dt, #landing-page dd, #landing-page ol, #landing-page ul, #landing-page li,
+#landing-page fieldset, #landing-page form, #landing-page label, #landing-page legend,
+#landing-page table, #landing-page caption, #landing-page tbody, #landing-page tfoot, #landing-page thead, #landing-page tr, #landing-page th, #landing-page td,
+#landing-page article, #landing-page aside, #landing-page canvas, #landing-page details, #landing-page embed,
+#landing-page figure, #landing-page figcaption, #landing-page footer, #landing-page header, #landing-page hgroup,
+#landing-page menu, #landing-page nav, #landing-page output, #landing-page ruby, #landing-page section, #landing-page summary,
+#landing-page time, #landing-page mark, #landing-page audio, #landing-page video, #donor-page div, #donor-page span, #donor-page applet, #donor-page object, #donor-page iframe,
+#donor-page h1, #donor-page h2, #donor-page h3, #donor-page h4, #donor-page h5, #donor-page h6, #donor-page p, #donor-page blockquote, #donor-page pre,
+#donor-page a, #donor-page abbr, #donor-page acronym, #donor-page address, #donor-page big, #donor-page cite, #donor-page code,
+#donor-page del, #donor-page dfn, #donor-page em, #donor-page img, #donor-page ins, #donor-page kbd, #donor-page q, #donor-page s, #donor-page samp,
+#donor-page small, #donor-page strike, #donor-page strong, #donor-page sub, #donor-page sup, #donor-page tt, #donor-page var,
+#donor-page b, #donor-page u, #donor-page i, #donor-page center,
+#donor-page dl, #donor-page dt, #donor-page dd, #donor-page ol, #donor-page ul, #donor-page li,
+#donor-page fieldset, #donor-page form, #donor-page label, #donor-page legend,
+#donor-page table, #donor-page caption, #donor-page tbody, #donor-page tfoot, #donor-page thead, #donor-page tr, #donor-page th, #donor-page td,
+#donor-page article, #donor-page aside, #donor-page canvas, #donor-page details, #donor-page embed,
+#donor-page figure, #donor-page figcaption, #donor-page footer, #donor-page header, #donor-page hgroup,
+#donor-page menu, #donor-page nav, #donor-page output, #donor-page ruby, #donor-page section, #donor-page summary,
+#donor-page time, #donor-page mark, #donor-page audio, #donor-page video, #event-page div, #event-page span, #event-page applet, #event-page object, #event-page iframe,
+#event-page h1, #event-page h2, #event-page h3, #event-page h4, #event-page h5, #event-page h6, #event-page p, #event-page blockquote, #event-page pre,
+#event-page a, #event-page abbr, #event-page acronym, #event-page address, #event-page big, #event-page cite, #event-page code,
+#event-page del, #event-page dfn, #event-page em, #event-page img, #event-page ins, #event-page kbd, #event-page q, #event-page s, #event-page samp,
+#event-page small, #event-page strike, #event-page strong, #event-page sub, #event-page sup, #event-page tt, #event-page var,
+#event-page b, #event-page u, #event-page i, #event-page center,
+#event-page dl, #event-page dt, #event-page dd, #event-page ol, #event-page ul, #event-page li,
+#event-page fieldset, #event-page form, #event-page label, #event-page legend,
+#event-page table, #event-page caption, #event-page tbody, #event-page tfoot, #event-page thead, #event-page tr, #event-page th, #event-page td,
+#event-page article, #event-page aside, #event-page canvas, #event-page details, #event-page embed,
+#event-page figure, #event-page figcaption, #event-page footer, #event-page header, #event-page hgroup,
+#event-page menu, #event-page nav, #event-page output, #event-page ruby, #event-page section, #event-page summary,
+#event-page time, #event-page mark, #event-page audio, #event-page video, #issues-page div, #issues-page span, #issues-page applet, #issues-page object, #issues-page iframe,
+#issues-page h1, #issues-page h2, #issues-page h3, #issues-page h4, #issues-page h5, #issues-page h6, #issues-page p, #issues-page blockquote, #issues-page pre,
+#issues-page a, #issues-page abbr, #issues-page acronym, #issues-page address, #issues-page big, #issues-page cite, #issues-page code,
+#issues-page del, #issues-page dfn, #issues-page em, #issues-page img, #issues-page ins, #issues-page kbd, #issues-page q, #issues-page s, #issues-page samp,
+#issues-page small, #issues-page strike, #issues-page strong, #issues-page sub, #issues-page sup, #issues-page tt, #issues-page var,
+#issues-page b, #issues-page u, #issues-page i, #issues-page center,
+#issues-page dl, #issues-page dt, #issues-page dd, #issues-page ol, #issues-page ul, #issues-page li,
+#issues-page fieldset, #issues-page form, #issues-page label, #issues-page legend,
+#issues-page table, #issues-page caption, #issues-page tbody, #issues-page tfoot, #issues-page thead, #issues-page tr, #issues-page th, #issues-page td,
+#issues-page article, #issues-page aside, #issues-page canvas, #issues-page details, #issues-page embed,
+#issues-page figure, #issues-page figcaption, #issues-page footer, #issues-page header, #issues-page hgroup,
+#issues-page menu, #issues-page nav, #issues-page output, #issues-page ruby, #issues-page section, #issues-page summary,
+#issues-page time, #issues-page mark, #issues-page audio, #issues-page video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-
-/* line 5, ../sass/03-display-theme/main.scss */
-.base {
-  overflow-x: hidden;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  width: 100vw;
-  height: 100%;
-}
-
-/* line 13, ../sass/03-display-theme/main.scss */
-* {
-  box-sizing: border-box;
-}
-
-/* line 16, ../sass/03-display-theme/main.scss */
-section {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 7.5px;
-}
-/* line 24, ../sass/03-display-theme/main.scss */
-section:nth-child(odd) {
-  background-color: lightgrey;
-}
-/* line 27, ../sass/03-display-theme/main.scss */
-section:nth-child(even) {
-  background-color: grey;
-}
-/* line 30, ../sass/03-display-theme/main.scss */
-section.x2 {
-  height: 200vh;
-}
-
-/* line 36, ../sass/03-display-theme/main.scss */
-[aria-labelledby="typeography"] button, [aria-labelledby="typeography"] .rounded, [aria-labelledby="typeography"] .circle {
-  border: none;
-  border-radius: 0;
-  font-size: 1rem;
-  padding: .2rem;
-  margin: .3rem;
-}
-@media screen and (min-width: 700px) {
-  /* line 36, ../sass/03-display-theme/main.scss */
-  [aria-labelledby="typeography"] button, [aria-labelledby="typeography"] .rounded, [aria-labelledby="typeography"] .circle {
-    font-size: 1.2rem;
-    padding: .25rem;
-    margin: .25rem;
-  }
-}
-@media screen and (min-width: 900px) {
-  /* line 36, ../sass/03-display-theme/main.scss */
-  [aria-labelledby="typeography"] button, [aria-labelledby="typeography"] .rounded, [aria-labelledby="typeography"] .circle {
-    font-size: 1.75rem;
-    padding: .25rem;
-    margin: .3rem;
-  }
-}
-/* line 53, ../sass/03-display-theme/main.scss */
-[aria-labelledby="typeography"] .inverse {
-  color: white;
-  background-color: black;
-  border: none;
-  border-radius: 0;
-  font-size: 1rem;
-  padding: .2rem;
-  margin: .3rem;
-}
-@media screen and (min-width: 700px) {
-  /* line 53, ../sass/03-display-theme/main.scss */
-  [aria-labelledby="typeography"] .inverse {
-    font-size: 1.2rem;
-    padding: .25rem;
-    margin: .25rem;
-  }
-}
-@media screen and (min-width: 900px) {
-  /* line 53, ../sass/03-display-theme/main.scss */
-  [aria-labelledby="typeography"] .inverse {
-    font-size: 1.75rem;
-    padding: .25rem;
-    margin: .3rem;
-  }
-}
-
-/* line 75, ../sass/03-display-theme/main.scss */
-[aria-labelledby="color pallet"] #colors {
-  height: 50vh;
-  width: 50vw;
+/* line 33, ../sass/01-compenates/random.scss */
+#landing-page article, #landing-page aside, #landing-page details, #landing-page figcaption, #landing-page figure,
+#landing-page footer, #landing-page header, #landing-page hgroup, #landing-page menu, #landing-page nav, #landing-page section, #donor-page article, #donor-page aside, #donor-page details, #donor-page figcaption, #donor-page figure,
+#donor-page footer, #donor-page header, #donor-page hgroup, #donor-page menu, #donor-page nav, #donor-page section, #event-page article, #event-page aside, #event-page details, #event-page figcaption, #event-page figure,
+#event-page footer, #event-page header, #event-page hgroup, #event-page menu, #event-page nav, #event-page section, #issues-page article, #issues-page aside, #issues-page details, #issues-page figcaption, #issues-page figure,
+#issues-page footer, #issues-page header, #issues-page hgroup, #issues-page menu, #issues-page nav, #issues-page section {
   display: block;
 }
-/* line 80, ../sass/03-display-theme/main.scss */
-[aria-labelledby="color pallet"] #color-pallet {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
+/* line 37, ../sass/01-compenates/random.scss */
+#landing-page body, #donor-page body, #event-page body, #issues-page body {
+  line-height: 1;
 }
-/* line 87, ../sass/03-display-theme/main.scss */
-[aria-labelledby="color pallet"] select#color-selector {
-  width: 50vw;
-  font-size: 1.2rem;
+/* line 40, ../sass/01-compenates/random.scss */
+#landing-page ol, #landing-page ul, #donor-page ol, #donor-page ul, #event-page ol, #event-page ul, #issues-page ol, #issues-page ul {
+  list-style: none;
 }
-
-/* line 94, ../sass/03-display-theme/main.scss */
-[aria-labelledby="Buttons"] main {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  align-items: center;
+/* line 43, ../sass/01-compenates/random.scss */
+#landing-page blockquote, #landing-page q, #donor-page blockquote, #donor-page q, #event-page blockquote, #event-page q, #issues-page blockquote, #issues-page q {
+  quotes: none;
+}
+/* line 46, ../sass/01-compenates/random.scss */
+#landing-page blockquote:before, #landing-page blockquote:after,
+#landing-page q:before, #landing-page q:after, #donor-page blockquote:before, #donor-page blockquote:after,
+#donor-page q:before, #donor-page q:after, #event-page blockquote:before, #event-page blockquote:after,
+#event-page q:before, #event-page q:after, #issues-page blockquote:before, #issues-page blockquote:after,
+#issues-page q:before, #issues-page q:after {
+  content: '';
+  content: none;
+}
+/* line 51, ../sass/01-compenates/random.scss */
+#landing-page table, #donor-page table, #event-page table, #issues-page table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* line 3, ../sass/03-lay-out/page-layout.scss */
+#landing-page nav, #donor-page nav, #event-page nav, #issues-page nav {
   width: 100vw;
-  height: 100vw;
-}
-/* line 101, ../sass/03-display-theme/main.scss */
-[aria-labelledby="Buttons"] main div#button-display {
+  min-height: 100%;
   display: flex;
-  flex-flow: column;
-  justify-content: space-around;
-  align-items: center;
-  width: 100vw;
-  height: 100%;
-}
-/* line 108, ../sass/03-display-theme/main.scss */
-[aria-labelledby="Buttons"] main div#button-display.grey {
-  background: grey;
-}
-/* line 111, ../sass/03-display-theme/main.scss */
-[aria-labelledby="Buttons"] main div#button-display.lightgrey {
-  background-color: lightgrey;
-}
-/* line 114, ../sass/03-display-theme/main.scss */
-[aria-labelledby="Buttons"] main div#button-display.white {
-  background-color: white;
-}
-/* line 117, ../sass/03-display-theme/main.scss */
-[aria-labelledby="Buttons"] main div#button-display.black {
-  background-color: black;
-}
-/* line 120, ../sass/03-display-theme/main.scss */
-[aria-labelledby="Buttons"] main div#button-display.hex3b {
-  background-color: #3b3b3b;
-}
-/* line 123, ../sass/03-display-theme/main.scss */
-[aria-labelledby="Buttons"] main div#button-display div {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 100vw;
-  height: 100%;
-}
-/* line 130, ../sass/03-display-theme/main.scss */
-[aria-labelledby="Buttons"] main div#button-display div.col {
-  height: 70vh;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: space-around;
-}
-/* line 139, ../sass/03-display-theme/main.scss */
-[aria-labelledby="Buttons"] main header {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
-  height: 15vh;
-  width: 100vw;
-  min-width: 100%;
-}
-/* line 147, ../sass/03-display-theme/main.scss */
-[aria-labelledby="Buttons"] main header div {
-  align-items: center;
-  justify-content: space-around;
-  width: 100vw;
-  display: flex;
-  flex-flow: row;
-}
-/* line 155, ../sass/03-display-theme/main.scss */
-[aria-labelledby="Buttons"] main nav {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 100vw;
-  height: 15vh;
-}
-
-/* forgot alt for image */
-/* line 2, ../sass/01-compenates/random.scss */
-img[alt=""],
-img:not([alt]) {
-  border: 5px dash #c00;
-}
-
-/* line 6, ../sass/01-compenates/random.scss */
-.hide {
-  display: none !important;
-  visibility: hidden !important;
-}
-
-/* line 10, ../sass/01-compenates/random.scss */
-.show {
-  display: inherit !important;
-  visibility: visible !important;
+  flex-flow: row wrap-reverse;
 }

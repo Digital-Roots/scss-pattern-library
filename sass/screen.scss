@@ -13,9 +13,13 @@ reset
 /*******
 
 
-Base/Varibles
+alternative sheets
 
 *****/
+@import "../sass/print.scss";
+@import "../sass/03-lay-out/main.scss";
+@import "../sass/01-compenates/random.scss";
+
 /*******
 
 
@@ -50,13 +54,4 @@ templates
 
 
 *****/
-
-/*******
-
-
-alternative sheets
-
-*****/
-@import "../sass/print.scss";
-@import "../sass/03-display-theme/main.scss";
-@import "../sass/01-compenates/random.scss";
+@import "../sass/03-lay-out/page-layout.scss";

@@ -28,6 +28,10 @@ section{
     background-color: grey;
   }
 }
+.row{
+  display: flex;
+  flex-direction: row;
+}
 //base
 [aria-labelledby="typeography"]{
   button{
@@ -160,5 +164,14 @@ section{
   }
 }
 [labelledby="images"]{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  footer{
 
+  }
+  main{
+    display: flex;
+  }
 }

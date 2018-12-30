@@ -34,6 +34,17 @@ $black: #3b3b3b;
 @import "../sass/00-elements/images.scss";
 @import "../sass/00-elements/typeography.scss";
 @import "../sass/00-elements/filters.scss";
+
+/*******
+
+
+alternative sheets
+
+*****/
+@import "../sass/print.scss";
+@import "../sass/03-display-theme/main.scss";
+@import "../sass/01-compenates/random.scss";
+
 /*******
 
 
@@ -48,13 +59,4 @@ templates
 
 
 *****/
-
-/*******
-
-
-alternative sheets
-
-*****/
-@import "../sass/print.scss";
-@import "../sass/03-display-theme/main.scss";
-@import "../sass/01-compenates/random.scss";
+@import "../sass/03-display-theme/media-dash.scss";

@@ -63,19 +63,20 @@ h4,
 h5,
 h6 {
   /* Change heading typefaces here */
-  margin-top: calc(.35 + .3vh);
-  margin-bottom: .2rem;
-  line-height: calc(1 + .25vw);
-  text-shadow: 1px 1px 3px $brand-color, 1px 1px 2px $second-brand;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top: calc(.35 + .1vh);
+  margin-bottom: 0;
+  line-height: calc(1 + .05vw);
+  text-shadow: 1px 1px 3px darkgrey, 1px 1px 2px lightgrey;
 }
 h1 {
   font-size: 2.642rem;
-  line-height: 2.15;
-  margin-top: 2.85rem;
+  line-height: 2;
+  margin-top: 2.45rem;
 }
 h2 {
   font-size: 2.328rem;
-  line-height: 2.05;
+  line-height: 1.8;
 }
 h3 {
   font-size: calc(2.114rem + .1vw);

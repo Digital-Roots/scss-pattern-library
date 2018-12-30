@@ -221,7 +221,7 @@ a.circle{
   line-height: 1.5;
   font-size:  1.7rem;
 }
-.rounded{
+button.rounded a.rounded{
   @extend button ;
   @extend.btn ;
   border-radius: .987rem;

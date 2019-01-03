@@ -549,13 +549,106 @@ img.hero {
   max-height: 350px;
 }
 
-/* base type */
-/* line 2, ../sass/00-elements/typeography.scss */
+/* line 1, ../sass/00-elements/typeography.scss */
 html {
   /* Change default typefaces here */
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: calc(.875 + 0.45vw);
   -webkit-font-smoothing: antialiased;
+}
+
+/* base type */
+/* Copy & Lists */
+/* line 9, ../sass/00-elements/typeography.scss */
+p {
+  line-height: calc(1.5rem + 0.45vw);
+  margin-top: 1.02rem;
+  margin-bottom: 0.35rem;
+}
+
+/* line 14, ../sass/00-elements/typeography.scss */
+ul,
+ol {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* line 19, ../sass/00-elements/typeography.scss */
+ul li,
+ol li {
+  line-height: 1.5;
+}
+
+/* line 23, ../sass/00-elements/typeography.scss */
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* line 30, ../sass/00-elements/typeography.scss */
+blockquote {
+  line-height: 1.5;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Headings */
+/* line 36, ../sass/00-elements/typeography.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* Change heading typefaces here */
+  margin-top: calc(.35 + .1vh);
+  margin-bottom: 0;
+  line-height: calc(1 + .05vw);
+  text-shadow: 1px 1px 3px darkgrey, 1px 1px 2px lightgrey;
+}
+
+/* line 48, ../sass/00-elements/typeography.scss */
+h1 {
+  font-size: 2.642rem;
+  line-height: 2;
+  margin-top: 2.45rem;
+}
+
+/* line 53, ../sass/00-elements/typeography.scss */
+h2 {
+  font-size: 2.328rem;
+  line-height: 1.8;
+}
+
+/* line 57, ../sass/00-elements/typeography.scss */
+h3 {
+  font-size: calc(2.114rem + .1vw);
+  line-height: 1.5;
+}
+
+/* line 61, ../sass/00-elements/typeography.scss */
+h4 {
+  font-size: calc(1.407rem + .5vw);
+}
+
+/* line 64, ../sass/00-elements/typeography.scss */
+h5 {
+  font-size: calc(1.013333333333333rem + .5vw);
+}
+
+/* line 67, ../sass/00-elements/typeography.scss */
+h6 {
+  font-size: calc(0.5535rem + .85vw);
+}
+
+/* Code blocks */
+/* line 71, ../sass/00-elements/typeography.scss */
+code {
+  vertical-align: bottom;
+  background-color: rgba(100, 100, 100, 0.3);
 }
 
 /* web fonts */
@@ -564,7 +657,7 @@ html {
   font-family: leafy;
   src: url("fonts/leafy.otf");
 }
-/* line 15, ../sass/00-elements/typeography.scss */
+/* line 82, ../sass/00-elements/typeography.scss */
 .leafy {
   font-family: leafy;
   font-size: calc(.875 + 0.45vw);
@@ -575,7 +668,7 @@ html {
   font-family: Brela;
   src: url("fonts/brelaregular.otf");
 }
-/* line 15, ../sass/00-elements/typeography.scss */
+/* line 82, ../sass/00-elements/typeography.scss */
 .Brela {
   font-family: Brela;
   font-size: calc(.875 + 0.45vw);
@@ -586,7 +679,7 @@ html {
   font-family: BRUX;
   src: url("fonts/BFTinyHand-Regular.otf");
 }
-/* line 15, ../sass/00-elements/typeography.scss */
+/* line 82, ../sass/00-elements/typeography.scss */
 .BRUX {
   font-family: BRUX;
   font-size: calc(.875 + 0.45vw);
@@ -597,7 +690,7 @@ html {
   font-family: Hamurz;
   src: url("fonts/Hamurz Free Version.otf");
 }
-/* line 15, ../sass/00-elements/typeography.scss */
+/* line 82, ../sass/00-elements/typeography.scss */
 .Hamurz {
   font-family: Hamurz;
   font-size: calc(.875 + 0.45vw);
@@ -608,7 +701,7 @@ html {
   font-family: kust;
   src: url("fonts/kust.otf");
 }
-/* line 15, ../sass/00-elements/typeography.scss */
+/* line 82, ../sass/00-elements/typeography.scss */
 .kust {
   font-family: kust;
   font-size: calc(.875 + 0.45vw);
@@ -619,7 +712,7 @@ html {
   font-family: tinny-hands;
   src: url("fonts/BFTinyHand-Regular.otf");
 }
-/* line 15, ../sass/00-elements/typeography.scss */
+/* line 82, ../sass/00-elements/typeography.scss */
 .tinny-hands {
   font-family: tinny-hands;
   font-size: calc(.875 + 0.45vw);
@@ -631,105 +724,11 @@ html {
   font-family: ubuntu;
   src: url("font/UbuntuC.ttf");
 }
-/* line 26, ../sass/00-elements/typeography.scss */
+/* line 93, ../sass/00-elements/typeography.scss */
 .ubuntu {
   font-family: ubuntu;
   font-size: calc(.875 + 0.45vw);
   -webkit-font-smoothing: antialiased;
-}
-
-/* Copy & Lists */
-/* line 32, ../sass/00-elements/typeography.scss */
-p {
-  line-height: calc(1.5rem + 0.45vw);
-  margin-top: 1.02rem;
-  margin-bottom: 0.35rem;
-}
-
-/* line 37, ../sass/00-elements/typeography.scss */
-ul,
-ol {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-/* line 42, ../sass/00-elements/typeography.scss */
-ul li,
-ol li {
-  line-height: 1.5;
-}
-
-/* line 46, ../sass/00-elements/typeography.scss */
-ul ul,
-ol ul,
-ul ol,
-ol ol {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-/* line 53, ../sass/00-elements/typeography.scss */
-blockquote {
-  line-height: 1.5;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-/* Headings */
-/* line 59, ../sass/00-elements/typeography.scss */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  /* Change heading typefaces here */
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-top: calc(.35 + .1vh);
-  margin-bottom: 0;
-  line-height: calc(1 + .05vw);
-  text-shadow: 1px 1px 3px darkgrey, 1px 1px 2px lightgrey;
-}
-
-/* line 72, ../sass/00-elements/typeography.scss */
-h1 {
-  font-size: 2.642rem;
-  line-height: 2;
-  margin-top: 2.45rem;
-}
-
-/* line 77, ../sass/00-elements/typeography.scss */
-h2 {
-  font-size: 2.328rem;
-  line-height: 1.8;
-}
-
-/* line 81, ../sass/00-elements/typeography.scss */
-h3 {
-  font-size: calc(2.114rem + .1vw);
-  line-height: 1.5;
-}
-
-/* line 85, ../sass/00-elements/typeography.scss */
-h4 {
-  font-size: calc(1.407rem + .5vw);
-}
-
-/* line 88, ../sass/00-elements/typeography.scss */
-h5 {
-  font-size: calc(1.013333333333333rem + .5vw);
-}
-
-/* line 91, ../sass/00-elements/typeography.scss */
-h6 {
-  font-size: calc(0.5535rem + .85vw);
-}
-
-/* Code blocks */
-/* line 95, ../sass/00-elements/typeography.scss */
-code {
-  vertical-align: bottom;
-  background-color: rgba(100, 100, 100, 0.3);
 }
 
 /* line 3, ../sass/00-elements/filters.scss */

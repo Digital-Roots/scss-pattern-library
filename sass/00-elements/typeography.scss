@@ -1,33 +1,10 @@
-/* base type */
 html {
   /* Change default typefaces here */
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: calc(.875 + 0.45vw);
   -webkit-font-smoothing: antialiased;
 }
-/* web fonts */
-/* otf fonts */
-@each $name, $file in (leafy, fonts/leafy),(Brela, fonts/brelaregular),(BRUX, fonts/BFTinyHand-Regular), (Hamurz, fonts/Hamurz Free Version), (kust, fonts/kust), (tinny-hands, fonts/BFTinyHand-Regular){
-  @font-face {
-    font-family: #{$name};
-    src: url('#{$file}.otf');
-  }
-  .#{$name}{
-    font-family: #{$name};
-    font-size: calc(.875 + 0.45vw);
-    -webkit-font-smoothing: antialiased;
-  }
-}
-/* tff fonts */
-@font-face {
-  font-family: ubuntu;
-  src: url('font/UbuntuC.ttf');
-}
-.ubuntu{
-  font-family: ubuntu;
-  font-size: calc(.875 + 0.45vw);
-  -webkit-font-smoothing: antialiased;
-}
+/* base type */
 /* Copy & Lists */
 p {
   line-height: calc(1.5rem + 0.45vw);
@@ -63,7 +40,6 @@ h4,
 h5,
 h6 {
   /* Change heading typefaces here */
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: calc(.35 + .1vh);
   margin-bottom: 0;
   line-height: calc(1 + .05vw);
@@ -95,4 +71,27 @@ h6 {
 code {
   vertical-align: bottom;
   background-color: rgba(100, 100, 100, .3);
+}
+/* web fonts */
+/* otf fonts */
+@each $name, $file in (leafy, fonts/leafy),(Brela, fonts/brelaregular),(BRUX, fonts/BFTinyHand-Regular), (Hamurz, fonts/Hamurz Free Version), (kust, fonts/kust), (tinny-hands, fonts/BFTinyHand-Regular){
+  @font-face {
+    font-family: #{$name};
+    src: url('#{$file}.otf');
+  }
+  .#{$name}{
+    font-family: #{$name};
+    font-size: calc(.875 + 0.45vw);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+/* tff fonts */
+@font-face {
+  font-family: ubuntu;
+  src: url('font/UbuntuC.ttf');
+}
+.ubuntu{
+  font-family: ubuntu;
+  font-size: calc(.875 + 0.45vw);
+  -webkit-font-smoothing: antialiased;
 }

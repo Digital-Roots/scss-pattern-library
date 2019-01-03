@@ -1346,31 +1346,73 @@ templates
 
 
 *****/
-/* line 1, ../sass/03-display-theme/media-dash.scss */
-body#media-dashboard {
+/* line 2, ../sass/03-display-theme/media-dash.scss */
+body#media-dashboard .grid-container {
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "video video video video header header header header header header"              "video video video video header header header header header header"                               "video video video video header header header header header header"                                 "nav nav body body body body body body body body"                                                   "nav nav body body body body body body body body"                                                   "nav nav body body body body body body body body"                                                   "nav nav body body body body body body body body"                                                    "nav nav body body body body body body body body"                                                    "nav nav body body body body body body body body";
 }
-/* line 5, ../sass/03-display-theme/media-dash.scss */
-body#media-dashboard header {
+/* line 7, ../sass/03-display-theme/media-dash.scss */
+body#media-dashboard .grid-container header {
   display: flex;
-}
-/* line 8, ../sass/03-display-theme/media-dash.scss */
-body#media-dashboard footer {
-  display: flex;
+  grid-area: header;
 }
 /* line 11, ../sass/03-display-theme/media-dash.scss */
-body#media-dashboard main {
+body#media-dashboard .grid-container footer {
   display: flex;
 }
 /* line 14, ../sass/03-display-theme/media-dash.scss */
-body#media-dashboard aside {
+body#media-dashboard .grid-container main {
+  display: flex;
+  grid-area: body;
+}
+/* line 18, ../sass/03-display-theme/media-dash.scss */
+body#media-dashboard .grid-container aside {
+  display: flex;
+  grid-area: video;
+}
+/* line 22, ../sass/03-display-theme/media-dash.scss */
+body#media-dashboard .grid-container section {
   display: flex;
 }
-/* line 17, ../sass/03-display-theme/media-dash.scss */
-body#media-dashboard section {
+/* line 25, ../sass/03-display-theme/media-dash.scss */
+body#media-dashboard .grid-container nav {
+  display: flex;
+  grid-area: nav;
+}
+
+/* line 2, ../sass/03-display-theme/generic-dash.scss */
+body#g-dash .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "nav nav header header header header header header header header"                 "nav nav body body body body body body body body"                                                   "nav nav body body body body body body body body"                                                    "nav nav body body body body body body body body"                                                   "nav nav body body body body body body body body"                                                   "nav nav body body body body body body body body"                                                   "nav nav body body body body body body body body"                                                    "nav nav body body body body body body body body"                                                    "nav nav body body body body body body body body";
+}
+/* line 7, ../sass/03-display-theme/generic-dash.scss */
+body#g-dash .grid-container header {
   display: flex;
 }
-/* line 20, ../sass/03-display-theme/media-dash.scss */
-body#media-dashboard nav {
+/* line 10, ../sass/03-display-theme/generic-dash.scss */
+body#g-dash .grid-container footer {
   display: flex;
+}
+/* line 13, ../sass/03-display-theme/generic-dash.scss */
+body#g-dash .grid-container main {
+  display: flex;
+  grid-area: body;
+}
+/* line 17, ../sass/03-display-theme/generic-dash.scss */
+body#g-dash .grid-container aside {
+  display: flex;
+  grid-area: video;
+}
+/* line 21, ../sass/03-display-theme/generic-dash.scss */
+body#g-dash .grid-container section {
+  display: flex;
+}
+/* line 24, ../sass/03-display-theme/generic-dash.scss */
+body#g-dash .grid-container nav {
+  display: flex;
+  grid-area: nav;
 }

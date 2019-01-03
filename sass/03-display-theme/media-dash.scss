@@ -1,30 +1,30 @@
 body#media-dashboard{
   .grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "video video video video header header header header header header" "video video video video header header header header header header" "video video video video header header header header header header" "nav nav body body body body body body body body" "nav nav body body body body body body body body" "nav nav body body body body body body body body" "nav nav body body body body body body body body" "nav nav body body body body body body body body" "nav nav body body body body body body body body";
-  }
-  header{
-    display: flex;
-    grid-area: header;
-  }
-  footer{
-    display: flex;
-  }
-  main{
-    display: flex;
-    grid-area: body;
-  }
-  aside{
-    display: flex;
-    grid-area: video;
-  }
-  section{
-    display: flex;
-  }
-  nav{
-    display: flex;
-    grid-area: nav; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "video video video video header header header header header header"              "video video video video header header header header header header"                               "video video video video header header header header header header"                                 "nav nav body body body body body body body body"                                                   "nav nav body body body body body body body body"                                                   "nav nav body body body body body body body body"                                                   "nav nav body body body body body body body body"                                                    "nav nav body body body body body body body body"                                                    "nav nav body body body body body body body body";
+    header{
+      display: flex;
+      grid-area: header;
+    }
+    footer{
+      display: flex;
+    }
+    main{
+      display: flex;
+      grid-area: body;
+    }
+    aside{
+      display: flex;
+      grid-area: video;
+    }
+    section{
+      display: flex;
+    }
+    nav{
+      display: flex;
+      grid-area: nav;
+    }
   }
 }
